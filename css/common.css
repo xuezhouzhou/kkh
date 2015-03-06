@@ -1,0 +1,35 @@
+*{
+  margin:0;
+  padding:0;
+  border:none;
+}
+
+body{
+  background-color:#fcfcfd;
+  font-family:'microsoft yahei';
+  font-size:14px;  
+}
+
+a{
+  text-decoration: none;
+}
+
+a:hover{
+  text-decoration:underline;
+}
+
+
+/* 全局文本框样式 */
+
+.text{
+  border:1px solid #d8dbdb;
+  color:#a4a9ae;
+  font-size: 14px;
+  height: 28px;
+  padding: 10px 0;
+  text-indent: 10px;
+}
+
+.text-block{
+  width: 100%;
+}
