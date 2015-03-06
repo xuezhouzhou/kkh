@@ -9,12 +9,14 @@
   border:1px solid #d8dbdb;
   background: #fff;
 }
+
 #logo{
   width:171px;
   height: 105px;
   margin: 0 auto;
   margin-top:50px;
 }
+
 .row{
   height: 50px;
 }
@@ -34,7 +36,14 @@
   width: 294px;
 }
 
-
+.text{
+  border:1px solid #d8dbdb;
+  color:#a4a9ae;
+  font-size: 14px;
+  height: 28px;
+  padding: 10px;
+  width: 274px;
+}
 
 .tips{
   font-size: 12px;
@@ -59,22 +68,30 @@
   float:left;
 }
 
+.link-reg-fgtpasss{
+  margin-top: 8px;
+}
 
 .link .reg{
   float:right;
 }
 
-.link .link-index{
+.link-index{
   text-align: center;
+  margin-top: 50px;
 }
 
-
-
-
-/* .rows .cols-left,
-.rows .cols-right{
-  width:23%;
+.btn-login{
+  width: 220px;
+  height: 50px;
+  line-height: 50px;
+  background: #6cc;
+  display: block;
+  margin: 0 auto;
+  border-radius: 25px;
+  color:#fff;
+  text-decoration: none;
+  text-align: center;
+  font-size: 18px;
+  margin-top: 50px;
 }
-.row .cols-middle{
-  width: 54%;
-} */
