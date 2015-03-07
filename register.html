@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>KKH - 注册</title>
+<link rel="stylesheet" href="css/common.css">
+<link rel="stylesheet" href="css/register.css">
+</head>
+<body>
+
+<div id="header-wrap">
+  <div id="header">
+    <div id="logo"></div>
+    <div id="top-menu">
+      <div class="back-index">
+        <a href="#">回到首页</a>
+      </div>
+      <div class="login-menu">
+        <a href="#">登录</a>
+        <span>|</span>
+        <a href="#">注册</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="register-wrap">
+  <div id="register">
+    <div class="row" id="title">
+      <div class="col col-l"></div>
+      <div class="col col-m">
+        <h1>注册</h1>
+        <p style="margin-top:5px;">为了能够顺利的注册完成。请正确填写一下信息。<p>
+      </div>
+      <div class="col col-r"></div>
+    </div>
+
+    <div class="row m-t-15">
+      <div class="col col-l"></div>
+      <div class="col col-m">
+        <input type="text" class="text" placeholder="用户名">
+      </div>
+      <div class="col col-r"></div>
+    </div>
+
+    <div class="row m-t-15">
+      <div class="col col-l"></div>
+      <div class="col col-m">
+        <input type="text" class="text" placeholder="真实姓名">
+      </div>
+      <div class="col col-r"></div>
+    </div>
+
+    <div class="row m-t-15">
+      <div class="col col-l"></div>
+      <div class="col col-m">
+        <div class="radio-wrap" style="margin-top:7px;">
+          <div class="radio">男</div>
+          <div class="radio radio-checked">女</div>  
+        </div>
+      </div>
+      <div class="col col-r"></div>
+    </div>
+
+    <div class="row m-t-15">
+      <div class="col col-l"></div>
+      <div class="col col-m">
+        <input type="text" class="text" placeholder="手机">
+      </div>
+      <div class="col col-r"></div>
+    </div>
+
+    <div class="row m-t-15">
+      <div class="col col-l"></div>
+      <div class="col col-m">
+        <input type="text" class="text" placeholder="邮箱">
+      </div>
+      <div class="col col-r">
+        <p class="warning-tips">邮箱格式不正确！</p>
+      </div>
+    </div>
+
+    <div class="row m-t-15">
+      <div class="col col-l"></div>
+      <div class="col col-m">
+        <input type="text" class="text" placeholder="公司/组织">
+      </div>
+      <div class="col col-r"></div>
+    </div>
+
+    <div class="row m-t-15">
+      <div class="col col-l"></div>
+      <div class="col col-m">
+        <input type="text" class="text" placeholder="职务">
+      </div>
+      <div class="col col-r"></div>
+    </div>
+
+    <div class="row m-t-15">
+      <div class="col col-l"></div>
+      <div class="col col-m">
+        <input type="password" class="text" placeholder="密码">
+      </div>
+      <div class="col col-r"></div>
+    </div>
+
+    <div class="row m-t-15">
+      <div class="col col-l"></div>
+      <div class="col col-m">
+        <input type="password" class="text" placeholder="重复密码">
+      </div>
+      <div class="col col-r"></div>
+    </div>
+
+    <div class="row" style="margin-top:30px;">
+      <div class="col col-l"></div>
+      <div class="col col-m">
+        <div class="btn btn-submit">确认</div>
+        <div class="btn btn-cancel">取消</div>
+      </div>
+      <div class="col col-r"></div>
+    </div>
+
+  </div>  
+</div>
+<div id="footer">2015 kaikaihui  开发者中心/服务协议/权利声明</div>
+<script src="js/jquery.min.js"></script>
+<script>
+(function(){
+  $(".radio-wrap .radio").click(function(){
+    $(this).siblings('.radio-checked').removeClass('radio-checked').end().addClass('radio-checked');
+  });
+})(jQuery);  
+</script>
+</body>
+</html>

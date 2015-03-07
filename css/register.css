@@ -1,0 +1,180 @@
+#header-wrap{
+  height: 79px;
+  border-bottom: 1px solid #d8dbdb;
+  background: #fff;
+}
+#header{
+  width: 1080px;
+  height: 79px;
+  margin-left:auto;
+  margin-right: auto;   
+}
+#logo{
+  width: 279px;
+  height: 79px;
+  float: left;
+  background: url(../images/logo-2.png) no-repeat center center;
+}
+#top-menu{
+  width: 265px;
+  height: 79px;
+  float: right;
+}
+#top-menu .back-index{
+  float: left;
+  width: 108px;
+  height: 79px;
+  text-align: center;
+  border-right: 1px solid #d8dbdb;
+}
+#top-menu .login-menu{
+  float: right;
+  width: 155px;
+  height: 79px;
+  text-align: center;
+  border-right: 1px solid #d8dbdb;
+}
+
+#top-menu .back-index a{
+  color:#5d5d5e;
+  line-height: 79px;
+  font-size: 16px;
+}
+
+#top-menu .login-menu a{
+  font-size: 18px;
+  color:#5d5d5e;
+  line-height: 79px;
+}
+
+#top-menu .login-menu span{
+  height: 79px;
+  line-height: 79px;
+  font-size: 18px;
+  margin:0 3px;
+  color:#d8dbdb; 
+}
+
+#register{
+  width: 1078px;
+  border:1px solid #d8dbdb;
+  border-top:0;
+  margin: 0 auto;
+  background: #fff;
+  padding-top: 60px;
+  padding-bottom: 45px;
+  overflow: hidden;
+}
+
+.row{
+  height: 42px;
+}
+
+.row .col{
+  height: 42px;
+  float: left;
+}
+
+#title{
+  height: 60px;
+}
+
+#title .col{
+  height: 60px;
+  float: left;
+}
+
+.row .col-l{
+  width: 350px;
+  
+}
+
+.row .col-m{
+  width: 356px;
+  
+}
+
+
+.row .col-r{
+  width: 372px;
+ 
+}
+
+#register h1{
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.text{
+  border:1px solid #d8dbdb;
+  color:#a4a9ae;
+  padding: 12px;
+  font-size: 14px;
+  width: 330px;
+  outline: none;  
+}
+
+.warning-tips{
+  font-size: 12px;
+  color:#f16374;
+  line-height: 42px;
+  text-indent: 36px;
+  background:url(../images/icon-tips-warning.png) no-repeat 7px center;
+}
+
+.m-t-15{
+  margin-top: 15px;
+}
+
+.radio-wrap{
+  height: 26px;
+}
+
+.radio-wrap .radio{
+  height: 26px;
+  float: left;
+  line-height: 26px;
+  padding-left: 30px;
+  background: url(../images/radio-default.png) no-repeat left center;
+  cursor: pointer;
+}
+
+.radio-wrap .radio{
+  margin-right: 30px;
+}
+
+.radio-wrap .radio-checked{
+  background: url(../images/radio-checked.png) no-repeat left center;
+}
+
+.btn{
+  width:138px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  font-size: 18px;
+  border-radius: 21px;
+
+}
+
+.btn-submit{
+  background-color: #6cc;
+  color: #fff;
+  border: 1px solid #6cc;
+  cursor:pointer;
+  float: left;
+}
+
+.btn-cancel{
+  background-color: #fff;
+  border: 1px solid #d8dbdb;
+  cursor:pointer;
+  float: right;
+}
+
+
+#footer{
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 40px;
+}
