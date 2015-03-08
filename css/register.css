@@ -1,60 +1,3 @@
-#header-wrap{
-  height: 79px;
-  border-bottom: 1px solid #d8dbdb;
-  background: #fff;
-}
-#header{
-  width: 1080px;
-  height: 79px;
-  margin-left:auto;
-  margin-right: auto;   
-}
-#logo{
-  width: 279px;
-  height: 79px;
-  float: left;
-  background: url(../images/logo-2.png) no-repeat center center;
-}
-#top-menu{
-  width: 265px;
-  height: 79px;
-  float: right;
-}
-#top-menu .back-index{
-  float: left;
-  width: 108px;
-  height: 79px;
-  text-align: center;
-  border-right: 1px solid #d8dbdb;
-}
-#top-menu .login-menu{
-  float: right;
-  width: 155px;
-  height: 79px;
-  text-align: center;
-  border-right: 1px solid #d8dbdb;
-}
-
-#top-menu .back-index a{
-  color:#5d5d5e;
-  line-height: 79px;
-  font-size: 16px;
-}
-
-#top-menu .login-menu a{
-  font-size: 18px;
-  color:#5d5d5e;
-  line-height: 79px;
-}
-
-#top-menu .login-menu span{
-  height: 79px;
-  line-height: 79px;
-  font-size: 18px;
-  margin:0 3px;
-  color:#d8dbdb; 
-}
-
 #register{
   width: 1078px;
   border:1px solid #d8dbdb;
@@ -173,8 +116,3 @@
 }
 
 
-#footer{
-  text-align: center;
-  padding-top: 30px;
-  padding-bottom: 40px;
-}

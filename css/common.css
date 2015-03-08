@@ -14,3 +14,345 @@ body{
 a{
   text-decoration: none;
 }
+
+
+/*== header start ==*/
+
+#header-wrap{
+  height: 79px;
+  border-bottom: 1px solid #d8dbdb;
+  background: #fff;
+}
+
+#header{
+  width: 1080px;
+  height: 79px;
+  margin-left:auto;
+  margin-right: auto;   
+}
+
+#logo{
+  width: 279px;
+  height: 79px;
+  float: left;
+  background: url(../images/logo-2.png) no-repeat center center;
+}
+
+
+#top-menu{
+  width: 265px;
+  height: 79px;
+  float: right;
+}
+
+#top-menu .back-index{
+  float: left;
+  width: 108px;
+  height: 79px;
+  text-align: center;
+  border-right: 1px solid #d8dbdb;
+}
+
+#top-menu .login-menu{
+  float: right;
+  width: 155px;
+  height: 79px;
+  text-align: center;
+  border-right: 1px solid #d8dbdb;
+}
+
+#top-menu .back-index a{
+  color:#5d5d5e;
+  line-height: 79px;
+  font-size: 16px;
+}
+
+#top-menu .login-menu a{
+  font-size: 18px;
+  color:#5d5d5e;
+  line-height: 79px;
+}
+
+#top-menu .login-menu span{
+  height: 79px;
+  line-height: 79px;
+  font-size: 18px;
+  margin:0 3px;
+  color:#d8dbdb; 
+}
+
+
+
+#top-menu .login-info{
+  float: right;
+  width: 155px;
+  height: 79px;
+  text-align: center;
+  border-right: 1px solid #d8dbdb;
+  position: relative;
+}
+
+#top-menu .login-info-inner{
+  position: absolute;
+  width:155px;
+  height: 79px;
+  left:0;
+  top:0;
+  cursor:pointer;
+}
+
+#top-menu .login-info-inner .tx{
+  position: absolute;
+  width: 58px;
+  height: 58px;
+  border: 1px solid #d8dbdb;
+  border-radius: 30px;
+  left: 9px;
+  top: 9px;
+}
+
+#top-menu .login-info-inner .username{
+  font-size: 18px;
+  color: #6cc;
+  position: absolute;
+  left: 69px;
+  top: 28px;
+  width: 85px;
+  text-align: center;
+}
+
+#top-menu .login-info-list{
+  position: absolute;
+  top:79px;
+  left:-1px;
+  width:155px;
+  border:1px solid #d8dbdb; 
+  border-top:none;
+  background: #fff;
+  z-index:999;
+  display: none;
+}
+
+#top-menu .login-info-list a{
+  display: block;
+  color:#454646;
+  height: 49px;
+  line-height: 49px;
+  font-size:18px;
+  text-align: center;
+  border-top:1px solid #d8dbdb;
+}
+
+
+
+#top-menu .login-info-list a:hover{
+  background: #d8dbdb;
+  color:#fff;
+}
+
+#welcome{
+  float: left;
+  width:510px;
+  height: 79px;
+  line-height: 79px;
+  text-align: center;
+}
+/*== header end ==*/
+
+
+#container-wrap{
+  margin-top: 10px;
+  overflow: hidden;
+}
+
+
+
+
+#container{
+  width: 1080px;
+  margin-left:auto;
+  margin-right: auto;
+}
+
+
+#side,
+#main{
+  height: 770px;
+  background-color:#fff;
+  border: 1px solid #d8dbdb;
+}
+
+#side{
+  float: left;
+  width: 184px
+}
+
+
+#main{
+  float: right;
+  width: 882px
+}
+
+
+
+/*侧边栏用户信息 start */
+#side-userinfo{
+  width: 184px;
+  height: 212px;
+  background:url(../images/side-userinfo-bg.png);
+  position: relative;
+}
+
+#side-userinfo .hover{
+  position: absolute;
+  left:0;
+  top:0;
+  width:184px;
+  height: 212px;
+  background: #000;
+  opacity: 0.5;
+  z-index:1;
+  filter:alpha(opacity=50);
+}
+
+#side-userinfo .tx{
+  position: absolute;
+  left:40px;
+  top:28px;
+  width: 100px;
+  height: 100px;
+  border: 2px solid #fff;
+  border-radius:52px;
+  z-index: 2;
+}
+
+#side-userinfo .sex{
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  left:112px;
+  top:96px;
+  z-index: 3;
+}
+
+#side-userinfo .sex-m{
+  background: url(../images/icon-sex-m.png) no-repeat center center;
+}
+
+#side-userinfo .username{
+  position: absolute;
+  text-align: center;
+  top:146px;
+  width: 100%;
+  color:#fff;
+  z-index: 2;
+  font-size: 18px;
+}
+
+#side-userinfo .score{
+  position: absolute;
+  text-align: center;
+  top:176px;
+  width: 100%;
+  color:#fff;
+  z-index: 2;
+  font-size: 18px;
+}
+
+#side-userinfo .score .num{
+  color:#edcc57;
+}
+/*侧边栏用户信息 end */
+
+
+
+
+/* 侧边栏Menu start */
+#side-menu{
+  border-top:1px solid #d8dbdb;
+}
+
+#side-menu .menu-list{
+  display: block;
+  height: 49px;
+  border-bottom:1px solid #d8dbdb;
+  position: relative;
+  cursor: pointer;
+}
+
+
+#side-menu .menu-list .icon{
+  width: 29px;
+  height: 29px;
+  position: absolute;
+  left: 20px;
+  top: 10px;
+}
+
+#side-menu .menu-list .text{
+  width: 80px;
+  height: 29px;
+  line-height: 29px;
+  position: absolute;
+  left: 65px;
+  top: 10px;
+}
+
+#side-menu .menu-list .icon-hygl{
+  background: url(../images/icon-hygl.png) no-repeat center center;
+}
+
+#side-menu .menu-list .icon-txlgl{
+  background: url(../images/icon-txlgl.png) no-repeat center center;
+}
+
+#side-menu .menu-list .icon-hdgl{
+  background: url(../images/icon-hdgl.png) no-repeat center center;
+}
+
+#side-menu .menu-list .icon-tjbb{
+  background: url(../images/icon-tjbb.png) no-repeat center center;
+}
+
+#side-menu .menu-list .icon-jt{
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  right: 17px;
+  top: 17px;
+  
+}
+
+#side-menu .menu-list .icon-jt-right{
+  background: url(../images/icon-jt-right.png) no-repeat center center;
+}
+
+
+#side-menu .menu-list .icon-jt-bottom{
+  background: url(../images/icon-jt-bottom.png) no-repeat center center;
+}
+
+#hdgl-child{
+  display: none;
+}
+/* 侧边栏Menu end */
+
+
+/* #side-userinfo .sex-w{
+  background: url(../images/icon-sex-w.png) no-repeat center center;
+}
+ */
+
+
+
+
+
+
+
+
+
+#footer{
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 40px;
+}
