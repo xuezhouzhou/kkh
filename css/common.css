@@ -302,6 +302,10 @@ a{
   background: url(../images/icon-hygl.png) no-repeat center center;
 }
 
+#side-menu .menu-list .icon-hygl-cur{
+  background: url(../images/icon-hygl-cur.png) no-repeat center center;
+}
+
 #side-menu .menu-list .icon-txlgl{
   background: url(../images/icon-txlgl.png) no-repeat center center;
 }
@@ -313,6 +317,22 @@ a{
 #side-menu .menu-list .icon-tjbb{
   background: url(../images/icon-tjbb.png) no-repeat center center;
 }
+
+
+
+#side-menu .menu-list .border{
+  position: absolute;
+  top:0;
+  left:0;
+  width: 6px;
+  height:50px;
+}
+
+
+#side-menu .menu-list .border-hy{
+  background-color: #8cc152;
+}
+
 
 #side-menu .menu-list .icon-jt{
   width: 15px;
@@ -374,6 +394,8 @@ a{
   border-radius:2px;
 }
 
+
+
 .btn-b{
   display: block;
   background-color: #6cc;
@@ -390,6 +412,18 @@ a{
   text-align: center;
   cursor: pointer;
   color:#a4a9ae;
+}
+
+.btn-d{
+  display: block;
+  width: 80px;
+  height: 30px;
+  line-height: 30px;
+  color: #fff;
+  text-align: center;
+  border: 1px solid #6cc;
+  border-radius:2px;
+  background-color: #6cc;
 }
   
 .btn-lg{
