@@ -5,16 +5,9 @@
 }
 
 #top-bar .btn-back{
-  display: block;
   position: absolute;
-  width: 80px;
-  height: 30px;
-  line-height: 30px;
-  border: 1px solid #d8dbdb;
-  top:14px;
+  top:13px;
   right: 25px;
-  text-align: center;
-  color:#a4a9ae;
 }
 
 #top-bar-nav{
@@ -53,6 +46,7 @@
   width: 596px;
   height: 709px;
   border-right:1px solid #d8dbdb;
+  position: relative;
 }
 
 
@@ -91,14 +85,11 @@
 
 
 #con-tx .btn-upload{
-  display: block;
-  width: 80px;
-  height: 30px;
-  line-height: 30px;
-  border: 1px solid #d8dbdb;
-  top:14px;
-  right: 25px;
-  text-align: center;
-  color:#a4a9ae;
   margin: 0 auto;
+}
+
+#con-userinfo .btn-userinfo-edit{
+  position: absolute;
+  top:25px;
+  right: 25px;
 }

@@ -2,11 +2,12 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>KKH - 账号信息</title>
+<title>KKH - 密码修改</title>
 <link rel="stylesheet" href="css/common.css">
-<link rel="stylesheet" href="css/userinfo.css">
+<link rel="stylesheet" href="css/changepass.css">
 </head>
 <body>
+
 <div id="header-wrap">
   <div id="header">
     <div id="logo"></div>
@@ -29,6 +30,9 @@
     </div>
   </div>
 </div>
+
+
+
 
 <div id="container-wrap">
   <div id="container">
@@ -72,71 +76,60 @@
 
       </div>
     </div>
+    
+
     <div id="main">
       <div id="top-bar">
         <div id="top-bar-nav">
-          <a href="javascript:void(0)" class="zhxx cur">账号信息</a>
-          <a href="changepass.html" class="mmxg">密码修改</a>
+          <a href="userinfo.html" class="zhxx">账号信息</a>
+          <a href="javascript:void(0)" class="mmxg cur">密码修改</a>
         </div>
         <a href="#" class="btn-a btn-back">返回</a>
       </div>
 
-      <div id="content">
-        <div id="con-userinfo">
-          <h2>个人信息</h2>
-          <table width="100%" cellpadding="0" cellspacing="0" style="margin-top:15px;">
-            <tr>
-              <td class="label" width="15%">用户名</td>
-              <td width="85%">荷西</td>
-            </tr>
-            <tr>
-              <td class="label">真实姓名</td>
-              <td>张三</td>
-            </tr>
-            <tr>
-              <td class="label">邮箱</td>
-              <td>xzzphp@163.com </td>
-            </tr>
-            <tr>
-              <td class="label">手机</td>
-              <td>18616675742</td>
-            </tr>
-            <tr>
-              <td class="label">性别</td>
-              <td>男</td>
-            </tr>
-          </table>
-          
-          <h2 style="margin-top:25px;">公司信息</h2>
-          <table width="100%" cellpadding="0" cellspacing="0" style="margin-top:15px;">
-            <tr>
-              <td class="label" width="15%">公司</td>
-              <td width="85%">上海荷锐信息技术有限公司</td>
-            </tr>
-            <tr>
-              <td class="label">职务</td>
-              <td>行政</td>
-            </tr>
-            <tr>
-              <td class="label">地址</td>
-              <td>上海市浦东新区巨峰路200号</td>
-            </tr>
-          </table>
+      <div id="change-pass">
+        <div class="row">
+          <div class="col col-l"></div>
+          <div class="col col-m">
+            <h1>修改密码</h1>
+          </div>
+          <div class="col col-r"></div>
+        </div>
 
-          <h2 style="margin-top:25px;">积分信息</h2>
-          <table width="100%" cellpadding="0" cellspacing="0" style="margin-top:15px;">
-            <tr>
-              <td class="label" width="15%">当前积分</td>
-              <td width="85%">208 分</td>
-            </tr>
-          </table>
-        
-          <a href="userinfo-edit.html" class="btn-a btn-userinfo-edit">修改</a>
+        <div class="row">
+          <div class="col col-l"></div>
+          <div class="col col-m">
+            <input type="password" class="text text-lg" placeholder="原始密码">
+          </div>
+          <div class="col col-r">
+            <p class="warning-tips">密码不正确！</p>
+          </div>
         </div>
-        <div id="con-tx">
-          <img class="tx-img" src="images/tx.jpg">
-          <a class="btn-a btn-upload" href="">上传</a>
+
+        <div class="row m-t-15">
+          <div class="col col-l"></div>
+          <div class="col col-m">
+            <input type="password" class="text text-lg" placeholder="设置新密码">
+          </div>
+          <div class="col col-r"></div>
         </div>
+
+        <div class="row m-t-15">
+          <div class="col col-l"></div>
+          <div class="col col-m">
+            <input type="password" class="text text-lg" placeholder="重复密码">
+          </div>
+          <div class="col col-r"></div>
+        </div>
+
+        <div class="row m-t-15">
+          <div class="col col-l"></div>
+          <div class="col col-m">
+            <a class="btn-b btn-commit">确认</a>
+          </div>
+          <div class="col col-r"></div>
+        </div>
+
       </div>
     </div>
   </div>

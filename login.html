@@ -5,47 +5,43 @@
 <title>KKH - 登录</title>
 <link rel="stylesheet" type="text/css" href="css/common.css">
 <link rel="stylesheet" type="text/css" href="css/login.css">
-
 </head>
 <body>
 <div id="login">
-  <div id="logo">
-    <a href="#"><img src="images/logo-1.png"></a>  
-  </div>
-  
+  <div class="logo"><a href="#"><img src="images/logo-1.png"></a></div>
+      
   <div class="row" style="margin-top:80px;">
     <div class="col col-l"></div>
     <div class="col col-m">
-      <input type="text" class="text text-block" text="" placeholder="用户名/手机号/email">
+      <input type="text" class="text text-lg" placeholder="用户名/手机号/email">
     </div>
     <div class="col col-r">
-      <p class="tips">账户不存在！</p>
+      <p class="warning-tips">账户不存在！</p>
     </div>
   </div>
 
-  <div class="row" style="margin-top:15px;">
+  <div class="row m-t-15">
     <div class="col col-l"></div>
     <div class="col col-m">
-      <input type="password" class="text text-block" placeholder="请输入密码">
+      <input type="password" class="text text-lg" placeholder="请输入密码">
     </div>
     <div class="col col-r">
-      <p class="tips" style="display:none;">密码不正确！</p>
+      <p class="warning-tips" style="display:none;">密码不正确！</p>
     </div>
   </div>
 
   <div class="link link-reg-fgtpasss">
     <a href="#" class="forget-pass">忘记密码?</a>
-    <a href="#" class="reg">注册</a>
+    <a href="register.html" class="reg">注册</a>
   </div>
 
   <div class="btn-wrap">
-    <a class="btn-login" href="#">确&nbsp;认</a>
+    <a class="btn-b btn-lg btn-login" href="#">确&nbsp;认</a>
   </div>
 
   <div class="link link-index">
     <a href="#" class="back-index">返回首页</a>
   </div>
-  
 </div>  
 </body>
 </html>

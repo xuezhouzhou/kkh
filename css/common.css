@@ -289,7 +289,7 @@ a{
   top: 10px;
 }
 
-#side-menu .menu-list .text{
+#side-menu .menu-list .title{
   width: 80px;
   height: 29px;
   line-height: 29px;
@@ -320,13 +320,11 @@ a{
   position: absolute;
   right: 17px;
   top: 17px;
-  
 }
 
 #side-menu .menu-list .icon-jt-right{
   background: url(../images/icon-jt-right.png) no-repeat center center;
 }
-
 
 #side-menu .menu-list .icon-jt-bottom{
   background: url(../images/icon-jt-bottom.png) no-repeat center center;
@@ -356,3 +354,87 @@ a{
   padding-top: 30px;
   padding-bottom: 40px;
 }
+
+
+
+
+
+
+
+
+/* 按钮 */
+.btn-a{
+  display: block;
+  width: 80px;
+  height: 30px;
+  line-height: 30px;
+  color: #a4a9ae;
+  text-align: center;
+  border: 1px solid #d8dbdb;
+  border-radius:2px;
+}
+
+.btn-b{
+  display: block;
+  background-color: #6cc;
+  color:#fff;
+  font-size: 18px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.btn-c{
+  font-size: 18px;
+  background-color: #fff;
+  border: 1px solid #d8dbdb;
+  text-align: center;
+  cursor: pointer;
+}
+  
+.btn-lg{
+  border-radius: 25px;
+  height: 50px;
+  line-height: 50px;
+}
+
+.btn-md{
+  border-radius: 20px;
+  height: 40px;
+  line-height: 40px;
+}
+
+.btn-sm{
+  border-radius: 15px;
+  height: 30px;
+  line-height: 30px;
+}
+
+a.btn-b{
+  text-decoration: none;  
+}
+
+/* 文本框 */
+.text{
+  border:1px solid #d8dbdb;
+  color:#a4a9ae;
+  font-size: 14px;
+  outline: none;
+}
+
+.text-lg{
+  padding: 16px 10px;
+}
+
+.text-md{
+  padding: 12px 10px;
+}
+
+/* 警告提示 */
+.warning-tips{
+  font-size: 12px;
+  color:#f16374;
+  text-indent: 36px;
+  background:url(../images/icon-tips-warning.png) no-repeat 7px center;
+}
+
+.m-t-15{ margin-top: 15px; }

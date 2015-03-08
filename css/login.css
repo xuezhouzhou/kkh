@@ -4,13 +4,14 @@
   height: 592px;
   left:50%;
   top:50%;
-  margin-left: -274px;
-  margin-top: -296px;
+  margin-left: -276px;
+  margin-top: -297px;
   border:1px solid #d8dbdb;
   background: #fff;
+  border-radius: 2px;
 }
 
-#logo{
+#login .logo{
   width:171px;
   height: 105px;
   margin: 0 auto;
@@ -24,7 +25,6 @@
 .row .col{
   height: 50px;
   float: left;
-  
 }
 
 .row .col-l,
@@ -36,21 +36,12 @@
   width: 294px;
 }
 
-.text{
-  border:1px solid #d8dbdb;
-  color:#a4a9ae;
-  font-size: 14px;
-  height: 28px;
-  padding: 10px;
-  width: 274px;
+#login .text{
+  width: 272px; 
 }
 
-.tips{
-  font-size: 12px;
-  color:#f16374;
+#login .warning-tips{
   line-height: 50px;
-  text-indent: 36px;
-  background:url(../images/icon-tips-warning.png) no-repeat 5px center;
 }
 
 .link{
@@ -81,17 +72,8 @@
   margin-top: 50px;
 }
 
-.btn-login{
+#login .btn-login{
   width: 220px;
-  height: 50px;
-  line-height: 50px;
-  background: #6cc;
-  display: block;
   margin: 0 auto;
-  border-radius: 25px;
-  color:#fff;
-  text-decoration: none;
-  text-align: center;
-  font-size: 18px;
   margin-top: 50px;
 }
