@@ -256,7 +256,7 @@
             </table>
             <div class="more-mumber">
               <a class="fl" href="javascript:void(0)" id="more-mumber">更多>></a>
-              <div class="fr btn-a">增加参会人</div>
+              <div class="fr btn-a" id="add-ch-member">增加参会人</div>
             </div>
           </div>
         </div>
@@ -274,9 +274,9 @@
               <td class="hd-type"><img src="images/hd-type-qdms.png"></td>
               <td colspan="4">
                 <div class="btn-wrap">
-                  <a href="" class="btn btn-wxqd">微信签到</a>
-                  <a href="" class="btn btn-sjqd">手机签到</a>
-                  <a href="" class="btn-b btn-sm btn-change">更换</a>  
+                  <a class="btn btn-wxqd">微信签到</a>
+                  <a class="btn btn-sjqd">手机签到</a>
+                  <a class="btn-b btn-sm btn-change" id="qdms-change">更换</a>  
                 </div>
               </td>
             </tr>
@@ -454,22 +454,155 @@
   </div>
   <div class="btn-wrap">
     <a class="btn-b btn-commit">确认</a>
-    <a href="" class="btn-c btn-cancel">取消</a>
+    <a class="btn-c btn-cancel">取消</a>
   </div>
+</div>
+
+
+
+
+<!-- 签到模式切换 -->
+<div id="tc-qdms">
+  <div class="top">
+    <h2>签到模式</h2>
+    <div class="btn-tc-close" id="tc-qdms-close"></div>
+  </div>
+  <table width="100%" cellpadding="0" cellspacing="0">
+    <tr>
+      <td class="img" width="50%"><img src="images/qd-weixin.png"></td>
+      <td class="img" width="50%"><img src="images/qd-phone.png"></td>
+    </tr>
+    <tr>
+      <td class="title">微信签到</td>
+      <td class="title">手机号签到</td>
+    </tr>
+    <tr>
+      <td class="des">参会人员将会收到二维<br>码，现场给相关人员进<br>行扫描即可。</td>
+      <td class="des">参会人员在微信订阅号中<br>输入自己的手机号码后四<br>位即可签到完成。</td>
+    </tr>
+    <tr>
+      <td><div class="radio radio-checked" data="wx"></div></td>
+      <td><div class="radio" data="phone"></div></td>
+    </tr>
+  </table>
+</div>
+
+
+
+<!-- 增加参会人 -->
+<div id="tc-add-number">
+  <div class="btn-tc-close" id="tc-add-number-close"></div>
+  <div class="content">
+    <h2>选择增加的参会人员（89人）</h2>
+    <table width="100%"cellpadding="0" cellspacing="0">
+      <tr>
+        <td width="85px" class="p-t-10" style="vertical-align: top;">参会人员</td>
+        <td class="p-t-10">
+          <div class="chry-wrap">
+            <div class="txl-wrap">
+              <div class="txl"><div class="radio radio-checked"></div>通讯录</div>
+              <div class="slide"></div>
+            </div>
+            
+            <div class="fz-wrap">
+              <div class="qbfz fl"><div class="radio"></div>全部分组</div>
+              <div class="bffz fl"><div class="radio radio-checked"></div>部分分组</div>
+            </div>
+
+            <div class="text-zdfz">指定分组（3/5)</div>
+              
+            <div class="zdfz-wrap">
+              <div class="item"><div class="checkbox"></div>研发一组</div>
+              <div class="item"><div class="checkbox checkbox-checked"></div>研发二组</div>
+              <div class="item"><div class="checkbox checkbox-checked"></div>研发三组</div>
+            </div>
+
+            <div class="zdfz-wrap">
+              <div class="item"><div class="checkbox"></div>研发四组</div>
+              <div class="item"><div class="checkbox checkbox-checked"></div>研发五组</div>
+            </div>
+
+            <div class="zdr-wrap">
+              <div class="zdr">指定人(0/300)<i style="padding-right:20px"></i>选择</div>
+            </div>
+          </div>
+
+
+        </td>
+      </tr>
+      <tr>
+        <td>邀请函</td>
+        <td>
+          <div class="yqh-wrap">
+            <div class="item"><div class="radio"></div>需要</div>
+            <div class="item"><div class="radio"></div>不需要</div>
+            <div class="item">
+              <div class="nddh">2015年年度大会</div>
+            </div>
+          </div>
+
+        </td>
+      </tr>
+    </table>
+    <div class="btn-wrap">
+      <a class="btn-b btn-commit">确认</a>
+      <a class="btn-c btn-cancel">取消</a>
+    </div>  
+  </div>
+  
 </div>
 
 <script src="js/jquery.min.js"></script>
 <script src="js/common.js"></script>
 <script>
 (function($){
-  //更多参会人员弹出框显示
+  //更多参会人员弹出层显示
   $("#more-mumber").on('click',function(){
     $("#tc-chry,#body-hover").show();
   });
 
-  //更多参会人员弹出框隐藏
+  //更多参会人员弹出层隐藏
   $('#tc-chry-close').on('click',function(){
     $("#tc-chry,#body-hover").hide();
+  });
+
+  //更多会议信息弹出层显示
+  $('#more-hyxx').on('click',function(){
+    $("#body-hover,#tc-more-hgxx").show();
+  });
+
+  //更多会议信息弹出层隐藏
+  $('#tc-more-hgxx-close').on('click',function(){
+    $("#body-hover,#tc-more-hgxx").hide();
+  });
+
+  //签到模式弹出层显示
+  $('#qdms-change').on('click',function(){
+   $("#body-hover,#tc-qdms").show(); 
+  });
+
+  //签到模式弹出层隐藏
+  $('#tc-qdms-close').on('click',function(){
+    $("#body-hover,#tc-qdms").hide();
+  });
+
+
+
+  $("#tc-qdms .radio").on('click',function(){
+    if(!$(this).hasClass('radio-checked')){
+      $("#tc-qdms .radio").removeClass("radio-checked");
+      $(this).addClass('radio-checked');
+    }
+  });
+
+
+  $("#tc-add-number-close").on('click',function(){
+    $("#tc-add-number,#body-hover").hide();
+  });
+
+
+  $('#add-ch-member').on('click',function(){
+    $("#tc-add-number,#body-hover").show();
   });
 })(jQuery);  
 </script>

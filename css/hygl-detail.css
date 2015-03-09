@@ -342,7 +342,7 @@
   opacity: 0.5;
   background: #000;
   z-index: 9999;
-  display: none; 
+  display: none;  
 }
 
 
@@ -529,3 +529,220 @@
   border-radius: 18px; 
 }
 /* 更多会议信息弹出层 end */
+
+
+
+
+
+/* 签到模式切换 start */
+#tc-qdms{
+  position: fixed;
+  width: 590px;
+  height: 420px;
+  left:50%;
+  top:50%;
+  margin-top: -210px;
+  margin-left: -295px;
+  background: #fff;
+  border-radius: 10px;
+  z-index: 99999;
+  display: none;
+}
+
+#tc-qdms .top{
+  height: 66px;
+  border-bottom: 1px solid #d8dbdb;
+}
+
+#tc-qdms .top h2{
+  height: 66px;
+  line-height: 66px;
+  font-size: 21px;
+  font-weight: 400;
+  text-align: center;
+}
+
+#tc-qdms td{
+  text-align: center;
+}
+
+#tc-qdms td img{
+  vertical-align:center;
+}
+
+#tc-qdms td.img{
+  height: 180px;
+}
+
+#tc-qdms td.title{
+  height: 36px;
+  line-height: 36px;
+  font-size: 18px;
+}
+
+#tc-qdms td.des{
+  color: #a4a9ae;
+}
+
+#tc-qdms td .radio{
+  margin:0 auto;
+  margin-top: 20px; 
+  width: 38px;
+  height: 38px;
+  vertical-align: middle;
+  background:url(../images/radio-blue.png);
+  cursor: pointer;
+}
+#tc-qdms td .radio-checked{
+  background:url(../images/radio-blue-checked.png);
+}
+/* 签到模式切换 end */
+
+
+
+/* 增加参会人 start */
+#tc-add-number{
+  position: fixed;
+  width: 610px;
+  height: 400px;
+  left:50%;
+  top:50%;
+  margin-top: -200px;
+  margin-left: -305px;
+  background: #fff;
+  border-radius: 10px;
+  z-index: 99999;
+  display: none;
+}
+
+
+
+#tc-add-number .content{
+  padding: 30px 20px; 
+}
+
+#tc-add-number h2{
+  font-size: 18px;
+  font-weight: 400;
+}
+
+#tc-add-number .chry-wrap{
+  border:1px solid #d8dbdb;
+  padding: 10px 15px;
+}
+
+.p-t-10{
+  padding-top: 10px;
+}
+
+#tc-add-number .txl-wrap,
+#tc-add-number .zdr-wrap,
+#tc-add-number .fz-wrap,
+#tc-add-number .zdfz-wrap{
+  height:30px;
+  line-height: 30px;
+}
+
+#tc-add-number .fz-wrap{
+  padding-left: 26px;
+}
+
+#tc-add-number .txl{
+  float: left;
+}
+
+
+#tc-add-number .checkbox,
+#tc-add-number .radio{
+  width: 30px;
+  height: 30px;
+  float: left;
+  cursor: pointer;
+}
+
+#tc-add-number .checkbox{
+  background: url(../images/icon-check.png) no-repeat left center;
+}
+
+#tc-add-number .radio{
+  background: url(../images/radio-sm-default.png) no-repeat left center;
+}
+
+#tc-add-number .checkbox-checked{
+  background: url(../images/icon-checked.png) no-repeat left center;
+}
+
+#tc-add-number .radio-checked{
+  background: url(../images/radio-sm-checked.png) no-repeat left center;
+}
+
+#tc-add-number .slide{
+  width: 15px;
+  height: 30px;
+  float: right;
+  background: url(../images/icon-jt-bottom.png) no-repeat right center;
+  cursor: pointer;
+}
+
+#tc-add-number .zdr{
+  text-indent: 35px;
+  background: url(../images/radio-sm-checked.png) no-repeat left center;
+}
+
+#tc-add-number .qbfz{
+  margin-right: 20px;
+}
+
+#tc-add-number .text-zdfz{
+  text-indent: 28px;
+
+}
+
+#tc-add-number .zdfz-wrap {
+  padding-left: 26px;
+}
+
+#tc-add-number .zdfz-wrap .item{
+  float: left;
+  margin-right: 20px;
+}
+
+#tc-add-number .yqh-wrap{
+  height: 30px;
+  line-height: 30px;
+}
+
+#tc-add-number .yqh-wrap .item{
+  float: left;
+  margin-right:20px;
+}
+
+#tc-add-number .nddh{
+  color:#66cccc;
+}
+
+#tc-add-number .btn-wrap{
+  width: 216px;
+  position: absolute;
+  right: 30px;
+  bottom: 30px; 
+}
+
+#tc-add-number .btn-commit{
+  height: 36px;
+  line-height: 36px;
+  float:left;
+  width: 100px;
+  border-radius: 18px;
+}
+
+#tc-add-number .btn-cancel{
+  height: 34px;
+  line-height: 34px;
+  float:right;
+  width: 98px;
+  border-radius: 18px; 
+}
+
+
+/* 增加参会人 end */
