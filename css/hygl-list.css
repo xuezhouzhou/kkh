@@ -142,65 +142,8 @@
   color:#a4a9ae;
 }
 
-
 .page-bar-wrap{
   margin-top: 25px;
   height: 24px;
   padding-right: 36px;
-}
-
-.page-bar{
-  height: 24px;
-  right: 0px;
-}
-
-.page-bar a,
-.page-bar span{
-  display: block;
-  float: right;
-  width: 24px;
-  height: 24px;
-  color: #5d5d5e;
-  text-align: center;
-  margin:0 4px; 
-}
-
-.page-bar .prev,
-.page-bar .next{
-  width: 22px;
-  height: 22px;
-  border: 1px solid #d8dbdb;
-  background-repeat: no-repeat;
-  
-}
-
-.page-bar .prev{
-  background-position: 6px center;
-  background-image: url(../images/icon-sxjt-left-ccc.png);
-}
-
-.page-bar .next{
-  background-position: 8px center;
-  background-image: url(../images/icon-sxjt-right-ccc.png);
-}
-
-
-.page-bar .prev-cur,
-.page-bar .prev:hover{
-  border: 1px solid #6cc;
-  background-color: #6cc;
-  background-image: url(../images/icon-sxjt-left-fff.png);
-}
-
-.page-bar .next-cur,
-.page-bar .next:hover{
-  border: 1px solid #6cc;
-  background-color: #6cc;
-  background-image: url(../images/icon-sxjt-right-fff.png);
-}
-
-.page-bar .dotted{
-  width: 48px;
-  line-height: 12px;
-  letter-spacing: 2px;
 }
