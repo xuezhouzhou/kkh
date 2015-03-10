@@ -71,8 +71,6 @@
 }
 
 #hy-detail .header h2{
-  font-weight: 400;
-  font-size: 18px;
   left:56px;
   width: 80px;
   height: 32px;
@@ -103,7 +101,6 @@
   height: 32px;
   line-height: 32px;
 }
-
 
 #hy-detail .title h3{
   font-weight: 400;
@@ -164,8 +161,9 @@
   margin-bottom:10px;
 }
 
-#hy-detail .map img{
+#hy-detail .map{
   width: 580px;
+  height: 120px;
 }
 /* 会议详情 end */
 
@@ -245,16 +243,13 @@
   width: 34px;
 }
 
-#hy-member .more-mumber{
+#hy-member .more-member{
   margin-top: 5px;
   height: 32px;
   line-height: 30px;
   padding: 0 15px;
 }
 
-#hy-member .more-mumber a{
-  color:#5d5d5e;
-}
 /* 参会人员 end */
 
 
@@ -278,8 +273,6 @@
 #hyhd .header h2{
   position: absolute;
   top:15px;
-  font-weight: 400;
-  font-size: 18px;
   left:56px;
   width: 80px;
   height: 32px;
@@ -315,17 +308,14 @@
   border:1px solid #d8dbdb;
 }
 
-#hyhd .btn{
+#hyhd .wxqd,
+#hyhd .sjqd{
   border:1px solid #d8dbdb;
   background-color: #f1f2f2;
-  padding: 3px 20px;
+  padding: 4px 20px;
   color:#686969;
 }
 
-#hyhd .btn-change{
-  display: inline-block;
-  width: 100px;
-}
 #hyhd .btn-wrap a{
   margin-right: 10px;
 }
@@ -507,26 +497,10 @@
 }
 
 #tc-more-hgxx .btn-wrap{
-  width: 216px;
+  width: 230px;
   position: absolute;
   right: 30px;
   bottom: 30px; 
-}
-
-#tc-more-hgxx .btn-commit{
-  height: 36px;
-  line-height: 36px;
-  float:left;
-  width: 100px;
-  border-radius: 18px;
-}
-
-#tc-more-hgxx .btn-cancel{
-  height: 34px;
-  line-height: 34px;
-  float:right;
-  width: 98px;
-  border-radius: 18px; 
 }
 /* 更多会议信息弹出层 end */
 
@@ -619,11 +593,6 @@
 
 #tc-add-number .content{
   padding: 30px 20px; 
-}
-
-#tc-add-number h2{
-  font-size: 18px;
-  font-weight: 400;
 }
 
 #tc-add-number .chry-wrap{
@@ -722,27 +691,9 @@
 }
 
 #tc-add-number .btn-wrap{
-  width: 216px;
+  width: 230px;
   position: absolute;
   right: 30px;
   bottom: 30px; 
 }
-
-#tc-add-number .btn-commit{
-  height: 36px;
-  line-height: 36px;
-  float:left;
-  width: 100px;
-  border-radius: 18px;
-}
-
-#tc-add-number .btn-cancel{
-  height: 34px;
-  line-height: 34px;
-  float:right;
-  width: 98px;
-  border-radius: 18px; 
-}
-
-
 /* 增加参会人 end */

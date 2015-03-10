@@ -12,12 +12,17 @@ body{
 }
 
 a{
+  color: #5d5d5e;
   text-decoration: none;
+}
+
+h2{
+  font-weight: 400;
+  font-size:18px; 
 }
 
 
 /*== header start ==*/
-
 #header-wrap{
   height: 79px;
   border-bottom: 1px solid #d8dbdb;
@@ -62,7 +67,6 @@ a{
 }
 
 #top-menu .back-index a{
-  color:#5d5d5e;
   line-height: 79px;
   font-size: 16px;
 }
@@ -277,9 +281,9 @@ a{
   height: 49px;
   border-bottom:1px solid #d8dbdb;
   position: relative;
+  color: #5d5d5e;
   cursor: pointer;
 }
-
 
 #side-menu .menu-list .icon{
   width: 29px;
@@ -446,7 +450,7 @@ a{
   height: 30px;
   line-height: 30px;
 }
-
+/*
 .btn-a{
   display: block;
   width: 80px;
@@ -512,6 +516,7 @@ a{
 a.btn-b{
   text-decoration: none;  
 }
+*/
 
 /* 浮动 */
 .fl,.fr{
@@ -561,6 +566,11 @@ a.btn-b{
 .text-296-40{
   width:274px;
   padding: 11px 10px; 
+}
+
+.text-230-38{
+  width:208px;
+  padding: 10px; 
 }
 
 .text-lg{

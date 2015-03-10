@@ -4,7 +4,8 @@
 <meta charset="UTF-8">
 <title>KKH - 会议管理 - 详情</title>
 <link rel="stylesheet" href="css/common.css">
-<link rel="stylesheet" href="css/hygl-detail.css">
+<link rel="stylesheet" href="css/meeting-detail.css">
+<script src="http://api.map.baidu.com/api?v=2.0&ak=154xlNeRRQNWV0XuZpRib87i"></script>
 </head>
 <body>
 
@@ -84,9 +85,9 @@
           <div class="header">
             <div class="icon"></div>
             <h2>会议详情</h2>
-            <a class="btn-a btn-back" href="">返回</a>
-            <a class="btn-a btn-edit" href="">修改会议</a>
-            <a class="btn-a btn-del" href="">删除会议</a>
+            <a class="btn btn-default btn-82-32 btn-back">返回</a>
+            <a class="btn btn-default btn-82-32 btn-edit">修改会议</a>
+            <a class="btn btn-default btn-82-32 btn-del">删除会议</a>
           </div>
           <div class="content-wrap">
             <div class="content">
@@ -115,7 +116,7 @@
                 <tr>
                   <td colspan="4">
                     <a href="javascript:void(0)" class="more-hy-info fl" id="more-hyxx">更多会议信息>></a>
-                    <a class="btn-a btn-ewm fr">会议二维码</a>
+                    <a class="btn btn-default btn-82-32 fr">会议二维码</a>
                   </td>
                 </tr>
                 <tr>
@@ -128,7 +129,7 @@
                   <div class="fl">X：116.35671616 <i style="padding-right:20px;"></i>Y：39.35671616</div>
                   <div class="fr sq">收起</div>
                 </div>
-                <div class="map">
+                <div class="map"  id="allmap">
                   <img src="images/map.jpg" />  
                 </div>
               </div>
@@ -254,9 +255,9 @@
                 <td class="ico"><div class="icon-mem-green"></div></td>
               </tr>
             </table>
-            <div class="more-mumber">
-              <a class="fl" href="javascript:void(0)" id="more-mumber">更多>></a>
-              <div class="fr btn-a" id="add-ch-member">增加参会人</div>
+            <div class="more-member">
+              <a href="javascript:void(0)" class="fl" id="more-member">更多>></a>
+              <div class="btn btn-default btn-82-32 fr" id="add-ch-member">增加参会人</div>
             </div>
           </div>
         </div>
@@ -267,16 +268,16 @@
           <div class="header">
             <div class="icon"></div>
             <h2>会议互动</h2>
-            <a class="btn-a btn-add" href="">添加互动</a>
+            <a class="btn btn-default btn-82-32 btn-add" href="">添加互动</a>
           </div>
           <table width="100%" cellspacing="0" cesspadding="0">
             <tr>
               <td class="hd-type"><img src="images/hd-type-qdms.png"></td>
               <td colspan="4">
                 <div class="btn-wrap">
-                  <a class="btn btn-wxqd">微信签到</a>
-                  <a class="btn btn-sjqd">手机签到</a>
-                  <a class="btn-b btn-sm btn-change" id="qdms-change">更换</a>  
+                  <a class="wxqd">微信签到</a>
+                  <a class="sjqd">手机签到</a>
+                  <a class="btn btn-primary btn-106-36 btn-br-18" id="qdms-change">更换</a>  
                 </div>
               </td>
             </tr>
@@ -426,11 +427,7 @@
   </div>
   <div class="content">
     <h3>会议介绍</h3>
-    <p>过程分析与控制技术综合交叉了过程工程、分析化学、控制工程、系统工程、仪器科学、信息
-科学、应用数学等学科内容，实现了将化学、物理和生物性质等多变量作为直接参量参与过程
-自动化生产控制的优化技术，对工业的安全生产、品质量等发挥着重要作用。随着物联网技术
-的发展，过程分析与控制技术在化学工业、石油及石化、能源、冶金、建材、核能、生物技术
-、医药以及环境污染治理等工业中将具有越来越广泛的应用前景。</p>
+    <p>过程分析与控制技术综合交叉了过程工程、分析化学、控制工程、系统工程、仪器科学、信息科学、应用数学等学科内容，实现了将化学、物理和生物性质等多变量作为直接参量参与过程自动化生产控制的优化技术，对工业的安全生产、品质量等发挥着重要作用。随着物联网技术的发展，过程分析与控制技术在化学工业、石油及石化、能源、冶金、建材、核能、生物技术、医药以及环境污染治理等工业中将具有越来越广泛的应用前景。</p>
     <h3 class="m-t-20">嘉宾介绍</h3>
     <p>李彬彬<i></i>范冰冰<i></i>刘冰冰<i></i>刘诗诗<i></i>等众多人员</p>
     <h3 class="m-t-20">会议日程</h3>
@@ -453,8 +450,8 @@
     </table>
   </div>
   <div class="btn-wrap">
-    <a class="btn-b btn-commit">确认</a>
-    <a class="btn-c btn-cancel">取消</a>
+    <a class="btn btn-primary btn-106-36 btn-br-18 fl">确认</a>
+    <a class="btn btn-default btn-106-36 btn-br-18 fr">取消</a>
   </div>
 </div>
 
@@ -545,8 +542,8 @@
       </tr>
     </table>
     <div class="btn-wrap">
-      <a class="btn-b btn-commit">确认</a>
-      <a class="btn-c btn-cancel">取消</a>
+      <a class="btn btn-primary btn-106-36 btn-br-18 fl">确认</a>
+      <a class="btn btn-default btn-106-36 btn-br-18 fr">取消</a>
     </div>  
   </div>
   
@@ -557,7 +554,7 @@
 <script>
 (function($){
   //更多参会人员弹出层显示
-  $("#more-mumber").on('click',function(){
+  $("#more-member").on('click',function(){
     $("#tc-chry,#body-hover").show();
   });
 
@@ -604,7 +601,30 @@
   $('#add-ch-member').on('click',function(){
     $("#tc-add-number,#body-hover").show();
   });
-})(jQuery);  
+
+
+
+
+
+
+
+
+
+
+  
+})(jQuery);
+
+
+
+
+// 百度地图API功能
+var map = new BMap.Map("allmap");
+var point = new BMap.Point(116.356716,39.356716);
+map.centerAndZoom(point, 12);
+var marker = new BMap.Marker(point);  // 创建标注
+map.addOverlay(marker);              // 将标注添加到地图中
+var label = new BMap.Label("上海市浦东新区巨峰路311号",{offset:new BMap.Size(20,-10)});
+marker.setLabel(label);  
 </script>
 </body>
 </html>

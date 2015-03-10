@@ -1,0 +1,54 @@
+/* 会议添加Header start */
+#meeting-add-header{
+  height: 60px;
+  border-bottom: 1px solid #d8dbdb;
+  position: relative;
+}
+
+#meeting-add-header .btn-back,
+#meeting-add-header .icon,
+#meeting-add-header h2{
+  top: 14px;
+  position: absolute;
+}
+
+#meeting-add-header .btn-back{
+  right: 25px;
+}
+
+#meeting-add-header .icon{
+  left: 12px;
+  width: 32px;
+  height: 32px;
+  background: url(../images/icon-add.png) no-repeat center center;
+}
+
+#meeting-add-header h2{
+  font-weight: 400;
+  font-size: 18px;
+  left: 56px;
+  width: 80px;
+  height: 32px;
+  line-height: 32px;
+}
+/* 会议添加Header end */
+
+
+/* 会议添加Content start */
+#meeting-add-con td{
+  height: 50px;
+  line-height: 50px;
+}
+#meeting-add-con td.label{
+  width: 100px;
+  text-align: center;
+}
+
+#meeting-add-con td.form-wrap{
+  width: 260px;
+}
+
+.w100{
+  width: 100px;
+}
+/* 会议添加Content end */
