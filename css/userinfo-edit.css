@@ -1,9 +1,27 @@
+/* layout start */
 #top-bar{
   height: 60px;
   border-bottom: 1px solid #d8dbdb;
   position: relative;
 }
 
+#con-userinfo{
+  float:left;
+  width: 596px;
+  height: 709px;
+  border-right:1px solid #d8dbdb;
+  position: relative;
+}
+
+#con-tx{
+  float:right;
+  width: 285px;
+  height: 709px;
+}
+/* layout end */
+
+
+/* top-bar start */
 #top-bar .btn-back{
   position: absolute;
   top:13px;
@@ -40,27 +58,19 @@
   color:#6cc;
   border-bottom: 5px solid #6cc;
 }
-
-#con-userinfo{
-  float:left;
-  width: 596px;
-  height: 709px;
-  border-right:1px solid #d8dbdb;
-  position: relative;
-}
+/* top-bar end */
 
 
-
+/* 用户信息 start */
 #con-userinfo h2{
   font-size: 18px;
   font-weight: 400;
-  margin-top: 40px;
   text-indent: 24px;
 }
 
 #con-userinfo td{
-  height: 44px;
-  line-height: 44px;
+  height: 46px;
+  line-height: 46px;
   text-indent: 24px;
 }
 
@@ -68,12 +78,15 @@
   color:#a4a9ae;
 }
 
-#con-tx{
-  float:right;
-  width: 285px;
-  height: 709px;
+#con-userinfo .btn-wrap{
+  width: 230px;
+  margin-top: 50px;
+  margin-left: 24px;
 }
+/* 用户信息 end */
 
+
+/* 头像信息 start */
 #con-tx .tx-img{
   display: block;
   width: 108px;
@@ -82,30 +95,4 @@
   border-radius: 55px;
   margin: 60px auto 30px auto;
 }
-
-
-#con-tx .btn-upload{
-  margin: 0 auto;
-}
-
-.text{
-  width:273px;
-  padding: 11px 10px; 
-}
-
-.btn-wrap{
-  width: 230px;
-  margin-top: 50px;
-  margin-left: 24px;
-}
-
-.btn-submit{
-  border:1px solid #6cc;
-  width: 100px;
-  float: left;
-}
-
-.btn-cancel{
-  width: 100px;
-  float: right;
-}
+/* 头像信息 end */

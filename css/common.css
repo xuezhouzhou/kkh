@@ -382,7 +382,71 @@ a{
 
 
 
+
 /* 按钮 */
+.btn{
+  text-align: center;
+  cursor: pointer;
+  display: inline-block;
+  border-width: 1px;
+  border-style: solid;
+}
+
+.btn-primary{
+  background-color: #6cc;
+  border-color: #6cc;
+  color:#fff;
+}
+
+.btn-default{
+  background-color: #fff;
+  border-color: #d8dbdb;
+  color:#a4a9ae;
+}
+
+.btn-br-25{
+  border-radius: 25px;
+}
+
+.btn-br-21{
+  border-radius: 21px;
+}
+
+.btn-br-18{
+  border-radius: 18px;
+}
+
+.btn-220-50,
+.btn-136-42,
+.btn-106-36{
+  font-size: 18px;
+}
+
+.btn-220-50{
+  width: 218px;
+  height: 48px;
+  line-height: 48px;
+}
+
+.btn-136-42{
+  width: 134px;
+  height: 40px;
+  line-height: 40px;
+}
+
+.btn-106-36{
+  width: 104px;
+  height: 34px;
+  line-height: 34px;
+}
+
+.btn-82-32{
+  font-size: 14px;
+  width: 80px;
+  height: 30px;
+  line-height: 30px;
+}
+
 .btn-a{
   display: block;
   width: 80px;
@@ -449,12 +513,50 @@ a.btn-b{
   text-decoration: none;  
 }
 
+/* 浮动 */
+.fl,.fr{
+  display: block;
+}
+
+.fl{
+  float: left;
+}
+
+.fr{
+  float: right;
+}
+
+/* 定位 */
+.absolute{
+  position: absolute;
+}
+
+.relative{
+  position: relative;
+}
+
+.center{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.m-t-15{ margin-top: 15px; }
+.m-t-25{ margin-top: 25px; }
+.m-t-40{ margin-top: 40px; }
+
+
 /* 文本框 */
 .text{
   border:1px solid #d8dbdb;
   color:#a4a9ae;
   font-size: 14px;
   outline: none;
+}
+
+.text-296-40{
+  width:274px;
+  padding: 11px 10px; 
 }
 
 .text-lg{
@@ -473,17 +575,9 @@ a.btn-b{
   background:url(../images/icon-tips-warning.png) no-repeat 7px center;
 }
 
-.m-t-15{ margin-top: 15px; }
 
-.fl{
-  display: block;
-  float: left;
-}
 
-.fr{
-  display: block;
-  float: right;
-}
+
 
 
 

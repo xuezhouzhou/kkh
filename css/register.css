@@ -73,14 +73,3 @@
 .radio-wrap .radio-checked{
   background: url(../images/radio-checked.png) no-repeat left center;
 }
-
-.btn-submit{
-  border:1px solid #6cc;
-  width: 140px;
-  float: left;
-}
-
-.btn-cancel{
-  width: 140px;
-  float: right;
-}

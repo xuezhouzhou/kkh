@@ -1,9 +1,17 @@
+/*layout start*/
 #top-bar{
   height: 60px;
   border-bottom: 1px solid #d8dbdb;
   position: relative;
 }
 
+#change-pass{
+  padding-top: 88px;
+}
+/*layout end*/
+
+
+/* top-bar start */
 #top-bar .btn-back{
   position: absolute;
   top:14px;
@@ -40,9 +48,31 @@
   color:#6cc;
   border-bottom: 5px solid #6cc;
 }
+/* top-bar end */
 
-#change-pass{
-  padding-top: 88px;
+
+
+
+/* 修改密码 start */
+#change-pass h1{
+  text-align: center;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+#change-pass .text{
+  width: 333px;
+}
+
+.warning-tips{
+  line-height: 50px;
+}
+
+#change-pass .btn-commit{
+  height: 36px;
+  line-height: 36px;
+  width: 105px;
+  border-radius: 18px;
 }
 
 .row{
@@ -67,23 +97,4 @@
   width: 310px;
 }
 
-#change-pass h1{
-  text-align: center;
-  font-size: 18px;
-  font-weight: 400;
-}
-
-#change-pass .text{
-  width: 333px;
-}
-
-.warning-tips{
-  line-height: 50px;
-}
-
-#change-pass .btn-commit{
-  height: 36px;
-  line-height: 36px;
-  width: 105px;
-  border-radius: 18px;
-}
+/* 修改密码 end */
