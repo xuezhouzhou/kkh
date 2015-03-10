@@ -1,3 +1,7 @@
+#side,
+#main{
+  height: 810px;
+}
 /* 会议添加Header start */
 #meeting-add-header{
   height: 60px;
@@ -35,20 +39,100 @@
 
 
 /* 会议添加Content start */
+#meeting-add-con{
+  padding:12px 24px; 
+}
+
 #meeting-add-con td{
-  height: 50px;
-  line-height: 50px;
-}
-#meeting-add-con td.label{
-  width: 100px;
-  text-align: center;
+  padding:5px 0; 
 }
 
-#meeting-add-con td.form-wrap{
-  width: 260px;
+#meeting-add-con .radio{
+  height: 38px;
+  line-height: 38px;
+  cursor: pointer;
+  float: left;
+  margin-right: 30px;
 }
 
-.w100{
-  width: 100px;
+#meeting-add-con .radio i{
+  width: 30px;
+  height: 38px;
+  display: block;
+  float: left;
+  background:url(../images/radio-sm-default.png) no-repeat -2px center;
+}
+
+#meeting-add-con .radio-checked i{
+  background:url(../images/radio-sm-checked.png) no-repeat -2px center;
+}
+
+#meeting-add-con .tips{
+  height: 32px;
+  line-height: 32px;
+  color:#f16374;
+  margin-left:15px; 
+}
+
+#meeting-add-con .tips i{
+  display: block;
+  float: left;
+  width: 32px;
+  height: 32px;
+  background:url(../images/icon-hongxin.png) no-repeat center center;
+}
+
+#meeting-add-con .btn-wrap{
+  width: 232px;
+  margin-top: 15px;
+}
+
+#allmap{
+  width: 580px;
+  height: 120px;
+}
+
+.w80{
+  width: 80px;
+}
+.w250{
+  width:250px;
 }
 /* 会议添加Content end */
+
+
+/* 更多会议信息弹出层 start */
+#tc-more-meeting-info{
+  margin-left: -330px;
+  margin-top: -310px;
+  width: 660px;
+  height: 620px;
+}
+
+#tc-more-meeting-info .content{
+  padding: 28px;
+}
+
+#tc-more-meeting-info .content h3{
+  font-size: 14px;
+  font-weight: 400;
+  color: #454646;
+}
+
+#tc-more-meeting-info .content textarea{
+  border: 1px solid #d8dbdb;
+  width: 586px;
+  height: 90px;
+  color: #a4a9ae;
+  outline: none;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+#tc-more-meeting-info .btn-wrap{
+  width: 232px;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
+/* 更多会议信息弹出层 end */

@@ -444,12 +444,23 @@ h2{
   line-height: 34px;
 }
 
+.btn-112-32,
 .btn-82-32{
   font-size: 14px;
-  width: 80px;
   height: 30px;
   line-height: 30px;
 }
+
+.btn-112-32{
+  width: 110px;
+  
+}
+
+.btn-82-32{
+  width: 80px;
+}
+
+
 /*
 .btn-a{
   display: block;
@@ -590,8 +601,10 @@ a.btn-b{
 }
 
 
-
-
+/* 字体颜色 */
+.a4a9ae{
+  color: #a4a9ae;
+}
 
 
 
@@ -653,3 +666,54 @@ a.btn-b{
 }
 
 /* 分页 end */
+
+/* 整个页面遮罩层 */
+#body-hover{
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0.5;
+  background: #000;
+  z-index: 9999;
+  display: none;
+}
+
+/* 弹出层通用样式 start */
+.tc-box{
+  position: fixed;
+  display: none;
+  left: 50%;
+  top: 50%;
+  background: #fff;
+  border-radius: 10px;
+  z-index: 99999;
+}
+
+.tc-box .top{
+  height: 66px;
+  border-bottom: 1px solid #d8dbdb;
+}
+
+.tc-box .top h2{
+  height: 66px;
+  line-height: 66px;
+  text-align: center;
+}
+
+.tc-close{
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  right: 14px;
+  top: 14px;
+  background: url(../images/icon-tc-close.png) no-repeat center center;
+  cursor: pointer;
+}
+
+.tc-show{
+  cursor: pointer;
+  color: #a4a9ae;
+}
+/* 弹出层通用样式 end */
