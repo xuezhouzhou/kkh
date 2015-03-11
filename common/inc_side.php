@@ -12,7 +12,7 @@
       <div id="side-menu">
         <a class="menu-list" href="meeting-list.php">
           
-          <?php if($module=="hygl"){ //判断当前的模块是否是会议管理模块(决定是否高亮显示图标) ?>
+          <?php if($module=="meeting"){ //判断当前的模块是否是会议管理模块(决定是否高亮显示图标) ?>
             <div class="border border-hy"></div>
             <div class="icon icon-hygl-cur"></div>
           <?php } else{ ?>

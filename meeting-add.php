@@ -3,7 +3,7 @@
 $login_statue = true;
 
 //模拟控制器assign过来模块信息(决定左侧导航的高亮显示)
-$module = "hygl";
+$module = "meeting";
 
 
 ?>
