@@ -32,7 +32,7 @@
 
   <div class="link link-reg-fgtpasss">
     <a href="#" class="forget-pass">忘记密码?</a>
-    <a href="register.html" class="reg">注册</a>
+    <a href="register.php" class="reg">注册</a>
   </div>
 
   <div class="btn-wrap">

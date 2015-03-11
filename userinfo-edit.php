@@ -27,7 +27,7 @@ $module = 'other';
       <div id="top-bar">
         <div id="top-bar-nav">
           <a href="javascript:void(0)" class="zhxx cur">账号信息</a>
-          <a href="changepass.html" class="mmxg">密码修改</a>
+          <a href="changepass.php" class="mmxg">密码修改</a>
         </div>
         <a href="#" class="btn btn-default btn-82-32 btn-back">返回</a>
       </div>

@@ -114,7 +114,7 @@ $login_statue = false;
   </div>  
 </div>
 
-<?php include_once 'common/inc_footer.php' ?>;
+<?php include_once 'common/inc_footer.php' ?>
 
 <script src="js/jquery.min.js"></script>
 <script>
