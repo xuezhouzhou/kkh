@@ -1,5 +1,9 @@
+<?php
+//模拟控制器assign过来数据
+$login_statue = false;
+?>
 <!doctype html>
-<html lang="en">
+<html>
 <head>
 <meta charset="UTF-8">
 <title>KKH - 注册</title>
@@ -8,21 +12,7 @@
 </head>
 <body>
 
-<div id="header-wrap">
-  <div id="header">
-    <div id="logo"></div>
-    <div id="top-menu">
-      <div class="back-index">
-        <a href="#">回到首页</a>
-      </div>
-      <div class="login-menu">
-        <a href="login.html">登录</a>
-        <span>|</span>
-        <a href="register.html">注册</a>  
-      </div>
-    </div>
-  </div>
-</div>
+<?php include_once 'common/inc_header.php'; ?>
 
 <div class="register-wrap">
   <div id="register">
@@ -123,7 +113,9 @@
 
   </div>  
 </div>
-<div id="footer">2015 kaikaihui  开发者中心/服务协议/权利声明</div>
+
+<?php include_once 'common/inc_footer.php' ?>;
+
 <script src="js/jquery.min.js"></script>
 <script>
 (function(){

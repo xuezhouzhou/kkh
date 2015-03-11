@@ -1,0 +1,1 @@
+<div id="footer">2015 kaikaihui  开发者中心/服务协议/权利声明</div>
