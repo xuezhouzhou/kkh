@@ -19,24 +19,24 @@
   height: 335px;
 }
 
-#meeting-detail,
-#meeting-member{
+#hy-detail,
+#hy-member{
   background: #fff;
   height: 720px;
   border:1px solid #d8dbdb;
 }
 
-#meeting-detail{
+#hy-detail{
   width: 610px;
   float: left;
 }
 
-#meeting-member{
+#hy-member{
   width: 260px;
   float: right;
 }
 
-#interactive{
+#hyhd{
   background: #fff;
   height: 334px;
   border: 1px solid #d8dbdb;
@@ -44,88 +44,91 @@
 /* layout end */
 
 
+
+
+
 /* 会议详情 start */
-.header{
+#hy-detail .header{
   height: 60px;
   border-bottom: 1px solid #d8dbdb;
   position:relative;
 }
 
-.header .icon,
-.header h2,
-.header .btn-del,
-.header .btn-edit,
-.header .btn-back{
+#hy-detail .header .icon,
+#hy-detail .header h2,
+#hy-detail .header .btn-del,
+#hy-detail .header .btn-edit,
+#hy-detail .header .btn-back{
   position: absolute;
   top:15px;
 }
 
-.header .icon{
+#hy-detail .header .icon{
   left:12px;
-  width: 34px;
+  width: 32px;
   height: 32px;
   background: url(../images/icon-hy-detail.png) no-repeat center center;
 }
 
-.header h2{
+#hy-detail .header h2{
   left:56px;
   width: 80px;
   height: 32px;
   line-height: 32px;
 }
 
-.header .btn-del{
+#hy-detail .header .btn-del{
   right: 15px;
 }
 
-.header .btn-edit{
+#hy-detail .header .btn-edit{
   right: 110px;
 }
 
-.header .btn-back{
+#hy-detail .header .btn-back{
   right: 205px;
 }
 
-#meeting-detail .content-wrap{
+#hy-detail .content-wrap{
   padding:15px;
 }
 
-#meeting-detail .meeting-img img{
+#hy-detail .hy-img img{
   width: 580px;
 }
 
-#meeting-detail .title{
+#hy-detail .title{
   height: 32px;
   line-height: 32px;
 }
 
-#meeting-detail .title h3{
+#hy-detail .title h3{
   font-weight: 400;
   font-size: 21px;
   float: left;
 }
 
-#meeting-detail .title p{
+#hy-detail .title p{
   float: right;
   color: #a4a9ae;
 }
 
-#meeting-detail .time-print {
+#hy-detail .time-print {
   height: 32px;
   line-height: 32px;
 }
 
-#meeting-detail .time-print .time{
+#hy-detail .time-print .time{
   float: left;
   text-indent: 24px;
   background: url(../images/icon-clock.png) no-repeat left center;  
 }
 
-#meeting-detail .time-print .time span{
+#hy-detail .time-print .time span{
   margin-left: 30px;
 }
 
-#meeting-detail .time-print .print{
+#hy-detail .time-print .print{
   float: right;
   color: #a4a9ae;
   text-indent: 35px;
@@ -133,158 +136,204 @@
   cursor: pointer;   
 }
 
-#meeting-detail td{
+#hy-detail td{
   height: 32px;
   line-height: 32px;
 }
 
-#meeting-detail .more-meeting-info{
+.more-hy-info{
   color:#a4a9ae;
 }
 
-#meeting-detail .map-wrap{
+#hy-detail .map-wrap{
   height: 32px;
   line-height: 32px;
 }
 
-#meeting-detail .map-wrap .pack-up{
+#hy-detail .map-wrap .sq{
   text-indent: 20px;
   background: url(../images/icon-jt-bottom.png) no-repeat left center;
   cursor: pointer;
 }
 
-#meeting-detail .map-wrap .position{
+#hy-detail .map-wrap .position{
   height: 32px;
   margin-bottom:10px;
 }
 
-#meeting-detail .map{
+#hy-detail .map{
   width: 580px;
   height: 120px;
 }
 /* 会议详情 end */
 
 
+
+
+
+
 /* 参会人员 start */
-#meeting-member .header .icon{
+#hy-member .header{
+  height: 60px;
+  border-bottom: 1px solid #d8dbdb;
+  position:relative; 
+}
+#hy-member .header .icon{
+  position: absolute;
+  top:15px;
+  left:12px;
+  width: 34px;
+  height: 32px;
   background: url(../images/icon-hy-member.png) no-repeat center center;
 }
-
-#meeting-member .header .total{
+#hy-member .header h2{
+  position: absolute;
+  top:15px;
+  font-weight: 400;
+  font-size: 18px;
+  left:56px;
+  width: 80px;
+  height: 32px;
+  line-height: 32px;
+}
+#hy-member .header .total{
   position: absolute;
   top:15px;
   height: 32px;
   line-height: 32px;
   left:136px;
 }
-
-#meeting-member td{
+#hy-member td{
   height: 34px;
   line-height: 34px;
   text-align: center;
 }
 
-#meeting-member .icon-sex-m,
-#meeting-member .icon-sex-w,
-#meeting-member .icon-mem-grey,
-#meeting-member .icon-mem-green,
-#meeting-member .icon-mem-blue{
+
+#hy-member .icon-sex-m,
+#hy-member .icon-sex-w,
+#hy-member .icon-mem-grey,
+#hy-member .icon-mem-green,
+#hy-member .icon-mem-blue{
   width: 34px;
   height: 34px;
 }
 
-#meeting-member .icon-sex-m{
+#hy-member .icon-sex-m{
   background: url(../images/icon-sex2-m.png) no-repeat center center;
 }
-
-#meeting-member .icon-sex-w{
+#hy-member .icon-sex-w{
   background: url(../images/icon-sex2-w.png) no-repeat center center;
 }
-#meeting-member .icon-mem-grey{
+#hy-member .icon-mem-grey{
   background: url(../images/icon-mem-grey.png) no-repeat left center;
 }
-
-#meeting-member .icon-mem-green{
+#hy-member .icon-mem-green{
   background: url(../images/icon-mem-green.png) no-repeat left center;
 }
-
-#meeting-member .icon-mem-blue{
+#hy-member .icon-mem-blue{
   background: url(../images/icon-mem-blue.png) no-repeat left center;
 }
 
-#meeting-member td.name{
+#hy-member td.name{
   width: 78px;
   font-size: 16px;
 }
-
-#meeting-member td.ico{
+#hy-member td.ico{
   width: 34px;
 }
 
-#meeting-member .more-member{
+#hy-member .more-member{
   margin-top: 5px;
   height: 32px;
   line-height: 30px;
   padding: 0 15px;
 }
+
 /* 参会人员 end */
 
 
+
 /* 会议互动 start */
-#interactive .header .icon{
+#hyhd .header{
+  height: 60px;
+  border-bottom: 1px solid #d8dbdb;
+  position:relative; 
+}
+
+#hyhd .header .icon{
+  position: absolute;
+  top:15px;
+  left:12px;
+  width: 34px;
+  height: 32px;
   background: url(../images/icon-hy-member.png) no-repeat center center;
 }
 
-#interactive .header .btn-add{
+#hyhd .header h2{
+  position: absolute;
+  top:15px;
+  left:56px;
+  width: 80px;
+  height: 32px;
+  line-height: 32px;
+}
+
+#hyhd .header .btn-add{
   position: absolute;
   top: 15px;
   right:15px;
 }
 
-#interactive td{
+#hyhd td{
   height: 80px;
 }
 
-#interactive td.meeting-type{
+#hyhd td.hd-type{
   width:106px;
   text-align: center;
+  
 }
 
-#interactive td.meeting-type img{
+#hyhd td.hd-type img{
   vertical-align:middle;
 }
 
-#interactive td.link a{
+#hyhd td.link a{
   color: #a4a9ae;
   padding: 3px 10px;
 }
 
-#interactive td.link a.border{
+#hyhd td.link a.border{
   border:1px solid #d8dbdb;
 }
 
-#interactive .sign-wrap{
-  height: 80px;
-  float: left;
-}
-
-#interactive .sign-wx,
-#interactive .sign-phone{
+#hyhd .wxqd,
+#hyhd .sjqd{
   border:1px solid #d8dbdb;
   background-color: #f1f2f2;
   padding: 4px 20px;
   color:#686969;
-  margin-right: 10px;
 }
 
-#interactive .tc-show{
-  color:#fff;
+#hyhd .btn-wrap a{
+  margin-right: 10px;
 }
 /* 会议互动 end */
 
 
 
-
+#body-hover{
+  position: fixed;
+  left:0;
+  top:0;
+  right: 0;
+  bottom:0;
+  opacity: 0.5;
+  background: #000;
+  z-index: 9999;
+  display: none;  
+}
 
 
 /* 更多参会人员弹出框 start */
@@ -390,64 +439,126 @@
 
 
 /* 更多会议信息弹出层 start */
-#tc-more-meeting-info{
+#tc-more-hgxx{
   width: 660px;
-  height: 500px;
-  margin-left: -330px;
-  margin-top: -250px;
-  overflow: hidden;
+  height: 670px;
+  position: fixed;
+  left:50%;
+  top:50%;
+  margin-left: -335px;
+  margin-top: -330px;
+  background: #fff;
+  border-radius: 10px;
+  z-index: 99999;
+  display: none;
 }
 
-#tc-more-meeting-info .content{
-  padding:30px 40px;
-  height: 373px;
-  overflow-y:scroll;
+
+#tc-more-hgxx .top{
+  height: 66px;
+  border-bottom: 1px solid #d8dbdb;
 }
 
-#tc-more-meeting-info .content h3,
-#tc-more-meeting-info .content p{
+#tc-more-hgxx .top h2{
+  height: 66px;
+  line-height: 66px;
+  font-size: 18px;
+  font-weight: 400;
+  text-align: center;
+
+}
+
+#tc-more-hgxx .content{
+ padding:30px 40px; 
+}
+
+#tc-more-hgxx .content h3,
+#tc-more-hgxx .content p{
   line-height: 2em;
 }
 
-#tc-more-meeting-info .content h3{
+#tc-more-hgxx .content h3{
  font-size: 14px;
  font-weight: 400;
  color: #a4a9ae; 
 }
+
+#tc-more-hgxx .content p i{
+  padding-right: 20px;
+}
+
+#tc-more-hgxx .m-t-20{
+  margin-top: 20px;
+}
+
+#tc-more-hgxx .content td{
+  height: 32px;
+  line-height: 32px;
+}
+
+#tc-more-hgxx .btn-wrap{
+  width: 230px;
+  position: absolute;
+  right: 30px;
+  bottom: 30px; 
+}
 /* 更多会议信息弹出层 end */
 
 
-/* 签到模式切换弹出层 start */
-#tc-sign-change{
+
+
+
+/* 签到模式切换 start */
+#tc-qdms{
+  position: fixed;
   width: 590px;
   height: 420px;
+  left:50%;
+  top:50%;
   margin-top: -210px;
   margin-left: -295px;
+  background: #fff;
+  border-radius: 10px;
+  z-index: 99999;
+  display: none;
 }
 
-#tc-sign-change td{
+#tc-qdms .top{
+  height: 66px;
+  border-bottom: 1px solid #d8dbdb;
+}
+
+#tc-qdms .top h2{
+  height: 66px;
+  line-height: 66px;
+  font-size: 21px;
+  font-weight: 400;
   text-align: center;
 }
 
-#tc-sign-change td.img{
-  height: 180px;
+#tc-qdms td{
+  text-align: center;
 }
 
-#tc-sign-change td img{
+#tc-qdms td img{
   vertical-align:center;
 }
 
-#tc-sign-change td.title{
+#tc-qdms td.img{
+  height: 180px;
+}
+
+#tc-qdms td.title{
   height: 36px;
   line-height: 36px;
   font-size: 18px;
 }
 
-#tc-sign-change td.des{
+#tc-qdms td.des{
   color: #a4a9ae;
 }
 
-#tc-sign-change .radio{
+#tc-qdms td .radio{
   margin:0 auto;
   margin-top: 20px; 
   width: 38px;
@@ -456,22 +567,31 @@
   background:url(../images/radio-blue.png);
   cursor: pointer;
 }
-
-#tc-sign-change .radio-checked{
+#tc-qdms td .radio-checked{
   background:url(../images/radio-blue-checked.png);
 }
 /* 签到模式切换 end */
 
 
-/* 增加参会人弹出层 start */
-#tc-add-member{
+
+/* 增加参会人 start */
+#tc-add-number{
+  position: fixed;
   width: 610px;
   height: 400px;
+  left:50%;
+  top:50%;
   margin-top: -200px;
   margin-left: -305px;
+  background: #fff;
+  border-radius: 10px;
+  z-index: 99999;
+  display: none;
 }
 
-/* #tc-add-number .content{
+
+
+#tc-add-number .content{
   padding: 30px 20px; 
 }
 
@@ -499,6 +619,7 @@
 #tc-add-number .txl{
   float: left;
 }
+
 
 #tc-add-number .checkbox,
 #tc-add-number .radio{
@@ -543,6 +664,7 @@
 
 #tc-add-number .text-zdfz{
   text-indent: 28px;
+
 }
 
 #tc-add-number .zdfz-wrap {
@@ -573,5 +695,5 @@
   position: absolute;
   right: 30px;
   bottom: 30px; 
-} */
-/* 增加参会人弹出层 end */
+}
+/* 增加参会人 end */
