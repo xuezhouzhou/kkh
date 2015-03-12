@@ -1,12 +1,3 @@
-<?php
-//模拟控制器assign过来登录状态
-$login_statue = true;
-
-//模拟控制器assign过来模块信息(决定左侧导航的高亮显示)
-$module = "meeting";
-
-
-?>
 <!doctype html>
 <html>
 <head>
@@ -17,13 +8,32 @@ $module = "meeting";
 <script src="http://api.map.baidu.com/api?v=2.0&ak=154xlNeRRQNWV0XuZpRib87i"></script>
 </head>
 <body>
-
-<?php include_once 'common/inc_header.php' ?>
+<!-- header -->  
+<div id="header-wrap">
+  <div id="header">
+    <div id="logo"></div>
+    <div id="welcome">欢迎您的登录！您可在此管理您的系统后台。</div>
+    <div id="top-menu">
+      <div class="back-index">
+        <a href="#">回到首页</a>
+      </div>
+      <div class="login-info">
+        <div class="login-info-inner">
+          <img class="tx" src="images/tx.jpg" >
+          <p class="username">河西</p>
+        </div>
+        <div class="login-info-list">
+          <a href="userinfo.html">账号信息</a>
+          <a href="changepass.html">密码修改</a>
+          <a href="">退出</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
 <div id="container-wrap">
   <div id="container">
-
-    <?php include_once 'common/inc_side.php' ?>
     
     <div id="main">
       <div id="meeting-add-header">
@@ -107,7 +117,7 @@ $module = "meeting";
   </div>
 </div>
 
-<?php include_once 'common/inc_header.php' ?>
+<div id="footer">2015 kaikaihui  开发者中心/服务协议/权利声明</div>
 
 <!-- 页面遮罩层 -->
 <div id="body-hover"></div>
