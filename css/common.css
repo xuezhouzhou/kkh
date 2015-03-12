@@ -21,6 +21,11 @@ h2{
   font-size:18px; 
 }
 
+h3{
+  font-weight: 400;
+  font-size:16px; 
+}
+
 
 /*== header start ==*/
 #header-wrap{
@@ -558,13 +563,18 @@ a.btn-b{
 }
 
 
-/* m-t-x */
+/* m-t-* */
 .m-t-5{ margin-top: 5px; }
 .m-t-15{ margin-top: 15px; }
+.m-t-20{ margin-top: 20px; }
 .m-t-25{ margin-top: 25px; }
 .m-t-30{ margin-top: 30px; }
 .m-t-40{ margin-top: 40px; }
 
+/* m-r-* */
+.m-r-50{ margin-right: 50px; }
+.m-r-40{ margin-right: 40px; }
+.m-r-20{ margin-right: 20px; }
 
 /* 文本框 */
 .text{
