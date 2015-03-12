@@ -84,6 +84,7 @@
     </div>
     <!-- side end -->
     <div id="main">
+      <!-- 新建会议 start -->
       <div id="meeting-add-header">
         <div class="icon"></div>
         <h2>新建会议</h2>
@@ -160,7 +161,8 @@
           <a class="btn btn-primary btn-106-36 btn-br-18 fl">确认</a>
           <a class="btn btn-default btn-106-36 btn-br-18 fr">取消</a>
         </div>
-      </div>  
+      </div>
+      <!-- 新建会议 end --> 
     </div>  
   </div>
 </div>
@@ -170,7 +172,7 @@
 <!-- 页面遮罩层 -->
 <div id="body-hover"></div>
 
-<!-- 更多会议信息填写弹出层 -->
+<!-- 更多会议信息填写弹出层 start -->
 <div id="tc-more-meeting-info" class="tc-box">
   <div class="tc-close" data-id="tc-more-meeting-info"></div>
   <div class="top">
@@ -189,20 +191,23 @@
     </div>
   </div>
 </div>
-
+<!-- 更多会议信息填写弹出层 end -->
 <script src="js/jquery.min.js"></script>
 <script src="js/common.js"></script>
 <script>
 (function($){
+  //WiFi服务 切换
   $('#wifi-radio .radio').on('click',function(){
     $(this).siblings('.radio-checked').removeClass('radio-checked').end().addClass('radio-checked');
   });
 
+  //弹出层隐藏
   $('.tc-close').on('click',function(){
     var id = $(this).attr('data-id');
     $('#' + id + ",#body-hover").hide();
   });
-
+  
+  //弹出层显示
   $('.tc-show').on('click',function(){
     var id = $(this).attr('data-id');
     $('#' + id + ",#body-hover").show();
