@@ -1,11 +1,11 @@
 #login{
   position: absolute;
   width:550px;
-  height: 592px;
+  height: 500px;
   left:50%;
   top:50%;
   margin-left: -276px;
-  margin-top: -297px;
+  margin-top: -250px;
   border:1px solid #d8dbdb;
   background: #fff;
   border-radius: 2px;
@@ -69,10 +69,10 @@
 
 .link-index{
   text-align: center;
-  margin-top: 50px;
+  margin-top: 35px;
 }
 
 #login .btn-wrap{
   text-align: center;
-  margin-top: 50px;
+  margin-top: 25px;
 }
