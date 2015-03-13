@@ -7,8 +7,8 @@
   });
 
   //互动管理二级菜单
-  $("#side-menu-hdgl").on('click',function(){
+  $("#side-menu-interactive").on('click',function(){
     $(this).find('.icon-jt').toggleClass('icon-jt-bottom');
-    $("#hdgl-child").slideToggle();
+    $("#interactive-child").slideToggle();
   });
 })(jQuery);  
