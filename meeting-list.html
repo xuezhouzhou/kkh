@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <title>KKH - 会议管理 - 列表</title>
 <link rel="stylesheet" href="css/common.css">
-<link rel="stylesheet" href="css/hygl-list.css">
+<link rel="stylesheet" href="css/meeting-list.css">
 </head>
 <body>
 <!-- header start --> 
@@ -77,6 +77,7 @@
     </div>
     <!-- side end -->
     <div id="main">
+      <!-- 工具条 start -->
       <div class="tool-bar">
         <div class="icon"></div>
         <h1>会议管理</h1>
@@ -84,12 +85,13 @@
           <input type="text" placeholder="请输入会议名称/时间/编号">
           <div class="btn-search"></div>
         </div>
-        <a class="btn btn-primary btn-82-32 btn-add">新建会议</a>
+        <a href="meeting-add.html" class="btn btn-primary btn-82-32 btn-add">新建会议</a>
         <a class="btn btn-default btn-82-32 btn-del">删除会议</a>
       </div>
-
+      <!-- 工具条 end -->
+      <!-- 会议列表 start -->
       <div class="con-list">
-        <table id="hy-list" width="100%" cellpading="0" cellspacing="0">
+        <table id="meeting-list" width="100%" cellpading="0" cellspacing="0">
           <thead>
             <tr>
               <td width="60px"><div class="check"></div></td>
@@ -242,28 +244,32 @@
           </div>
         </div>
       </div>
+      <!-- 会议列表 end -->
     </div>
   </div>
 </div>
 
-<div id="footer">2015 kaikaihui  开发者中心/服务协议/权利声明</div><script src="js/jquery.min.js"></script>
+<div id="footer">2015 kaikaihui  开发者中心/服务协议/权利声明</div>
+<script src="js/jquery.min.js"></script>
 <script src="js/common.js"></script>
 <script>
 
 (function($){
-  
-  $("#hy-list tr:odd").css({'background-color':'#f6f8fa'});
+  //隔行变色
+  $("#meeting-list tr:odd").css({'background-color':'#f6f8fa'});
 
-  $('#hy-list tbody .check').on('click',function(){
+  //每行前面的check选中处理
+  $('#meeting-list tbody .check').on('click',function(){
     $(this).toggleClass('checked');
   });
 
-  $('#hy-list thead .check').on('click',function(){
+  //所有check控制
+  $('#meeting-list thead .check').on('click',function(){
     $(this).toggleClass('checked');
     if($(this).hasClass('checked')){
-      $('#hy-list tbody .check').addClass('checked');
+      $('#meeting-list tbody .check').addClass('checked');
     }else{
-      $('#hy-list tbody .check').removeClass('checked');
+      $('#meeting-list tbody .check').removeClass('checked');
     }
   });
 
