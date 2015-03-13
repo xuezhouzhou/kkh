@@ -37,7 +37,7 @@ h3{
 }
 
 
-/*== header start ==*/
+/* header start */
 #header-wrap{
   height: 79px;
   border-bottom: 1px solid #d8dbdb;
@@ -57,7 +57,6 @@ h3{
   float: left;
   background: url(../images/logo-2.png) no-repeat center center;
 }
-
 
 #top-menu{
   width: 265px;
@@ -99,8 +98,6 @@ h3{
   margin:0 3px;
   color:#d8dbdb; 
 }
-
-
 
 #top-menu .login-info{
   float: right;
@@ -162,8 +159,6 @@ h3{
   border-top:1px solid #d8dbdb;
 }
 
-
-
 #top-menu .login-info-list a:hover{
   background: #d8dbdb;
   color:#fff;
@@ -176,23 +171,20 @@ h3{
   line-height: 79px;
   text-align: center;
 }
-/*== header end ==*/
+/* header end */
 
 
+/* layout start */
 #container-wrap{
   margin-top: 10px;
   overflow: hidden;
 }
-
-
-
 
 #container{
   width: 1080px;
   margin-left:auto;
   margin-right: auto;
 }
-
 
 #side,
 #main{
@@ -206,12 +198,11 @@ h3{
   width: 184px
 }
 
-
 #main{
   float: right;
   width: 882px
 }
-
+/* layout end */
 
 
 /*侧边栏用户信息 start */
@@ -284,8 +275,6 @@ h3{
 /*侧边栏用户信息 end */
 
 
-
-
 /* 侧边栏Menu start */
 #side-menu{
   border-top:1px solid #d8dbdb;
@@ -317,27 +306,25 @@ h3{
   top: 10px;
 }
 
-#side-menu .menu-list .icon-hygl{
+#side-menu .menu-list .icon-meeting{
   background: url(../images/icon-hygl.png) no-repeat center center;
 }
 
-#side-menu .menu-list .icon-hygl-cur{
+#side-menu .menu-list .icon-meeting-cur{
   background: url(../images/icon-hygl-cur.png) no-repeat center center;
 }
 
-#side-menu .menu-list .icon-txlgl{
+#side-menu .menu-list .icon-contacts{
   background: url(../images/icon-txlgl.png) no-repeat center center;
 }
 
-#side-menu .menu-list .icon-hdgl{
+#side-menu .menu-list .icon-interactive{
   background: url(../images/icon-hdgl.png) no-repeat center center;
 }
 
-#side-menu .menu-list .icon-tjbb{
+#side-menu .menu-list .icon-statistical{
   background: url(../images/icon-tjbb.png) no-repeat center center;
 }
-
-
 
 #side-menu .menu-list .border{
   position: absolute;
@@ -347,11 +334,9 @@ h3{
   height:50px;
 }
 
-
 #side-menu .menu-list .border-hy{
   background-color: #8cc152;
 }
-
 
 #side-menu .menu-list .icon-jt{
   width: 15px;
@@ -369,7 +354,7 @@ h3{
   background: url(../images/icon-jt-bottom.png) no-repeat center center;
 }
 
-#hdgl-child{
+#interactive-child{
   display: none;
 }
 /* 侧边栏Menu end */
