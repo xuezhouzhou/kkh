@@ -1,0 +1,100 @@
+/*nav start */
+#nav{
+  display: block;
+}
+
+#nav li{
+  list-style: none;
+  float: left;
+  width: 16.666666%;
+  height: 100px;
+  border-bottom: 1px solid #d8dbdb;
+}
+
+#nav li a{
+  width: 58px;
+  height: 58px;
+  display: block;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 30px;
+  text-align: center;
+  line-height: 58px;
+  margin: 20px auto;
+}
+
+#nav li a.vote{
+  color:#6fa1f4;
+  border-color:#6fa1f4;
+}
+
+#nav li a.vote-cur,
+#nav li a.vote:hover{
+  color:#fff;
+  background-color:#6fa1f4;
+}
+
+#nav li a.ques{
+  color:#21b5e1;
+  border-color:#21b5e1;
+}
+
+#nav li a.ques-cur,
+#nav li a.ques:hover{
+  color:#fff;
+  background-color:#21b5e1;
+}
+
+#nav li a.lucky-draw{
+  color:#edcd3a;
+  border-color:#edcd3a;
+}
+
+#nav li a.lucky-draw-cur,
+#nav li a.lucky-draw:hover{
+  color:#fff;
+  background-color:#edcd3a;
+}
+
+#nav li a.photo-wall{
+  color:#88c800;
+  border-color:#88c800;
+}
+
+#nav li a.photo-wall-cur,
+#nav li a.photo-wall:hover{
+  color:#fff;
+  background-color:#88c800;
+}
+
+#nav li a.wx-wall{
+  color:#00c8c8;
+  border-color:#00c8c8;
+}
+
+#nav li a.wx-wall-cur,
+#nav li a.wx-wall:hover{
+  color:#fff;
+  background-color:#00c8c8;
+}
+
+#nav li a.the-raise{
+  color:#8883f9;
+  border-color:#8883f9;
+}
+
+#nav li a.the-raise-cur,
+#nav li a.the-raise:hover{
+  color:#fff;
+  background-color:#8883f9;
+}
+/*nav end */
+
+/* tool-bar start */
+#tool-bar{
+  height: 60px;
+  border-bottom: 1px solid #d8dbdb;
+}
+/* tool-bar start */
+
+

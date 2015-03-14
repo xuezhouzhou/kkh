@@ -505,7 +505,7 @@ h3{
 }
 
 
-/* m-t-* */
+/* margin */
 .m-t-5{ margin-top: 5px; }
 .m-t-10{ margin-top: 10px; }
 .m-t-15{ margin-top: 15px; }
@@ -514,11 +514,19 @@ h3{
 .m-t-30{ margin-top: 30px; }
 .m-t-35{ margin-top: 35px; }
 .m-t-40{ margin-top: 40px; }
-
-/* m-r-* */
 .m-r-50{ margin-right: 50px; }
 .m-r-40{ margin-right: 40px; }
 .m-r-20{ margin-right: 20px; }
+
+/* padding */
+.p-t-14{ padding-top: 14px}
+.p-t-13{ padding-top: 13px}
+.p-l-15{ padding-left: 15px; }
+.p-l-25{ padding-left: 25px; }
+.p-r-15{ padding-right: 15px; }
+
+
+
 
 /* 文本框 */
 .text{
@@ -569,8 +577,6 @@ h3{
 .a4a9ae{
   color: #a4a9ae;
 }
-
-
 
 /* 分页 start */
 .page-bar{
@@ -681,3 +687,68 @@ h3{
   color: #a4a9ae;
 }
 /* 弹出层通用样式 end */
+
+/* 搜索框通用样式 start */
+.search{
+  width: 230px;
+  height: 34px;
+  border-radius: 5px;
+  overflow: hidden;
+  position: relative;  
+}
+
+.search input{
+  padding: 9px 10px;
+  outline: none;
+  width: 173px;
+  background-color: #f0f2f5;
+  color: #abadb3;
+}
+
+.search .btn-search{
+  position: absolute;
+  width: 37px;
+  height: 34px;
+  right: 0;
+  top: 0;
+  background: url(../images/btn-search.png) no-repeat;
+  cursor: pointer;
+}
+/* 搜索框通用样式 end */
+
+.table{
+  width: 100%;
+}
+
+.table thead{
+  color:#a4a9ae;
+}
+
+.table td,
+.table th{
+  line-height: 40px;
+}
+
+.table td,th{
+  text-align: center;
+}
+
+.table .check{
+  width: 40px;
+  height: 40px;
+  background: url(../images/icon-check.png) no-repeat center center;
+  cursor: pointer;
+  margin: 0 auto;
+}
+
+.table .checked{
+  background: url(../images/icon-checked.png) no-repeat center center;
+}
+
+.table .odd{
+  background-color:#f6f8fa;
+}
+
+.table tr:hover{
+  background-color:#f0f2f5;
+}

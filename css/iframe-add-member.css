@@ -1,0 +1,59 @@
+body{
+  padding:30px 20px;
+}
+
+#select-member{
+  border:1px solid #d8dbdb;
+}
+
+td{
+  line-height: 40px;
+}
+
+.check,
+.radio{
+  line-height: 40px;
+  cursor: pointer;
+  padding-right: 20px;
+}
+
+.check i,
+.radio i{
+  display: block;
+  float: left;
+  width: 40px;
+  height: 40px;
+}
+
+.check i{
+  background: url(../images/icon-check.png) no-repeat center center;  
+}
+
+.radio i{
+  background: url(../images/radio-sm-default.png) no-repeat center center;  
+}
+
+.checked i{
+  background: url(../images/icon-checked.png) no-repeat center center;  
+}
+
+.radio-checked i{
+  background: url(../images/radio-sm-checked.png) no-repeat center center;  
+}
+
+.label{
+  line-height: 40px;
+  padding-left: 37px;
+}
+
+.inv{
+  float: left;
+  color: #6cc;
+  cursor:pointer;
+}
+
+.btn-wrap{
+  float: right;
+  width: 232px;
+  height: 30px;
+}

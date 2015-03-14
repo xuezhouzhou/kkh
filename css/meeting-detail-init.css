@@ -232,10 +232,6 @@
 /* 会议互动 end */
 
 
-
-
-
-
 /* 更多参会人员弹出框 start */
 #tc-chry{
   display: none;
@@ -413,13 +409,19 @@
 
 
 /* 增加参会人弹出层 start */
+
 #tc-add-member{
   width: 610px;
   height: 400px;
   margin-top: -200px;
   margin-left: -305px;
+  overflow: hidden;
 }
 
+#tc-add-member .frame-wrap{
+  width: 100%;
+  height: 100%;
+}
 /* #tc-add-number .content{
   padding: 30px 20px; 
 }
@@ -524,3 +526,26 @@
   bottom: 30px; 
 } */
 /* 增加参会人弹出层 end */
+
+
+/* 添加互动弹出层 start */
+#tc-interactive-add{
+  width: 660px;
+  height: 500px;
+  margin-left:-330px;
+  margin-top:-250px;
+}
+
+#tc-interactive-add .frame-wrap{
+  border-bottom:1px solid #d8dbdb;
+  height: 370px;
+}
+
+#tc-interactive-add .btn-wrap{
+  position: absolute;
+  width: 232px;
+  height: 36px;
+  right: 30px;
+  bottom: 14px;
+}
+/* 添加互动弹出层 end */
