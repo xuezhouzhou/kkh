@@ -126,19 +126,19 @@
   background: url(../images/icon-wx-high.png) no-repeat center center;
 }
 
-#hy-list{
+#meeting-list{
   margin-top: 15px;
 }
 
-#hy-list tbody tr:hover{
+#meeting-list tbody tr:hover{
   background-color: #f0f2f5 !important;
 }
 
-#hy-list td{
+#meeting-list td{
   color:#a4a9ae; 
 }
 
-#hy-list td a{
+#meeting-list td a{
   color:#a4a9ae;
 }
 

@@ -1,0 +1,214 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>KKH - 通讯录管理</title>
+<link rel="stylesheet" href="css/common.css">
+<link rel="stylesheet" href="css/contacts.css">
+</head>
+<body>
+<!-- header start --> 
+<div id="header-wrap">
+  <div id="header">
+    <div id="logo"></div>
+    <div id="welcome">欢迎您的登录！您可在此管理您的系统后台。</div>
+    <div id="top-menu">
+      <div class="back-index">
+        <a href="#">回到首页</a>
+      </div>
+      <div class="login-info">
+        <div class="login-info-inner">
+          <img class="tx" src="images/tx.jpg" >
+          <p class="username">河西</p>
+        </div>
+        <div class="login-info-list">
+          <a href="userinfo.html">账号信息</a>
+          <a href="changepass.html">密码修改</a>
+          <a href="">退出</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- header end -->
+<div id="container-wrap">
+  <div id="container">
+    <!-- side start -->
+    <div id="side">
+      <!-- 侧边栏用户信息 start  -->
+      <div id="side-userinfo">
+        <div class="hover"></div>
+        <img class="tx" src="images/tx.jpg">
+        <div class="sex sex-m"></div>
+        <p class="username">荷西-sweety</p>
+        <p class="score"><span class="num">208</span>分</p>
+      </div>
+      <!-- 侧边栏用户信息 end --> 
+      <!-- 侧边栏菜单 start -->
+      <div id="side-menu">
+        <a class="menu-list">
+          <div class="icon icon-meeting"></div>
+          <div class="title">会议管理</div>
+        </a>
+        <a class="menu-list">
+          <div class="border border-contacts"></div>
+          <div class="icon icon-contacts-cur"></div>
+          <div class="title">通讯录管理</div>
+        </a>
+        <div id="side-menu-interactive" class="menu-list">
+          <div class="icon icon-interactive"></div>
+          <div class="title">互动管理</div>
+          <div class="icon-jt icon-jt-right"></div>
+        </div>
+        <div id="interactive-child">
+          <a class="menu-list"><div class="title">投票管理</div></a>
+          <a class="menu-list"><div class="title">问卷管理</div></a>
+          <a class="menu-list"><div class="title">抽奖管理</div></a>
+          <a class="menu-list"><div class="title">照片墙管理</div></a>
+          <a class="menu-list"><div class="title">签到管理</div></a>
+          <a class="menu-list"><div class="title">众筹管理</div></a>
+        </div>
+        <a class="menu-list">
+          <div class="icon icon-statistical"></div>
+          <div class="title">统计报表</div>
+        </a>
+      </div>
+      <!-- 侧边栏菜单 end -->
+    </div>
+    <!-- side end -->
+    <div id="main">
+      <div id="main-top">
+        <div class="icon"></div>
+        <h2>通讯录管理</h2>
+        <div class="search-wrap">
+          <div class="search">
+            <input type="text" placeholder="请输入名称/时间/编号">
+            <div class="btn-search"></div>
+          </div>
+        </div>
+        <a class="btn btn-primary btn-100-32 btn-add">新建通讯录</a>
+        <a class="btn btn-default btn-100-32 btn-del">删除通讯录</a>
+      </div>
+      <div id="main-bottom">
+        <!-- 我的通讯录 start -->
+        <div id="my-contacts">
+          <ul>
+            <li class="parent open">我的通讯录(5个)<i></i></li>
+            <ul class="child">
+              <li><a href="javascript:void(0)" class="checked"><i></i>研发1组 (56人）</a></li>
+              <li><a href="javascript:void(0)"><i></i>研发2组 (56人）</a></li>
+              <li><a href="javascript:void(0)"><i></i>研发3组 (56人）</a></li>
+              <li><a href="javascript:void(0)"><i></i>研发4组 (56人）</a></li>
+              <li><a href="javascript:void(0)"><i></i>研发5组 (56人）</a></li>
+            </ul>
+          </ul>
+          <ul class="his">
+            <li class="parent">历史会议通讯录(6个)<i></i></li>
+            <ul class="child">
+              <li><a href="javascript:void(0)"><i></i>2015年上海各... (56人）</a></li>
+              <li><a href="javascript:void(0)"><i></i>2015年上海各... (56人）</a></li>
+              <li><a href="javascript:void(0)"><i></i>2015年上海各... (56人）</a></li>
+              <li><a href="javascript:void(0)"><i></i>2015年上海各... (56人）</a></li>
+              <li><a href="javascript:void(0)"><i></i>2015年上海各... (56人）</a></li>
+              <li><a href="javascript:void(0)"><i></i>2015年上海各... (56人）</a></li>
+            </ul>
+          </ul>
+        </div>
+        <!-- 我的通讯录 end -->
+        
+        <!-- 通讯录详细信息 start -->
+        <div id="contacts-info">
+          <iframe name="contacts-info" src="iframe-contacts-info.html" frameborder="0" width="100%" height="100%"></iframe>
+        </div>
+        <!-- 通讯录详细信息 end -->
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="footer">2015 kaikaihui  开发者中心/服务协议/权利声明</div>
+<div id="body-hover"></div>
+
+<!-- 添加通讯人弹出层 start -->
+<div id="tc-contacts-add" class="tc-box">
+  <div class="tc-close" data-id="tc-contacts-add"></div>
+  <div class="content">
+    <h2>添加通讯人</h2>
+    <div class="m-t-15">
+      <input type="text" class="text text-296-40" placeholder="姓名">
+    </div>
+    <div class="m-t-15">
+      <div id="sex-radio" class="clear">
+        <div class="radio"><i></i>男</div>
+        <div class="radio radio-checked"><i></i>女</div>   
+      </div>
+    </div>
+    <div class="m-t-15">
+      <input type="text" class="text text-296-40" placeholder="手机号">
+    </div>
+    <div class="m-t-15">
+      <input type="text" class="text text-296-40" placeholder="邮箱">
+    </div>
+    <div class="m-t-15">
+      <input type="text" class="text text-296-40" placeholder="公司">
+    </div>
+    <div class="m-t-15">
+      <input type="text" class="text text-296-40" placeholder="职务">
+    </div>
+    <div class="m-t-15">
+      <a class="btn btn-primary btn-106-36 btn-br-18 fl">添加</a>
+      <a class="btn btn-default btn-106-36 btn-br-18 fr">取消</a>
+    </div>
+  </div>
+</div>
+<!-- 添加通讯人弹出层 end -->
+<script src="js/jquery.min.js"></script>
+<script src="js/common.js"></script>
+<script>
+(function($){
+  //通讯录展开折叠
+  $('#my-contacts .parent').on('click',function(){
+    $(this).toggleClass('open');
+    $(this).siblings('.child').slideToggle();
+  });
+
+  //通讯录左侧选中状态切换
+  $('#my-contacts .child a').on('click',function(){
+    $('#my-contacts .child a').removeClass("checked");
+    $(this).addClass("checked");
+  });
+
+
+  //性别切换
+  $('#sex-radio .radio').on('click',function(){
+    $(this).siblings('.radio-checked').removeClass('radio-checked').end().addClass('radio-checked');
+  });
+
+  $(function(){
+    var contactsInfo = window.frames['contacts-info'];
+    $(contactsInfo).load(function () {
+      $(contactsInfo.document).find('#add-contacts').on('click',function(){
+        $("#body-hover,#tc-contacts-add").show();
+      });
+    });
+  });
+
+
+
+  
+
+  //弹出层隐藏
+  $('.tc-close').on('click',function(){
+    var id = $(this).attr('data-id');
+    $('#' + id + ",#body-hover").hide();
+  });
+  
+  //弹出层显示
+  $('.tc-show').on('click',function(){
+    var id = $(this).attr('data-id');
+    $('#' + id + ",#body-hover").show();
+  });
+})(jQuery);  
+</script>
+</body>
+</html>

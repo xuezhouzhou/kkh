@@ -1,0 +1,163 @@
+/* main-top start */
+#main-top{
+  border-bottom: 1px solid #d8dbdb;
+  height: 60px;
+  position:relative;
+}
+
+#main-top .icon,
+#main-top h2,
+#main-top .btn{
+  position: absolute;
+  top:15px;
+}
+
+#main-top .icon{
+  left: 12px;
+  width: 34px;
+  height: 32px;
+  background: url(../images/icon-contacts-cur.png) no-repeat center center;
+}
+
+#main-top h2{
+  left: 56px;
+  width: 98px;
+  height: 32px;
+  line-height: 32px; 
+}
+
+#main-top .btn-add{
+  right: 145px;
+}
+
+#main-top .btn-del{
+  right: 30px;
+}
+
+#main-top .search-wrap{
+  height: 34px;
+  width: 300px;
+  position: absolute;
+  left: 200px;
+  top: 14px;
+}
+/* main-top end */
+
+/* 我的通讯录 start */
+#my-contacts{
+  width: 270px;
+  border-right:1px solid #d8dbdb;
+  float:left;
+  height: 709px;
+}
+
+#my-contacts li{
+  list-style: none;
+  display: block;
+  height: 50px;
+  line-height: 50px;
+  
+}
+
+#my-contacts .parent{
+  text-indent: 60px;  
+  font-size: 16px;
+  color: #a4a9ae;
+  border-bottom: 1px solid #d8dbdb;
+}
+
+
+
+#my-contacts .child{
+  font-size: 18px;
+  border-bottom: 1px solid #d8dbdb;
+}
+#my-contacts .child li{
+  text-indent: 10px;   
+}
+
+#my-contacts .child li a{
+  display: block;
+}
+
+#my-contacts .child li i{
+  display: block;
+  float: left;
+  width: 50px;
+  height: 50px;
+  background: url(../images/icon-check.png) no-repeat center center;
+}
+
+
+
+#my-contacts .parent{
+  cursor: pointer;
+} 
+#my-contacts .parent i{
+  display: block;
+  float: right;
+  width: 50px;
+  height: 50px;
+  background: url(../images/icon-jt-bottom.png) no-repeat center center;
+}
+#my-contacts .open i{
+  background: url(../images/icon-jt-top.png) no-repeat center center;
+}
+
+
+#my-contacts .his .child{
+  display: none;
+}
+
+#my-contacts li a.checked i{
+  background: url(../images/icon-checked.png) no-repeat center center ;
+}
+/* 我的通讯录 end */
+
+
+/* 通讯录详细信息 start */
+#contacts-info{
+  width: 611px;
+  height: 709px;
+  float:right;
+}
+/* 通讯录详细信息 end */
+
+
+/* 添加通讯人弹出层 start */
+#tc-contacts-add{
+  height: 460px;
+  width:400px;
+  margin-left: -200px;
+  margin-top: -230px;  
+}
+
+#tc-contacts-add .content{
+  width: 296px;
+  margin:30px auto; 
+}
+
+#tc-contacts-add .radio{
+  height: 38px;
+  line-height: 38px;
+  cursor: pointer;
+  float: left;
+  margin-right: 30px;
+}
+
+#tc-contacts-add .radio i{
+  width: 30px;
+  height: 38px;
+  display: block;
+  float: left;
+  background: url(../images/radio-sm-default.png) no-repeat -2px center; 
+}
+
+#tc-contacts-add .radio-checked i{
+  background: url(../images/radio-sm-checked.png) no-repeat -2px center; 
+}
+
+#tc-contacts-add h2{
+  text-align: center;
+}
+/* 添加通讯人弹出层 end */

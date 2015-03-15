@@ -1,0 +1,35 @@
+#contacts-detail{
+  padding: 20px 30px;
+  border-bottom: 1px solid #d8dbdb;
+}
+
+#contacts-detail h1{
+  font-size: 18px;
+}
+
+#contacts-detail .l-h-32{
+  line-height: 32px;
+}
+
+#contacts-detail .btn{
+  margin-left:15px;
+}
+
+#contacts-list .name{
+  width: 82px;
+  margin: 0 auto;
+}
+#contacts-list .name i{
+  width: 40px;
+  height: 40px;
+}
+#contacts-list .sex-m{
+  background: url(../images/icon-sex2-m.png) no-repeat center center;
+}
+#contacts-list .sex-w{
+  background: url(../images/icon-sex2-w.png) no-repeat center center;
+}
+
+.page-wrap{
+  padding: 20px  30px; 
+}

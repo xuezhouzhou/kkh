@@ -318,6 +318,10 @@ h3{
   background: url(../images/icon-txlgl.png) no-repeat center center;
 }
 
+#side-menu .menu-list .icon-contacts-cur{
+  background: url(../images/icon-contacts-cur.png) no-repeat center center;
+}
+
 #side-menu .menu-list .icon-interactive{
   background: url(../images/icon-hdgl.png) no-repeat center center;
 }
@@ -336,6 +340,10 @@ h3{
 
 #side-menu .menu-list .border-meeting{
   background-color: #8cc152;
+}
+
+#side-menu .menu-list .border-contacts{
+  background-color: #5db3f5;
 }
 
 #side-menu .menu-list .icon-jt{
@@ -366,25 +374,11 @@ h3{
  */
 
 
-
-
-
-
-
-
-
 #footer{
   text-align: center;
   padding-top: 30px;
   padding-bottom: 40px;
 }
-
-
-
-
-
-
-
 
 
 /* 按钮 */
@@ -439,6 +433,12 @@ h3{
   line-height: 48px;
 }
 
+.btn-100-32{
+  width: 98px;
+  height: 30px;
+  line-height: 30px;
+}
+
 .btn-220-50{
   width: 218px;
   height: 48px;
@@ -473,30 +473,14 @@ h3{
   width: 80px;
 }
 
-
-
-
 /* 浮动 */
-.fl,.fr{
-  display: block;
-}
-
-.fl{
-  float: left;
-}
-
-.fr{
-  float: right;
-}
+.fl,.fr{ display: block; }
+.fl{ float: left; }
+.fr{ float: right; }
 
 /* 定位 */
-.absolute{
-  position: absolute;
-}
-
-.relative{
-  position: relative;
-}
+.absolute{ position: absolute; }
+.relative{ position: relative; }
 
 .center{
   display: block;
@@ -518,6 +502,7 @@ h3{
 .m-r-40{ margin-right: 40px; }
 .m-r-20{ margin-right: 20px; }
 
+
 /* padding */
 .p-t-14{ padding-top: 14px}
 .p-t-13{ padding-top: 13px}
@@ -526,9 +511,7 @@ h3{
 .p-r-15{ padding-right: 15px; }
 
 
-
-
-/* 文本框 */
+/* 文本框 start */
 .text{
   border:1px solid #d8dbdb;
   color:#a4a9ae;
@@ -539,6 +522,11 @@ h3{
 .text-356-50{
   width: 334px;
   padding: 16px 10px; 
+}
+
+.text-356-42{
+  width: 334px;
+  padding: 12px 10px; 
 }
 
 .text-296-40{
@@ -556,13 +544,12 @@ h3{
   padding: 16px 10px; 
 }
 
-.text-lg{
-  padding: 16px 10px;
+.text-294-50{
+  width:272px;
+  padding: 16px 10px; 
 }
+/* 文本框 end */
 
-.text-md{
-  padding: 12px 10px;
-}
 
 /* 警告提示 */
 .warning-tips{
@@ -574,9 +561,7 @@ h3{
 
 
 /* 字体颜色 */
-.a4a9ae{
-  color: #a4a9ae;
-}
+.a4a9ae{ color: #a4a9ae; }
 
 /* 分页 start */
 .page-bar{
@@ -614,7 +599,6 @@ h3{
   background-image: url(../images/icon-sxjt-right-ccc.png);
 }
 
-
 .page-bar .prev-cur,
 .page-bar .prev:hover{
   border: 1px solid #6cc;
@@ -634,8 +618,8 @@ h3{
   line-height: 12px;
   letter-spacing: 2px;
 }
-
 /* 分页 end */
+
 
 /* 整个页面遮罩层 */
 #body-hover{
@@ -649,6 +633,7 @@ h3{
   z-index: 9999;
   display: none;
 }
+
 
 /* 弹出层通用样式 start */
 .tc-box{
@@ -684,9 +669,9 @@ h3{
 
 .tc-show{
   cursor: pointer;
-  color: #a4a9ae;
 }
 /* 弹出层通用样式 end */
+
 
 /* 搜索框通用样式 start */
 .search{
@@ -716,6 +701,8 @@ h3{
 }
 /* 搜索框通用样式 end */
 
+
+/* table 通用样式 start */
 .table{
   width: 100%;
 }
@@ -752,3 +739,4 @@ h3{
 .table tr:hover{
   background-color:#f0f2f5;
 }
+/* table 通用样式 end */
