@@ -136,3 +136,69 @@
   right: 20px;
 }
 /* 更多会议信息弹出层 end */
+
+
+/* 添加wifi弹出层 start */
+#tc-add-wifi{
+  width: 420px;
+  height: 450px;
+  margin-left: -210px;
+  margin-top: -225px;
+}
+
+#add-wifi-con {
+  padding: 30px 50px;
+}
+
+#add-wifi-con td{
+  padding: 5px 0;
+}
+
+
+#add-wifi-con .radio{
+  height: 38px;
+  line-height: 38px;
+  cursor: pointer;
+  float: left;
+  margin-right: 30px;
+}
+
+#add-wifi-con .radio i{
+  width: 30px;
+  height: 38px;
+  display: block;
+  float: left;
+  background:url(../images/radio-sm-default.png) no-repeat -2px center;
+}
+
+#add-wifi-con .radio-checked i{
+  background:url(../images/radio-sm-checked.png) no-repeat -2px center;
+}
+
+#add-wifi-con .check{
+  line-height: 36px;
+  cursor: pointer;
+}
+
+#add-wifi-con .check i{
+  width:30px;
+  height: 38px;
+  line-height: 38px;
+  cursor: pointer;
+  float: left;
+  background:url(../images/icon-check.png) no-repeat -2px center;
+}
+
+#add-wifi-con .checked i{
+  background:url(../images/icon-checked.png) no-repeat -2px center;
+}
+
+#add-wifi-con .tips{
+  color: #66cccc;
+}
+
+#add-wifi-con .btn-wrap{
+  width: 232px;
+  height: 36px;
+}
+/* 添加wifi弹出层 end */

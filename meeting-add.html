@@ -123,7 +123,7 @@
             </td>
           </tr>
           <tr>
-            <td colspan="4" class="a4a9ae">自动配置WiFi编号</td>
+            <td colspan="4" class="a4a9ae" ><span class="tc-show" data-id="tc-add-wifi">自动配置WiFi编号</span></td>
           </tr>
           <tr>
             <td>会议图片</td>
@@ -186,6 +186,60 @@
   </div>
 </div>
 <!-- 更多会议信息填写弹出层 end -->
+<!-- 添加wifi弹出层 start -->
+<div id="tc-add-wifi" class="tc-box">
+  <div class="tc-close" data-id="tc-add-wifi"></div>
+  <div class="top">
+    <h2>添加WiFi</h2>
+  </div>
+  <div id="add-wifi-con">
+    <table width="100%" cellspacing="0" cellpadding="0">
+      <tr>
+        <td width="90px">场地大小</td>
+        <td width="230px">
+          <input type="text" class="text text-230-38" placeholder="100平">
+        </td>
+      </tr>
+      <tr>
+        <td>使用人数</td>
+        <td><input type="text" class="text text-230-38" placeholder=">1000人"></td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <div id="wifi-positon-radio">
+            <div class="radio"><i></i>室内</div>
+            <div class="radio radio-checked"><i></i>室外</div>   
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <div class="check"><i></i>是否有宽带接入</div>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <input type="text" class="text text-300-38" placeholder="带宽值">
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <p class="tips">您配置的网络速度是乌龟速哦！<p>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <div class="btn-wrap">
+            <a class="btn btn-primary btn-106-36 btn-br-18 fl">确定</a>
+            <a class="btn btn-default btn-106-36 btn-br-18 fr">取消</a>
+          </div>
+        </td>
+      </tr>
+    </table>
+  </div>
+</div>
+<!-- 添加wifi弹出层 start-->
+
 <script src="js/jquery.min.js"></script>
 <script src="js/common.js"></script>
 <script>
