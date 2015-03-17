@@ -1,0 +1,172 @@
+#side,
+#main{
+  height: 1010px;
+}
+/* 会议编辑Header start */
+#meeting-edit-header{
+  height: 60px;
+  border-bottom: 1px solid #d8dbdb;
+  position: relative;
+}
+
+#meeting-edit-header .btn-back,
+#meeting-edit-header .icon,
+#meeting-edit-header h2{
+  top: 14px;
+  position: absolute;
+}
+
+#meeting-edit-header .btn-back{
+  right: 25px;
+}
+
+#meeting-edit-header .icon{
+  left: 12px;
+  width: 32px;
+  height: 32px;
+  background: url(../images/icon-meeting-edit.png) no-repeat center center;
+}
+
+#meeting-edit-header h2{
+  font-weight: 400;
+  font-size: 18px;
+  left: 56px;
+  width: 80px;
+  height: 32px;
+  line-height: 32px;
+}
+/* 会议编辑Header end */
+
+
+/* 会议编辑Content start */
+#meeting-edit-con{
+  padding:12px 24px; 
+}
+
+#meeting-edit-con td{
+  padding:5px 0; 
+}
+
+#meeting-edit-con .qr-code-wrap{
+  position:relative;
+  height:140px;
+}
+
+#meeting-edit-con .delete-qr-code{
+  position: absolute;
+  left:160px;
+  top:5px;
+}
+
+#meeting-edit-con img.logo{
+  width: 42px;
+  height: 42px;
+  border:1px solid #d8dbdb;
+  position: absolute;
+  left:0px;
+  top:5px;
+}
+
+#meeting-edit-con img.qr-code{
+  width: 140px;
+  height: 140px;
+  position: absolute;
+  left:0px;
+  top:5px;
+}
+
+#meeting-edit-con .delete-logo{
+  position: absolute;
+  left:65px;
+  top:5px;
+}
+
+#meeting-edit-con .radio{
+  height: 38px;
+  line-height: 38px;
+  cursor: pointer;
+  float: left;
+  margin-right: 30px;
+}
+
+#meeting-edit-con .radio i{
+  width: 30px;
+  height: 38px;
+  display: block;
+  float: left;
+  background:url(../images/radio-sm-default.png) no-repeat -2px center;
+}
+
+#meeting-edit-con .radio-checked i{
+  background:url(../images/radio-sm-checked.png) no-repeat -2px center;
+}
+
+#meeting-edit-con .tips{
+  height: 32px;
+  line-height: 32px;
+  color:#f16374;
+  margin-left:15px; 
+}
+
+#meeting-edit-con .tips i{
+  display: block;
+  float: left;
+  width: 32px;
+  height: 32px;
+  background:url(../images/icon-hongxin.png) no-repeat center center;
+}
+
+#meeting-edit-con .btn-wrap{
+  width: 232px;
+  margin-top: 15px;
+}
+
+#allmap{
+  width: 580px;
+  height: 120px;
+}
+
+.w80{
+  width: 80px;
+}
+.w250{
+  width:250px;
+}
+/* 会议编辑Content end */
+
+
+/* 更多会议信息弹出层 start */
+#tc-more-meeting-info{
+  margin-left: -330px;
+  margin-top: -250px;
+  width: 660px;
+  height: 500px;
+}
+
+#tc-more-meeting-info .content{
+  padding: 28px;
+}
+
+#tc-more-meeting-info .content h3{
+  font-size: 14px;
+  font-weight: 400;
+  color: #454646;
+}
+
+#tc-more-meeting-info .content textarea{
+  border: 1px solid #d8dbdb;
+  width: 586px;
+  height: 55px;
+  color: #a4a9ae;
+  outline: none;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+#tc-more-meeting-info .btn-wrap{
+  width: 232px;
+  position: absolute;
+  bottom: 15px;
+  right: 20px;
+}
+/* 更多会议信息弹出层 end */

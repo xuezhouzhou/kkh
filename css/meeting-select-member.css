@@ -1,0 +1,274 @@
+#main-header{
+  height: 60px;
+  border-bottom: 1px solid #d8dbdb;
+  position: relative;
+}
+
+#main-header .btn-back, 
+#main-header .icon, 
+#main-header h2 {
+  top: 14px;
+  position: absolute;
+}
+
+#main-header .icon{
+  left: 12px;
+  width: 32px;
+  height: 32px;
+  background: url(../images/icon-select-meeting-member.png) no-repeat center center;
+}
+
+#main-header h2{
+  font-weight: 400;
+  font-size: 18px;
+  left: 56px;
+  width: 120px;
+  height: 32px;
+  line-height: 32px;
+}
+
+#main-header .btn-back{
+  right: 25px;
+}
+
+
+
+/*选择参会人员 start */
+#main-content{
+  padding:22px 20px; 
+}
+
+#select-member{
+  border:1px solid #d8dbdb;
+}
+
+td{
+  line-height: 40px;
+}
+
+.check,
+.radio{
+  line-height: 40px;
+  cursor: pointer;
+  padding-right: 20px;
+}
+
+.check i,
+.radio i{
+  display: block;
+  float: left;
+  width: 40px;
+  height: 40px;
+}
+
+.check i{
+  background: url(../images/icon-check.png) no-repeat center center;  
+}
+
+.radio i{
+  background: url(../images/radio-sm-default.png) no-repeat center center;  
+}
+
+.checked i{
+  background: url(../images/icon-checked.png) no-repeat center center;  
+}
+
+.radio-checked i{
+  background: url(../images/radio-sm-checked.png) no-repeat center center;  
+}
+
+.label{
+  line-height: 40px;
+  padding-left: 37px;
+}
+
+.inv{
+  float: left;
+  color: #6cc;
+  cursor:pointer;
+}
+
+#main-content .btn-wrap{
+  margin-top: 30px;
+  width: 232px;
+  height: 36px;
+}
+/*选择参会人员 end */
+
+
+/* 我的通讯录弹出层 start */
+#tc-my-contacts{
+  width: 680px;
+  height: 500px;
+  margin-left: -340px;
+  margin-top:-250px; 
+}
+
+#tc-my-contacts .tc-close{
+  z-index:999;
+}
+
+
+#tc-my-contacts .top{
+  position: relative;
+}
+
+#tc-my-contacts .top h2{
+  position: absolute;
+  height: 30px;
+  line-height: 30px;
+  left: 24px;
+  top: 18px;
+}
+
+#tc-my-contacts .top .search-wrap{
+  position: absolute;
+  height: 34px;
+  left: 175px;
+  top: 16px;
+}
+
+#tc-my-contacts .contacts-list{
+  height: 370px;
+  border-bottom:1px solid #d8dbdb;
+}
+
+#tc-my-contacts .group{
+  height: 370px;
+  float: left;
+  width: 210px;
+  border-right: 1px solid #d8dbdb;
+}
+
+#tc-my-contacts .list{
+  height: 370px;
+  float: left;
+  width: 469px;
+  overflow-y:scroll;
+}
+
+
+
+
+
+#tc-my-contacts .group li{
+  text-indent: 10px;
+  list-style: none;
+  display: block;
+  height: 50px;
+  line-height: 50px;
+}
+
+#tc-my-contacts .group li a{
+  display:block;
+}
+
+#tc-my-contacts .group i{
+  display: block;
+  float: left;
+  width: 50px;
+  height: 50px;
+  background: url(../images/icon-check.png) no-repeat center center;
+}
+
+#tc-my-contacts .group i.check{
+  display: block;
+  float: left;
+  width: 50px;
+  height: 50px;
+  background: url(../images/icon-check.png) no-repeat center center;
+}
+
+#tc-my-contacts li a.checked i {
+  background: url(../images/icon-checked.png) no-repeat center center;
+}
+
+#tc-my-contacts .name{
+  width: 82px;
+  margin: 0 auto;
+}
+
+#tc-my-contacts .name i{
+  width: 40px;
+  height: 40px;
+}
+
+#tc-my-contacts .sex-m{
+  background: url(../images/icon-sex2-m.png) no-repeat center center;
+}
+
+#tc-my-contacts .sex-w{
+  background: url(../images/icon-sex2-w.png) no-repeat center center;
+}
+#tc-my-contacts .btn-wrap{
+  float: right;
+  width: 232px;
+  height: 36px;
+  padding: 12px 30px;
+}
+/* 我的通讯录弹出层 end */
+
+
+
+/* 邀请函弹出层 start */
+#tc-inv{
+  width: 610px;
+  height: 500px;
+  margin-top: -250px;
+  margin-left: -305px;
+  overflow: hidden;
+}
+
+#tc-inv .tc-inv-inner{
+  padding:50px 35px;
+  overflow-y: scroll; 
+  height: 400px;
+}
+
+#tc-inv h2{
+  text-align: center;
+  display: none;
+}
+
+#tc-inv p{
+  line-height: 2em;
+}
+
+#tc-inv .qr-code{
+  padding: 30px 0;
+  text-align: center;
+}
+
+#tc-inv .title{
+  
+}
+
+#tc-inv .title input{
+  text-align: center;
+  padding: 1px;
+  color: #5d5d5e;
+  font-size: 18px;
+  width: 100%;
+  outline: none;
+}
+
+#tc-inv .con textarea{
+  height: 80px;
+  color: #5d5d5e;
+  line-height: 1.5em;
+  width: 100%;
+  outline: none;
+  border:1px solid #ccc;
+  padding: 10px;
+  margin:0 -10px;
+}
+#p-inv-con{
+  display: none;
+}
+
+#tc-inv .btn-wrap{
+  width: 232px;
+  float: right;
+  margin-top: 20px;
+}
+/* 邀请函弹出层 end */

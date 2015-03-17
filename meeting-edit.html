@@ -1,0 +1,229 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>KKH - 会议管理 - 编辑会议</title>
+<link rel="stylesheet" href="css/common.css">
+<link rel="stylesheet" href="css/meeting-edit.css">
+<script src="http://api.map.baidu.com/api?v=2.0&ak=154xlNeRRQNWV0XuZpRib87i"></script>
+</head>
+<body>
+<!-- header start --> 
+<div id="header-wrap">
+  <div id="header">
+    <div id="logo"></div>
+    <div id="welcome">欢迎您的登录！您可在此管理您的系统后台。</div>
+    <div id="top-menu">
+      <div class="back-index">
+        <a href="#">回到首页</a>
+      </div>
+      <div class="login-info">
+        <div class="login-info-inner">
+          <img class="tx" src="images/tx.jpg" >
+          <p class="username">河西</p>
+        </div>
+        <div class="login-info-list">
+          <a href="userinfo.html">账号信息</a>
+          <a href="changepass.html">密码修改</a>
+          <a href="">退出</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- header end -->
+<div id="container-wrap">
+  <div id="container">
+    <!-- side start -->
+    <div id="side">
+      <!-- 侧边栏用户信息 start  -->
+      <div id="side-userinfo">
+        <div class="hover"></div>
+        <img class="tx" src="images/tx.jpg">
+        <div class="sex sex-m"></div>
+        <p class="username">荷西-sweety</p>
+        <p class="score"><span class="num">208</span>分</p>
+      </div>
+      <!-- 侧边栏用户信息 end --> 
+      <!-- 侧边栏菜单 start -->
+      <div id="side-menu">
+        <a class="menu-list">
+          <div class="border border-meeting"></div>
+          <div class="icon icon-meeting icon-meeting-cur"></div>
+          <div class="title">会议管理</div>
+        </a>
+        <a class="menu-list">
+          <div class="icon icon-contacts"></div>
+          <div class="title">通讯录管理</div>
+        </a>
+        <div id="side-menu-interactive" class="menu-list">
+          <div class="icon icon-interactive"></div>
+          <div class="title">互动管理</div>
+          <div class="icon-jt icon-jt-right"></div>
+        </div>
+        <div id="interactive-child">
+          <a class="menu-list"><div class="title">投票管理</div></a>
+          <a class="menu-list"><div class="title">问卷管理</div></a>
+          <a class="menu-list"><div class="title">抽奖管理</div></a>
+          <a class="menu-list"><div class="title">照片墙管理</div></a>
+          <a class="menu-list"><div class="title">签到管理</div></a>
+          <a class="menu-list"><div class="title">众筹管理</div></a>
+        </div>
+        <a class="menu-list">
+          <div class="icon icon-statistical"></div>
+          <div class="title">统计报表</div>
+        </a>
+      </div>
+      <!-- 侧边栏菜单 end -->
+    </div>
+    <!-- side end -->    
+    <div id="main">
+      <!-- 编辑会议 start -->
+      <div id="meeting-edit-header">
+        <div class="icon"></div>
+        <h2>编辑会议</h2>
+        <a class="btn btn-default btn-82-32 btn-back">返回</a>
+      </div>  
+      <div id="meeting-edit-con">
+        <table width="100%" cellspacing="0" cellpadding="0">
+          <tr>
+            <td class="w80">公司名称</td>
+            <td class="w250"><input type="text" class="text text-230-38" placeholder="请输入公司名称"></td>
+            <td colspan="2" class="relative">
+              <img class="logo" src="images/logo-3.jpg" />
+              <a class="btn btn-default btn-82-32 delete-logo">删除logo</a>
+            </td>
+          </tr>
+          <tr>
+            <td>会议名称</td>
+            <td colspan="3">
+              <input type="text" class="text text-230-38" placeholder="请输入会议名称">
+            </td>
+          </tr>
+          <tr>
+            <td>参会人数</td>
+            <td colspan="3"><input type="text" class="text text-230-38" placeholder=">1000人"></td>
+          </tr>
+          <tr>
+            <td>开始时间</td>
+            <td><input type="text" class="text text-230-38" placeholder="2014-10-09 16:00"></td>
+            <td class="w80">结束时间</td>
+            <td><input type="text" class="text text-230-38" placeholder="2014-10-09 16:00"></td>
+          </tr>
+          <tr>
+            <td>联系人</td>
+            <td colspan="3"><input type="text" class="text text-230-38" placeholder="请输入联系人"></td>
+          </tr>
+          <tr>
+            <td>联系电话</td>
+            <td colspan="3"><input type="text" class="text text-230-38" placeholder="请输入联系电话"></td>
+          </tr>
+          <tr>
+            <td>WIFI服务</td>
+            <td colspan="3">
+              <div id="wifi-radio">
+                <div class="radio"><i></i>需要</div>
+                <div class="radio radio-checked"><i></i>不需要</div>   
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="4" class="a4a9ae">自动配置WiFi编号</td>
+          </tr>
+          <tr>
+            <td>会议图片</td>
+            <td colspan="3">
+              <a class="btn btn-default btn-82-32 fl">添加</a>
+              <div class="tips fl"><i></i>添加图片会让您的会议更出彩哦！</div>
+            </td>
+          </tr>
+          <tr>
+            <td>会议地址</td>
+            <td ><input type="text" class="text text-230-38" placeholder="请输入详细地址"></td>
+            <td colspan="2"><a class="btn btn-primary btn-106-36 btn-br-18">选场地</a></td>
+          </tr>
+          <tr>
+            <td>&nbsp;</td>
+            <td colspan="3">
+              <div id="allmap"></div>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="4" style="line-height:50px;"><a class="tc-show" data-id="tc-more-meeting-info">更多会议信息填写>></a></td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top;">会议二维码</td>
+            <td class="qr-code-wrap">
+              <img class="qr-code" src="images/ewm.png" />
+              <a class="btn btn-default btn-82-32 delete-qr-code">删除</a>
+            </td>
+          </tr>
+        </table>
+        <div class="btn-wrap">
+          <a class="btn btn-primary btn-106-36 btn-br-18 fl">确认</a>
+          <a class="btn btn-default btn-106-36 btn-br-18 fr">取消</a>
+        </div>
+      </div>
+      <!-- 编辑会议 end --> 
+    </div>  
+  </div>
+</div>
+
+<div id="footer">2015 kaikaihui  开发者中心/服务协议/权利声明</div>
+
+<!-- 页面遮罩层 -->
+<div id="body-hover"></div>
+
+<!-- 更多会议信息填写弹出层 start -->
+<div id="tc-more-meeting-info" class="tc-box">
+  <div class="tc-close" data-id="tc-more-meeting-info"></div>
+  <div class="top">
+    <h2>更多会议信息填写</h2>
+  </div>
+  <div class="content">
+    <h3>会议介绍</h3>
+    <textarea placeholder="请输入会议介绍" row="3"></textarea>
+    <h3 class="m-t-5">嘉宾介绍</h3>
+    <textarea placeholder="请输入嘉宾介绍" row="3"></textarea>
+    <h3 class="m-t-5">会议日程</h3>
+    <textarea placeholder="请输入会议日程" row="3"></textarea>
+    <div class="btn-wrap">
+      <a class="btn btn-primary btn-106-36 btn-br-18 fl">确认</a>
+      <a class="btn btn-default btn-106-36 btn-br-18 fr">取消</a>
+    </div>
+  </div>
+</div>
+<!-- 更多会议信息填写弹出层 end -->
+<script src="js/jquery.min.js"></script>
+<script src="js/common.js"></script>
+<script>
+(function($){
+  //WiFi服务 切换
+  $('#wifi-radio .radio').on('click',function(){
+    $(this).siblings('.radio-checked').removeClass('radio-checked').end().addClass('radio-checked');
+  });
+
+  //弹出层隐藏
+  $('.tc-close').on('click',function(){
+    var id = $(this).attr('data-id');
+    $('#' + id + ",#body-hover").hide();
+  });
+  
+  //弹出层显示
+  $('.tc-show').on('click',function(){
+    var id = $(this).attr('data-id');
+    $('#' + id + ",#body-hover").show();
+  });
+})(jQuery);
+
+// 百度地图API功能
+var map = new BMap.Map("allmap");
+var point = new BMap.Point(116.356716,39.356716);
+map.centerAndZoom(point, 12);
+var marker = new BMap.Marker(point);  // 创建标注
+map.addOverlay(marker);              // 将标注添加到地图中
+var label = new BMap.Label("上海市浦东新区巨峰路311号",{offset:new BMap.Size(20,-10)});
+marker.setLabel(label);   
+</script>
+</body>
+</html>
