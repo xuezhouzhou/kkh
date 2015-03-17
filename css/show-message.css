@@ -2,7 +2,8 @@
   width: 618px;
   height: 418px;
   border:1px solid #d8dbdb;
-  margin: 70px auto 0 auto; 
+  margin: 70px auto 0 auto;
+  background-color: #fff; 
 }
 
 #show-message .con{
@@ -13,7 +14,6 @@
 
 #show-message .highlight{
   color:#f16374;
-
 }
 
 #show-message h1{
