@@ -86,7 +86,7 @@
           <div class="btn-search"></div>
         </div>
         <a href="meeting-add.html" class="btn btn-primary btn-82-32 btn-add">新建会议</a>
-        <a class="btn btn-default btn-82-32 btn-del">删除会议</a>
+        <a class="btn btn-default btn-82-32 btn-del tc-show" data-id="tc-confirm">删除会议</a>
       </div>
       <!-- 工具条 end -->
       <!-- 会议列表 start -->
@@ -249,11 +249,26 @@
   </div>
 </div>
 
+<!-- 遮罩层 -->
+<div id="body-hover"></div>
+
+<!-- confirm 确认框 start -->
+<div id="tc-confirm" class="tc-box">
+  <div class="tc-close" data-id="tc-confirm"></div>
+  <div class="confire-inner">
+    <p>确定要执行此操作么？</p>
+    <div class="btn-wrap">
+      <a id="confirm-commit" class="btn btn-primary btn-106-36 btn-br-18 fl">确定</a>
+      <a id="confirm-cancel" class="btn btn-default btn-106-36 btn-br-18 fr" data-id="tc-confirm">取消</a>
+    </div>
+  </div>
+</div>
+<!-- confirm 确认框 end -->
+
 <div id="footer">2015 kaikaihui  开发者中心/服务协议/权利声明</div>
 <script src="js/jquery.min.js"></script>
 <script src="js/common.js"></script>
 <script>
-
 (function($){
   //隔行变色
   $("#meeting-list tr:odd").css({'background-color':'#f6f8fa'});
@@ -272,6 +287,18 @@
       $('#meeting-list tbody .check').removeClass('checked');
     }
   });
+  
+  //弹出层隐藏
+  $('.tc-close,#confirm-cancel').on('click',function(){
+    var id = $(this).attr('data-id');
+    $('#' + id + ",#body-hover").hide();
+  });
+  
+  //弹出层显示
+  $('.tc-show').on('click',function(){
+    var id = $(this).attr('data-id');
+    $('#' + id + ",#body-hover").show();
+  }); 
 
 })(jQuery);  
 </script>

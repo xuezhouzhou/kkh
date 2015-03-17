@@ -559,6 +559,28 @@ h3{
   background:url(../images/icon-tips-warning.png) no-repeat 7px center;
 }
 
+/* confirm 弹出框 start */
+#tc-confirm{
+  width: 300px;
+  height: 200px;
+  margin-left:-150px;
+  margin-top: -100px;
+}
+
+#tc-confirm .confire-inner{
+  padding: 60px 30px 30px;
+}
+
+#tc-confirm .confire-inner p{
+  text-align: center;
+}
+
+#tc-confirm .btn-wrap{
+  margin-top: 40px;
+  height: 36px;
+}
+/* confirm 弹出框 end */
+
 
 /* 字体颜色 */
 .a4a9ae{ color: #a4a9ae; }
