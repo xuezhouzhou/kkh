@@ -2,14 +2,13 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>KKH - 会议管理 - 详情 - 初始化状态</title>
+<title>KKH - 会议管理 - 详情</title>
 <link rel="stylesheet" href="css/common.css">
 <link rel="stylesheet" href="css/meeting-detail.css">
 <script src="http://api.map.baidu.com/api?v=2.0&ak=154xlNeRRQNWV0XuZpRib87i"></script>
 </head>
 <body>
-
-<!-- header start -->
+<!-- header start --> 
 <div id="header-wrap">
   <div id="header">
     <div id="logo"></div>
@@ -33,12 +32,11 @@
   </div>
 </div>
 <!-- header end -->
-
 <div id="container-wrap">
   <div id="container">
     <!-- side start -->
     <div id="side">
-      <!-- 侧边栏用户信息 start -->
+      <!-- 侧边栏用户信息 start  -->
       <div id="side-userinfo">
         <div class="hover"></div>
         <img class="tx" src="images/tx.jpg">
@@ -46,28 +44,24 @@
         <p class="username">荷西-sweety</p>
         <p class="score"><span class="num">208</span>分</p>
       </div>
-      <!-- 侧边栏用户信息 end -->
-
+      <!-- 侧边栏用户信息 end --> 
       <!-- 侧边栏菜单 start -->
       <div id="side-menu">
-        <a class="menu-list ">
-          <div class="border border-hy"></div>
-          <div class="icon icon-hygl-cur"></div>
+        <a class="menu-list">
+          <div class="border border-meeting"></div>
+          <div class="icon icon-meeting icon-meeting-cur"></div>
           <div class="title">会议管理</div>
         </a>
-        
         <a class="menu-list">
-          <div class="icon icon-txlgl"></div>
+          <div class="icon icon-contacts"></div>
           <div class="title">通讯录管理</div>
         </a>
-        
-        <div id="side-menu-hdgl" class="menu-list">
-          <div class="icon icon-hdgl"></div>
+        <div id="side-menu-interactive" class="menu-list">
+          <div class="icon icon-interactive"></div>
           <div class="title">互动管理</div>
           <div class="icon-jt icon-jt-right"></div>
         </div>
-
-        <div id="hdgl-child">
+        <div id="interactive-child">
           <a class="menu-list"><div class="title">投票管理</div></a>
           <a class="menu-list"><div class="title">问卷管理</div></a>
           <a class="menu-list"><div class="title">抽奖管理</div></a>
@@ -75,16 +69,14 @@
           <a class="menu-list"><div class="title">签到管理</div></a>
           <a class="menu-list"><div class="title">众筹管理</div></a>
         </div>
-
         <a class="menu-list">
-          <div class="icon icon-tjbb"></div>
+          <div class="icon icon-statistical"></div>
           <div class="title">统计报表</div>
         </a>
       </div>
       <!-- 侧边栏菜单 end -->
     </div>
-    <!-- side end -->
-    
+    <!-- side end -->    
     <!-- main start -->
     <div id="main">
       <div id="main-top">
@@ -143,7 +135,6 @@
           </div>
         </div>
         <!-- 会议详情 end -->
-
         <!-- 参会人员 start -->
         <div id="meeting-member">
           <div class="header">
@@ -263,8 +254,8 @@
               </tr>
             </table>
             <div class="more-member">
-              <a href="javascript:void(0)" class="fl" id="more-member">更多&gt;&gt;</a>
-              <div class="btn btn-default btn-82-32 fr" id="add-ch-member">增加参会人</div>
+              <a class="fl tc-show" data-id="tc-more-member">更多&gt;&gt;</a>
+              <a class="btn btn-default btn-82-32 fr tc-show" data-id="tc-add-member">增加参会人</a>
             </div>
           </div>
         </div>
@@ -277,7 +268,7 @@
           <div class="header">
             <div class="icon"></div>
             <h2>会议互动</h2>
-            <a class="btn btn-default btn-82-32 btn-add tc-show">添加互动</a>
+            <a class="btn btn-default btn-82-32 btn-add tc-show" data-id="tc-interactive-add">添加互动</a>
           </div>
           <table width="100%" cellspacing="0" cesspadding="0">
             <tbody><tr>
@@ -346,8 +337,6 @@
   </div>
 </div>
 <!-- 更多会议信息弹出层 end -->
-
-
 <!-- 选择签到模式弹出层 start -->
 <div id="tc-sign-change" class="tc-box">
   <div class="tc-close" data-id="tc-sign-change"></div>
@@ -374,13 +363,111 @@
   </table>
 </div>
 <!-- 选择签到模式弹出层 end -->
-
-
+<!-- 添加新的互动弹出层 start -->
+<div id="tc-interactive-add" class="tc-box">
+  <div class="tc-close" data-id="tc-interactive-add"></div>
+  <div class="top">
+    <h2>添加新的互动</h2>
+  </div>
+  <div class="frame-wrap">
+    <iframe src="iframe-interactive-vote.html" width="100%" height="100%"></iframe>
+  </div>
+  <div class="btn-wrap">
+    <a class="btn btn-primary btn-106-36 btn-br-18 fl">确定</a>
+    <a class="btn btn-default btn-106-36 btn-br-18 fr">取消</a>
+  </div>
+</div>
+<!-- 添加新的互动弹出层 end -->
 <!-- 增加参会人弹出层 start -->
 <div id="tc-add-member" class="tc-box">
   <div class="tc-close" data-id="tc-add-member"></div>
+  <div class="frame-wrap">
+    <iframe src="iframe-add-member.html" width="100%" height="100%"></iframe>
+  </div>
 </div>
 <!-- 增加参会人弹出层 end -->
+<!-- 更多参会人员信息 start -->
+<div id="tc-more-member" class="tc-box">
+  <div class="tc-close" data-id="tc-more-member"></div>
+  <div class="top">
+    <h2>参会人员 (89人)</h2>
+    <a class="btn btn-default btn-82-32  btn-add">增加参会人</a>
+  </div>
+  <table width="100%" cellpadding="0" cellspacing="0">
+    <thead>
+      <tr>
+        <td width="134px">姓名</td>
+        <td width="168px">电话</td>
+        <td width="200px">邮箱</td>
+        <td>
+          <div class="cursor-pointer">属性<span class="order order-asc"></span></div>
+        </td>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><div class="name sex-m">王康飞</div></td>
+        <td>13165546543</td>
+        <td>5698637@qq.com</td>
+        <td><div class="icon-mem-grey"></div></td>
+      </tr>
+      <tr>
+        <td><div class="name sex-w">李娟</div></td>
+        <td>13165546543</td>
+        <td>5698637@qq.com</td>
+        <td><div class="icon-mem-green"></div></td>
+      </tr>
+      <tr>
+        <td><div class="name sex-m">王康飞</div></td>
+        <td>13165546543</td>
+        <td>5698637@qq.com</td>
+        <td><div class="icon-mem-blue"></div></td>
+      </tr>
+      <tr>
+        <td><div class="name sex-w">李娟</div></td>
+        <td>13165546543</td>
+        <td>5698637@qq.com</td>
+        <td><div class="icon-mem-grey"></div></td>
+      </tr>
+      <tr>
+        <td><div class="name sex-m">王康飞</div></td>
+        <td>13165546543</td>
+        <td>5698637@qq.com</td>
+        <td><div class="icon-mem-grey"></div></td>
+      </tr>
+      <tr>
+        <td><div class="name sex-w">李娟</div></td>
+        <td>13165546543</td>
+        <td>5698637@qq.com</td>
+        <td><div class="icon-mem-green"></div></td>
+      </tr>
+      <tr>
+        <td><div class="name sex-m">王康飞</div></td>
+        <td>13165546543</td>
+        <td>5698637@qq.com</td>
+        <td><div class="icon-mem-blue"></div></td>
+      </tr>
+      <tr>
+        <td><div class="name sex-w">李娟</div></td>
+        <td>13165546543</td>
+        <td>5698637@qq.com</td>
+        <td><div class="icon-mem-grey"></div></td>
+      </tr>
+    </tbody>
+  </table>
+  <div class="page-bar-wrap">
+    <div class="page-bar">
+      <a class="next" href=""></a>
+      <a href="#">8</a>
+      <span class="dotted">.....</span>
+      <a href="#">3</a>
+      <a href="#">2</a>
+      <a href="#">1</a>
+      <a class="prev" href=""></a>
+    </div>
+  </div>
+</div>
+<!-- 更多参会人员信息 end -->
 
 <script src="js/jquery.min.js"></script>
 <script src="js/common.js"></script>
