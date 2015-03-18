@@ -1,0 +1,90 @@
+/* main-header start */
+#main-header{
+  height: 60px;
+  border-bottom: 1px solid #d8dbdb;
+  position: relative;
+}
+
+#main-header .icon, 
+#main-header h2 {
+  top: 14px;
+  position: absolute;
+}
+
+#main-header .icon{
+  left: 12px;
+  width: 32px;
+  height: 32px;
+  background: url(../images/icon-interactive-cur.png) no-repeat center center;
+}
+
+#main-header h2{
+  font-weight: 400;
+  font-size: 18px;
+  left: 56px;
+  width: 180px;
+  height: 32px;
+  line-height: 32px;
+}
+/* main-header end */
+
+
+/* main-content start */
+
+
+#main-content{
+  padding:50px 100px;
+}
+
+#main-content h1{
+  font-size:24px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+#main-content td{
+  text-align: center;
+}
+
+#main-content td.img{
+  height: 180px;
+}
+
+#main-content td img{
+  vertical-align:center;
+}
+
+#main-content td.title{
+  height: 36px;
+  line-height: 36px;
+  font-size: 18px;
+}
+
+#main-content td.des{
+  color: #a4a9ae;
+}
+
+#main-content .radio{
+  margin:0 auto;
+  margin-top: 20px; 
+  width: 38px;
+  height: 38px;
+  vertical-align: middle;
+  background:url(../images/radio-blue.png);
+  cursor: pointer;
+}
+
+#main-content .radio-checked{
+  background:url(../images/radio-blue-checked.png);
+}
+/* main-content end */
+
+
+
+
+
+
+
+
+  
+

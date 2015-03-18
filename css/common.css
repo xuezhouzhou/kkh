@@ -326,6 +326,10 @@ h3{
   background: url(../images/icon-hdgl.png) no-repeat center center;
 }
 
+#side-menu .menu-list .icon-interactive-cur{
+  background: url(../images/icon-interactive-cur.png) no-repeat center center;
+}
+
 #side-menu .menu-list .icon-statistical{
   background: url(../images/icon-tjbb.png) no-repeat center center;
 }
@@ -346,6 +350,10 @@ h3{
   background-color: #5db3f5;
 }
 
+#side-menu .menu-list .border-interactive{
+  background-color: #f88d68;
+}
+
 #side-menu .menu-list .icon-jt{
   width: 15px;
   height: 15px;
@@ -364,6 +372,11 @@ h3{
 
 #interactive-child{
   display: none;
+}
+
+#interactive-child .cur{
+  background: #f88d68;
+  color:#fff;
 }
 /* 侧边栏Menu end */
 
