@@ -1,0 +1,196 @@
+#side,
+#main{
+  height: 900px;
+}
+
+/* main-header start */
+#main-header{
+  height: 60px;
+  border-bottom: 1px solid #d8dbdb;
+  position: relative;
+}
+
+#main-header .btn-back,
+#main-header .btn-preview, 
+#main-header .icon, 
+#main-header h2 {
+  top: 14px;
+  position: absolute;
+}
+
+#main-header .icon{
+  left: 12px;
+  width: 32px;
+  height: 32px;
+  background: url(../images/icon-interactive-cur.png) no-repeat center center;
+}
+
+#main-header .btn-preview{
+  right: 25px;
+}
+
+#main-header .btn-back{
+  right: 125px;
+}
+
+#main-header h2{
+  left: 56px;
+  width: 240px;
+  height: 32px;
+  line-height: 32px; 
+}
+/* main-header end */
+
+
+/*投票模板类型 start */
+#vote-type{
+  padding: 20px 30px;
+  border-bottom: 1px solid #d8dbdb;
+}
+#vote-type li{
+  list-style: none;
+}
+#vote-type ul{
+  margin: 30px auto;
+  width: 684px;
+  border-top: 1px solid #d8dbdb;
+  border-left:1px solid #d8dbdb;
+}
+#vote-type li{
+  width: 227px;
+  height: 246px;
+  border-right: 1px solid #d8dbdb;
+  border-bottom: 1px solid #d8dbdb;
+  float: left;
+  position: relative;
+  cursor: pointer;
+}
+#vote-type li i{
+  display: block;
+  width: 42px;
+  height: 42px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  background: url(../images/icon-vote-type-select.png);
+}
+#vote-type li.cur i{
+  background: url(../images/icon-vote-type-select-cur.png);
+}
+/*投票模板类型 end */
+
+/* 添加投票 start */
+#vote-add{
+  padding: 40px 30px;
+}
+
+#vote-add textarea{
+  border:1px solid #d8dbdb;
+  width: 450px;
+  height: 60px;
+  padding: 10px;
+  outline: none;
+}
+
+#vote-add li{
+  list-style: none;
+  height: 32px;
+  line-height: 32px;
+  margin-bottom: 10px;
+}
+
+#vote-add li img{
+  vertical-align: middle;
+  position: relative;
+  top:-2px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+#vote-add li a{
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+#vote-add td{
+  padding: 5px 0;
+}
+
+#vote-add .add-options{
+  width: 90px;
+  cursor: pointer;
+}
+
+#vote-add .add-options i{
+  width: 32px;
+  height: 32px;
+  float: left;
+  background: url(../images/icon-add-options.png) no-repeat left center;
+}
+
+#vote-add .btn-wrap{
+  width: 232px;
+  margin-left: 70px;
+}
+/* 添加投票 end */
+
+
+/* 投票预览弹出框 start */
+#tc-vote-preview{
+  width: 670px;
+  height: 500px;
+  margin-left: -335px;
+  margin-top: -250px;
+  overflow: hidden;
+}
+
+#tc-vote-preview .content{
+  overflow-y:scroll;
+  height: 433px; 
+}
+
+#tc-vote-preview .vote-title-wrap{
+  text-align: center;
+  margin-top: 50px;
+}
+
+.vote-title{
+  display: inline-block;
+  height: 48px;
+  line-height: 48px;
+  position: relative;
+}
+
+.vote-title h2{
+  font-size: 18px;
+  color: #fff;
+  background-color: #ff8b62;
+}
+
+.vote-title .left,
+.vote-title .right{
+  position: absolute;
+  width: 80px;
+  height:48px;
+  top:0;
+  background-image: url(../images/vote-title.png);
+  background-repeat:no-repeat;
+  
+}
+
+.vote-title .left{
+  left:-80px;
+  background-position: 0px 0px; 
+}
+
+.vote-title .right{
+  right:-80px;
+  background-position: -273px 0px;  
+}
+
+#tc-vote-preview .vote-des{
+  font-size: 18px;
+  line-height: 1.2em;
+  margin: 40px 80px;
+}
+/* 投票预览弹出框 end */

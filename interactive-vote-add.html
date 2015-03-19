@@ -1,0 +1,208 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>KKH - 互动管理 - 投票管理 - 添加</title>
+<link rel="stylesheet" type="text/css" href="css/common.css">
+<link rel="stylesheet" type="text/css" href="css/interactive-vote-add.css">
+</head>
+<body>
+<!-- header start --> 
+<div id="header-wrap">
+  <div id="header">
+    <div id="logo"></div>
+    <div id="welcome">欢迎您的登录！您可在此管理您的系统后台。</div>
+    <div id="top-menu">
+      <div class="back-index">
+        <a href="#">回到首页</a>
+      </div>
+      <div class="login-info">
+        <div class="login-info-inner">
+          <img class="tx" src="images/tx.jpg" >
+          <p class="username">河西</p>
+        </div>
+        <div class="login-info-list">
+          <a href="userinfo.html">账号信息</a>
+          <a href="changepass.html">密码修改</a>
+          <a href="">退出</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- header end -->
+<div id="container-wrap">
+  <div id="container">
+    <!-- side start -->
+    <div id="side">
+      <!-- 侧边栏用户信息 start  -->
+      <div id="side-userinfo">
+        <div class="hover"></div>
+        <img class="tx" src="images/tx.jpg">
+        <div class="sex sex-m"></div>
+        <p class="username">荷西-sweety</p>
+        <p class="score"><span class="num">208</span>分</p>
+      </div>
+      <!-- 侧边栏用户信息 end --> 
+      <!-- 侧边栏菜单 start -->
+      <div id="side-menu">
+        <a class="menu-list">
+          <div class="icon icon-meeting"></div>
+          <div class="title">会议管理</div>
+        </a>
+        <a class="menu-list">
+          <div class="icon icon-contacts"></div>
+          <div class="title">通讯录管理</div>
+        </a>
+        <div id="side-menu-interactive" class="menu-list">
+          <div class="border border-interactive"></div>
+          <div class="icon icon-interactive icon-interactive-cur"></div>
+          <div class="title">互动管理</div>
+          <div class="icon-jt icon-jt-right icon-jt-bottom"></div>
+        </div>
+        <div id="interactive-child" style="display:block;">
+          <a class="menu-list cur"><div class="title">投票管理</div></a>
+          <a class="menu-list"><div class="title">问卷管理</div></a>
+          <a class="menu-list"><div class="title">抽奖管理</div></a>
+          <a class="menu-list"><div class="title">微信墙管理</div></a>
+          <a class="menu-list"><div class="title">照片墙管理</div></a>
+          <a class="menu-list"><div class="title">签到管理</div></a>
+          <a class="menu-list"><div class="title">众筹管理</div></a>
+        </div>
+        <a class="menu-list">
+          <div class="icon icon-statistical"></div>
+          <div class="title">统计报表</div>
+        </a>
+      </div>
+      <!-- 侧边栏菜单 end -->
+    </div>
+    <!-- side end -->    
+    <div id="main">
+      <div id="main-header">
+        <div class="icon"></div>
+        <h2>互动管理 > 新建投票</h2>
+        <a class="btn btn-default btn-82-32 btn-back">返回</a>
+        <a class="btn btn-default btn-82-32 btn-preview">预览</a>
+      </div>
+      <div id="main-content">
+        <!-- 投票模板类型 start -->
+        <div id="vote-type">
+          <div class="clear">
+            <div class="fl">模版</div>
+            <div class="fr">选定模版用于结果显示</div>
+          </div>
+          <ul class="clear">
+            <li class="cur">
+              <img src="images/vote-type-1.png" />
+              <i></i>
+            </li>
+            <li>
+              <img src="images/vote-type-2.png" />
+              <i></i>
+            </li>
+            <li>
+              <img src="images/vote-type-3.png" />
+              <i></i>
+            </li>
+          </ul>
+        </div>
+        <!-- 投票模板类型 end -->
+        <!-- 添加投票 start -->
+        <div id="vote-add">
+          <table width="100%" cellspacing="0" cellpadding="0">
+            <tr >
+              <td width="70px">投票名称</td>
+              <td>
+                <input type="text" class="text text-230-32" placeholder="请输入投票名称">
+                <a class="btn btn-default btn-82-32 fr tc-show" data-id="tc-vote-preview">问题预览</a>  
+              </td>
+            </tr>
+            <tr>
+              <td style="vertical-align: top;">投票说明</td>
+              <td>
+                <textarea placeholder="请输入说明该投票的文字信息"></textarea>
+              </td>
+            </tr>
+            <tr>
+              <td style="vertical-align: top;">选项</td>
+              <td>
+                <ul>
+                  <li><input type="text" class="text text-230-32" placeholder="选项1"><img src="images/icon-img.png" /><a>删除</a></li>
+                  <li><input type="text" class="text text-230-32" placeholder="选项2"><img src="images/icon-img.png" /><a>删除</a></li>
+                  <li><div class="add-options"><i></i>增加选项</div></li>
+                </ul>
+              </td>
+            </tr>
+          </table>
+          <div class="btn-wrap clear">
+            <a class="btn btn-primary btn-106-36 btn-br-18 fl">确认</a>
+            <a class="btn btn-default btn-106-36 btn-br-18 fr">取消</a>
+          </div>
+        </div>
+        <!-- 添加投票 end -->
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div id="footer">2015 kaikaihui  开发者中心/服务协议/权利声明</div>
+<div id="body-hover"></div>
+
+<!-- 投票预览弹出框 start -->
+<div id="tc-vote-preview" class="tc-box">
+  <div class="tc-close" data-id="tc-vote-preview"></div>
+  <div class="top">
+    <h2>预览</h2>
+  </div>
+  <div class="content">
+    <div class="vote-title-wrap">
+      <div class="vote-title">
+        <div class="left"></div>
+        <h2>谁是现场最美女孩？</h2>
+        <div class="right"></div>
+      </div>
+    </div>
+    <div class="vote-des">请在场所有的会员选取今晚在场中的您认为最漂亮的女生，我们会从中选取作为本场的最美女孩当选择。</div>
+    <div style="text-align:center;">
+      <img src="images/vote-type-1.png">
+    </div>
+  </div>
+</div>
+<!-- 投票预览弹出框 end -->
+
+<script src="js/jquery.min.js"></script>
+<script src="js/common.js"></script>
+<script>
+(function($){
+  //增加选项
+  $("#vote-add .add-options").on('click',function(){
+    $(this).parent('li').before('<li><input type="text" class="text text-230-32" placeholder="选项"><img src="images/icon-img.png" /><a>删除</a></li>');
+    $.each($("#vote-add li"),function(index,item){
+      $(item).children('input').attr('placeholder',"选项" + (index+1));
+    });
+  });
+
+  //删除选项
+  $("#vote-add li a").live('click',function(){
+    $(this).parent('li').remove();
+    $.each($("#vote-add li"),function(index,item){
+      $(item).children('input').attr('placeholder',"选项" + (index+1));
+    });
+  });
+
+  //弹出层隐藏
+  $('.tc-close').on('click',function(){
+    var id = $(this).attr('data-id');
+    $('#' + id + ",#body-hover").hide();
+  });
+  
+  //弹出层显示
+  $('.tc-show').on('click',function(){
+    var id = $(this).attr('data-id');
+    $('#' + id + ",#body-hover").show();
+  });
+})(jQuery);  
+</script>
+</body>
+</html>
