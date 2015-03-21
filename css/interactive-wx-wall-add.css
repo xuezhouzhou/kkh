@@ -1,0 +1,153 @@
+#side,
+#main{
+  height: 900px;
+}
+
+/* main-header start */
+#main-header{
+  height: 60px;
+  border-bottom: 1px solid #d8dbdb;
+  position: relative;
+}
+
+#main-header .btn-back,
+#main-header .btn-preview, 
+#main-header .icon, 
+#main-header h2 {
+  top: 14px;
+  position: absolute;
+}
+
+#main-header .icon{
+  left: 12px;
+  width: 32px;
+  height: 32px;
+  background: url(../images/icon-interactive-cur.png) no-repeat center center;
+}
+
+#main-header .btn-preview{
+  right: 25px;
+}
+
+#main-header .btn-back{
+  right: 125px;
+}
+
+#main-header h2{
+  left: 56px;
+  width: 240px;
+  height: 32px;
+  line-height: 32px; 
+}
+/* main-header end */
+
+
+/*投票模板类型 start */
+#wx-wall-type{
+  padding: 20px 30px;
+  border-bottom: 1px solid #d8dbdb;
+}
+#wx-wall-type li{
+  list-style: none;
+}
+#wx-wall-type ul{
+  margin: 30px auto;
+  width: 718px;
+  border-top: 1px solid #d8dbdb;
+  border-left:1px solid #d8dbdb;
+}
+#wx-wall-type li{
+  width: 348px;
+  height: 196px;
+  border-right: 1px solid #d8dbdb;
+  border-bottom: 1px solid #d8dbdb;
+  float: left;
+  position: relative;
+  cursor: pointer;
+  padding: 5px;
+}
+#wx-wall-type li img{
+  width: 348px;
+  height: 196px;
+}
+#wx-wall-type li i{
+  display: block;
+  width: 42px;
+  height: 42px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  background: url(../images/icon-vote-type-select.png);
+}
+#wx-wall-type li.cur i{
+  background: url(../images/icon-vote-type-select-cur.png);
+}
+/*投票模板类型 end */
+
+/* 添加投票 start */
+#wx-wall-add{
+  padding: 40px 30px;
+}
+
+#wx-wall-add textarea{
+  border:1px solid #d8dbdb;
+  width: 450px;
+  height: 60px;
+  padding: 10px;
+  outline: none;
+}
+
+#wx-wall-add li{
+  list-style: none;
+  height: 32px;
+  line-height: 32px;
+  margin-bottom: 10px;
+}
+
+#wx-wall-add li img{
+  vertical-align: middle;
+  position: relative;
+  top:-2px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+#wx-wall-add li a{
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+#wx-wall-add td{
+  padding: 5px 0;
+}
+
+#wx-wall-add .add-options{
+  width: 90px;
+  cursor: pointer;
+}
+
+#wx-wall-add .add-options i{
+  width: 32px;
+  height: 32px;
+  float: left;
+  background: url(../images/icon-add-options.png) no-repeat left center;
+}
+
+#wx-wall-add .btn-wrap{
+  width: 232px;
+  margin-left: 80px;
+}
+/* 添加投票 end */
+
+
+/* 投票预览弹出框 start */
+#tc-wx-wall-preview{
+  width: 670px;
+  height: 500px;
+  margin-left: -335px;
+  margin-top: -250px;
+  overflow: hidden;
+}
+
+
+/* 投票预览弹出框 end */
