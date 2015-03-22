@@ -1,0 +1,296 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>KKH - 互动管理 - 抽奖管理 - 添加</title>
+<link rel="stylesheet" type="text/css" href="css/common.css">
+<link rel="stylesheet" type="text/css" href="css/interactive-luck-draw-add.css">
+</head>
+<body>
+<!-- header start --> 
+<div id="header-wrap">
+  <div id="header">
+    <div id="logo"></div>
+    <div id="welcome">欢迎您的登录！您可在此管理您的系统后台。</div>
+    <div id="top-menu">
+      <div class="back-index">
+        <a href="#">回到首页</a>
+      </div>
+      <div class="login-info">
+        <div class="login-info-inner">
+          <img class="tx" src="images/tx.jpg" >
+          <p class="username">河西</p>
+        </div>
+        <div class="login-info-list">
+          <a href="userinfo.html">账号信息</a>
+          <a href="changepass.html">密码修改</a>
+          <a href="">退出</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- header end -->
+<div id="container-wrap">
+  <div id="container">
+    <!-- side start -->
+    <div id="side">
+      <!-- 侧边栏用户信息 start  -->
+      <div id="side-userinfo">
+        <div class="hover"></div>
+        <img class="tx" src="images/tx.jpg">
+        <div class="sex sex-m"></div>
+        <p class="username">荷西-sweety</p>
+        <p class="score"><span class="num">208</span>分</p>
+      </div>
+      <!-- 侧边栏用户信息 end --> 
+      <!-- 侧边栏菜单 start -->
+      <div id="side-menu">
+        <a class="menu-list">
+          <div class="icon icon-meeting"></div>
+          <div class="title">会议管理</div>
+        </a>
+        <a class="menu-list">
+          <div class="icon icon-contacts"></div>
+          <div class="title">通讯录管理</div>
+        </a>
+        <div id="side-menu-interactive" class="menu-list">
+          <div class="border border-interactive"></div>
+          <div class="icon icon-interactive icon-interactive-cur"></div>
+          <div class="title">互动管理</div>
+          <div class="icon-jt icon-jt-right icon-jt-bottom"></div>
+        </div>
+        <div id="interactive-child" style="display:block;">
+          <a class="menu-list"><div class="title">投票管理</div></a>
+          <a class="menu-list"><div class="title">问卷管理</div></a>
+          <a class="menu-list cur"><div class="title">抽奖管理</div></a>
+          <a class="menu-list"><div class="title">微信墙管理</div></a>
+          <a class="menu-list"><div class="title">照片墙管理</div></a>
+          <a class="menu-list"><div class="title">签到管理</div></a>
+          <a class="menu-list"><div class="title">众筹管理</div></a>
+        </div>
+        <a class="menu-list">
+          <div class="icon icon-statistical"></div>
+          <div class="title">统计报表</div>
+        </a>
+      </div>
+      <!-- 侧边栏菜单 end -->
+    </div>
+    <!-- side end -->    
+    <div id="main">
+      <div id="main-header">
+        <div class="icon"></div>
+        <h2>互动管理 > 新建抽奖</h2>
+        <a class="btn btn-default btn-82-32 btn-back">返回</a>
+        <a class="btn btn-default btn-82-32 btn-preview">预览</a>
+      </div>
+      <div id="main-content">
+        <!-- 抽奖模板选择 start -->
+        <div id="luck-draw-type">
+          <div>模版</div>
+          <ul class="clear">
+            <li class="cur">
+              <img src="images/luck-draw-type-1.png">
+              <i></i>
+            </li>
+          </ul>
+        </div>
+        <!-- 抽奖模板选择 end -->
+        <!-- 抽奖信息 start -->
+        <div id="luck-draw-info">
+          <table width="100%" cellpadding="0" cellspacing="0">
+            <tr>
+              <td width="70px">抽奖名称</td>
+              <td><input type="text" class="text text-230-32" placeholder="请输入抽奖名称"></td>
+            </tr>
+            <tr style="vertical-align:top;">
+              <td>抽奖说明</td>
+              <td><textarea placeholder="请输入说明该抽奖的文字信息"></textarea></td>
+            </tr>
+            
+          </table>
+        </div>
+        <!-- 抽奖信息 end -->
+        <!-- 奖项信息 start -->
+        <div id="award-info">
+          <div class="item">
+            <table width="100%" cellpadding="0" cellspacing="0">
+              <tr>
+                <td width="70px">奖项一</td>
+                <td>
+                  <input type="text" class="text text-230-32" placeholder="奖项1" ><img src="images/icon-img.png" class="award-img"><a class="award-del">删除</a>
+                </td>            
+              </tr> 
+              <tr>
+                <td>中奖人数</td>
+                <td><input type="text" class="text text-230-32" placeholder="请输入中奖人数" ></td>
+              </tr>
+              <tr>
+                <td style="vertical-align: top;">奖项说明</td>
+                <td>
+                  <textarea placeholder="请输入奖项说明"></textarea>
+                </td>
+              </tr>
+              <tr style="vertical-align:top;">
+                <td>抽奖人员</td>
+                <td>
+                  <ul>
+                    <li>
+                      <div class="cursor-pointer"><i></i>会议邀请的所有人员</li></div>
+                    <li class="cur">
+                      <div class="cursor-pointer"><i></i>指定范围抽奖</li></div>
+                    </li>
+                    <li >
+                      <div class="userlist">
+                        <table width="100%" cellpadding="0">
+                          <tr>
+                            <td width="20%">王康飞<img class="icon" src="images/icon-sex2-m.png"></td>
+                            <td width="30%">13165546543<img class="icon" src="images/icon-mem-blue.png"></td>
+                            <td width="20%">王康飞<img class="icon" src="images/icon-sex2-w.png"></td>
+                            <td width="30%">13165546543<img class="icon" src="images/icon-mem-blue.png"></td>
+                          <tr>
+                          <tr>
+                            <td width="20%">王康飞<img class="icon" src="images/icon-sex2-m.png"></td>
+                            <td width="30%">13165546543<img class="icon" src="images/icon-mem-blue.png"></td>
+                            <td width="20%">王康飞<img class="icon" src="images/icon-sex2-w.png"></td>
+                            <td width="30%">13165546543<img class="icon" src="images/icon-mem-blue.png"></td>
+                          <tr>
+                          <tr>
+                            <td width="20%">王康飞<img class="icon" src="images/icon-sex2-m.png"></td>
+                            <td width="30%">13165546543<img class="icon" src="images/icon-mem-blue.png"></td>
+                            <td width="20%">王康飞<img class="icon" src="images/icon-sex2-w.png"></td>
+                            <td width="30%">13165546543<img class="icon" src="images/icon-mem-blue.png"></td>
+                          <tr>
+                          <tr>
+                            <td width="20%">王康飞<img class="icon" src="images/icon-sex2-m.png"></td>
+                            <td width="30%">13165546543<img class="icon" src="images/icon-mem-blue.png"></td>
+                            <td width="20%">王康飞<img class="icon" src="images/icon-sex2-w.png"></td>
+                            <td width="30%">13165546543<img class="icon" src="images/icon-mem-blue.png"></td>
+                          <tr>
+                          <tr>
+                            <td width="20%">王康飞<img class="icon" src="images/icon-sex2-m.png"></td>
+                            <td width="30%">13165546543<img class="icon" src="images/icon-mem-blue.png"></td>
+                            <td width="20%">王康飞<img class="icon" src="images/icon-sex2-w.png"></td>
+                            <td width="30%">13165546543<img class="icon" src="images/icon-mem-blue.png"></td>
+                          <tr>  
+                        </table>
+                      </div>
+                    </li>
+                    <li><i></i>全部签到人员</li>
+                    <li>
+                      <div class="fl" style="margin-right:50px;">指定中奖人</div>
+                      <div class="fl" style="color:#ff8b62">王康飞<img class="icon" src="images/icon-sex2-m.png">&nbsp;&nbsp;&nbsp;&nbsp;13127576575&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5698664@qq.com</div>
+                    </li>
+                  </ul>
+                </td>
+              </tr>
+            </table>
+          </div>
+
+          <div class="item">
+            <table width="100%" cellpadding="0" cellspacing="0">
+              <tr>
+                <td width="70px">奖项二</td>
+                <td>
+                  <input type="text" class="text text-230-32" placeholder="奖项2" ><img src="images/icon-img.png" class="award-img"><a class="award-del">删除</a>
+                </td>            
+              </tr> 
+              <tr>
+                <td>中奖人数</td>
+                <td><input type="text" class="text text-230-32" placeholder="请输入中奖人数" ></td>
+              </tr>
+              <tr>
+                <td style="vertical-align: top;">奖项说明</td>
+                <td>
+                  <textarea placeholder="请输入奖项说明"></textarea>
+                </td>
+              </tr>
+              <tr style="vertical-align:top;">
+                <td>抽奖人员</td>
+                <td>
+                  <ul>
+                    <li>
+                      <div class="cursor-pointer"><i></i>会议邀请的所有人员</li></div>
+                    <li class="cur">
+                      <div class="cursor-pointer"><i></i>指定范围抽奖</li></div>
+                    </li>
+                    <li >
+                      <div class="userlist">
+                        <table width="100%" cellpadding="0">
+                          <tr>
+                            <td width="20%">王康飞<img class="icon" src="images/icon-sex2-m.png"></td>
+                            <td width="30%">13165546543<img class="icon" src="images/icon-mem-blue.png"></td>
+                            <td width="20%">王康飞<img class="icon" src="images/icon-sex2-w.png"></td>
+                            <td width="30%">13165546543<img class="icon" src="images/icon-mem-blue.png"></td>
+                          <tr>
+                          <tr>
+                            <td width="20%">王康飞<img class="icon" src="images/icon-sex2-m.png"></td>
+                            <td width="30%">13165546543<img class="icon" src="images/icon-mem-blue.png"></td>
+                            <td width="20%">王康飞<img class="icon" src="images/icon-sex2-w.png"></td>
+                            <td width="30%">13165546543<img class="icon" src="images/icon-mem-blue.png"></td>
+                          <tr>
+                          <tr>
+                            <td width="20%">王康飞<img class="icon" src="images/icon-sex2-m.png"></td>
+                            <td width="30%">13165546543<img class="icon" src="images/icon-mem-blue.png"></td>
+                            <td width="20%">王康飞<img class="icon" src="images/icon-sex2-w.png"></td>
+                            <td width="30%">13165546543<img class="icon" src="images/icon-mem-blue.png"></td>
+                          <tr>
+                          <tr>
+                            <td width="20%">王康飞<img class="icon" src="images/icon-sex2-m.png"></td>
+                            <td width="30%">13165546543<img class="icon" src="images/icon-mem-blue.png"></td>
+                            <td width="20%">王康飞<img class="icon" src="images/icon-sex2-w.png"></td>
+                            <td width="30%">13165546543<img class="icon" src="images/icon-mem-blue.png"></td>
+                          <tr>
+                          <tr>
+                            <td width="20%">王康飞<img class="icon" src="images/icon-sex2-m.png"></td>
+                            <td width="30%">13165546543<img class="icon" src="images/icon-mem-blue.png"></td>
+                            <td width="20%">王康飞<img class="icon" src="images/icon-sex2-w.png"></td>
+                            <td width="30%">13165546543<img class="icon" src="images/icon-mem-blue.png"></td>
+                          <tr>  
+                        </table>
+                      </div>
+                    </li>
+                    <li><i></i>全部签到人员</li>
+                    <li>
+                      <div class="fl" style="margin-right:50px;">指定中奖人</div>
+                      <div class="fl" style="color:#ff8b62">王康飞<img class="icon" src="images/icon-sex2-m.png">&nbsp;&nbsp;&nbsp;&nbsp;13127576575&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5698664@qq.com</div>
+                    </li>
+                  </ul>
+                </td>
+              </tr>
+            </table>
+            <div class="add-award">在此奖项之后新增奖项</div>
+            <div class="btn-wrap clear">
+              <a class="btn btn-primary btn-106-36 btn-br-18 fl">确认</a>
+              <a class="btn btn-default btn-106-36 btn-br-18 fr">取消</a>
+            </div>
+          </div>
+        </div>
+        <!-- 奖项信息 end -->
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="footer">2015 kaikaihui  开发者中心/服务协议/权利声明</div>
+<div id="body-hover"></div>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/common.js"></script>
+<script>
+(function($){
+  //弹出层隐藏
+  $('.tc-close').on('click',function(){
+    var id = $(this).attr('data-id');
+    $('#' + id + ",#body-hover").hide();
+  });
+  
+  //弹出层显示
+  $('.tc-show').on('click',function(){
+    var id = $(this).attr('data-id');
+    $('#' + id + ",#body-hover").show();
+  });
+})(jQuery);  
+</script>
+</body>
+</html>

@@ -1,0 +1,180 @@
+#side,
+#main{
+  height: 1900px;
+}
+
+/* main-header start */
+#main-header{
+  height: 60px;
+  border-bottom: 1px solid #d8dbdb;
+  position: relative;
+}
+
+#main-header .btn-back,
+#main-header .btn-preview, 
+#main-header .icon, 
+#main-header h2 {
+  top: 14px;
+  position: absolute;
+}
+
+#main-header .icon{
+  left: 12px;
+  width: 32px;
+  height: 32px;
+  background: url(../images/icon-interactive-cur.png) no-repeat center center;
+}
+
+#main-header .btn-preview{
+  right: 25px;
+}
+
+#main-header .btn-back{
+  right: 125px;
+}
+
+#main-header h2{
+  left: 56px;
+  width: 240px;
+  height: 32px;
+  line-height: 32px; 
+}
+/* main-header end */
+
+/* 抽奖模板类型选择  start */
+#luck-draw-type{
+  padding: 20px 30px;
+  border-bottom: 1px solid #d8dbdb;
+}
+
+
+#luck-draw-type ul{
+  margin: 30px auto;
+  width: 516px;
+  border-top: 1px solid #d8dbdb;
+  border-left: 1px solid #d8dbdb;
+}
+
+#luck-draw-type li{
+  list-style: none;
+  width: 506px;
+  height: 285px;
+  border-right: 1px solid #d8dbdb;
+  border-bottom: 1px solid #d8dbdb;
+  float: left;
+  position: relative;
+  cursor: pointer;
+  padding: 5px;
+}
+
+#luck-draw-type li i{
+  display: block;
+  width: 42px;
+  height: 42px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  background: url(../images/icon-vote-type-select.png);
+}
+
+#luck-draw-type li.cur i{
+  background: url(../images/icon-vote-type-select-cur.png);
+}
+/* 抽奖模板类型选择 end */
+
+
+/* 抽奖信息 start */
+#luck-draw-info{
+  padding: 20px 30px;
+}
+
+#luck-draw-info textarea{
+  border: 1px solid #d8dbdb;
+  width: 450px;
+  height: 60px;
+  padding: 10px;
+  outline: none;
+}
+
+#luck-draw-info td{
+  padding:5px 0;
+}
+/* 抽奖信息 end */
+
+
+/* 奖项信息 start */
+#award-info .item{
+  padding: 20px 30px;
+  border-top: 1px solid #d8dbdb;
+}
+
+#award-info .award-img{
+  vertical-align: middle;
+  position: relative;
+  top: -2px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+#award-info .award-del{
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+#award-info td{
+  padding:5px 0;
+}
+
+#award-info textarea{
+  border: 1px solid #d8dbdb;
+  width: 450px;
+  height: 60px;
+  padding: 10px;
+  outline: none;
+}
+#award-info li{
+  list-style: none;
+  line-height: 32px;
+  
+}
+
+#award-info li i{
+  width:32px;
+  height: 32px;
+  background: url(../images/radio-sm-default.png) no-repeat left center;
+  display: block;
+  float: left;
+}
+
+#award-info li.cur i{
+  background: url(../images/radio-sm-checked.png) no-repeat left center;
+}
+
+#award-info .userlist{
+  border:1px solid #d8dbdb;
+  width: 536px;
+  height: 130px;
+  overflow-y:scroll;
+  margin-left: 32px; 
+
+}
+
+#award-info .cursor-pointer{
+  cursor: pointer;
+}
+
+#award-info  .icon{
+  vertical-align: middle;
+  margin-left:15px;
+}
+
+#award-info .add-award{
+  margin-top: 50px;
+  cursor: pointer;
+}
+
+#award-info .btn-wrap{
+  width: 232px;
+  margin-top: 15px;
+}
+/* 奖项信息 end */
