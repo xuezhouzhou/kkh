@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>KKH - 互动管理 - 抽奖管理 - 添加</title>
+<title>KKH - 互动管理 - 抽奖管理 - 新建</title>
 <link rel="stylesheet" type="text/css" href="css/common.css">
 <link rel="stylesheet" type="text/css" href="css/interactive-luck-draw-add.css">
 </head>
@@ -116,154 +116,140 @@
           <div class="item">
             <table width="100%" cellpadding="0" cellspacing="0">
               <tr>
-                <td width="70px">奖项一</td>
-                <td>
-                  <input type="text" class="text text-230-32" placeholder="奖项1" ><img src="images/icon-img.png" class="award-img"><a class="award-del">删除</a>
-                </td>            
+                <td width="70px">奖项1</td>
+                <td><input type="text" class="text text-230-32" placeholder="奖项1" ><img src="images/icon-img.png" class="award-img"><a class="award-del">删除</a></td>            
               </tr> 
               <tr>
                 <td>中奖人数</td>
                 <td><input type="text" class="text text-230-32" placeholder="请输入中奖人数" ></td>
               </tr>
               <tr>
-                <td style="vertical-align: top;">奖项说明</td>
+                <td class="v-a-t">奖项说明</td>
                 <td>
                   <textarea placeholder="请输入奖项说明"></textarea>
                 </td>
               </tr>
-              <tr style="vertical-align:top;">
+              <tr class="v-a-t">
                 <td>抽奖人员</td>
                 <td>
                   <ul>
-                    <li>
-                      <div class="cursor-pointer"><i></i>会议邀请的所有人员</li></div>
-                    <li class="cur">
-                      <div class="cursor-pointer"><i></i>指定范围抽奖</li></div>
+                    <li class="award-scope-wrap">
+                      <span class="award-scope award-scope-cur"><i></i>会议邀请的所有人员</span>
                     </li>
-                    <li >
-                      <div class="userlist">
-                        <table width="100%" cellpadding="0">
-                          <tr>
-                            <td width="20%">王康飞<img class="icon" src="images/icon-sex2-m.png"></td>
-                            <td width="30%">13165546543<img class="icon" src="images/icon-mem-blue.png"></td>
-                            <td width="20%">王康飞<img class="icon" src="images/icon-sex2-w.png"></td>
-                            <td width="30%">13165546543<img class="icon" src="images/icon-mem-blue.png"></td>
-                          <tr>
-                          <tr>
-                            <td width="20%">王康飞<img class="icon" src="images/icon-sex2-m.png"></td>
-                            <td width="30%">13165546543<img class="icon" src="images/icon-mem-blue.png"></td>
-                            <td width="20%">王康飞<img class="icon" src="images/icon-sex2-w.png"></td>
-                            <td width="30%">13165546543<img class="icon" src="images/icon-mem-blue.png"></td>
-                          <tr>
-                          <tr>
-                            <td width="20%">王康飞<img class="icon" src="images/icon-sex2-m.png"></td>
-                            <td width="30%">13165546543<img class="icon" src="images/icon-mem-blue.png"></td>
-                            <td width="20%">王康飞<img class="icon" src="images/icon-sex2-w.png"></td>
-                            <td width="30%">13165546543<img class="icon" src="images/icon-mem-blue.png"></td>
-                          <tr>
-                          <tr>
-                            <td width="20%">王康飞<img class="icon" src="images/icon-sex2-m.png"></td>
-                            <td width="30%">13165546543<img class="icon" src="images/icon-mem-blue.png"></td>
-                            <td width="20%">王康飞<img class="icon" src="images/icon-sex2-w.png"></td>
-                            <td width="30%">13165546543<img class="icon" src="images/icon-mem-blue.png"></td>
-                          <tr>
-                          <tr>
-                            <td width="20%">王康飞<img class="icon" src="images/icon-sex2-m.png"></td>
-                            <td width="30%">13165546543<img class="icon" src="images/icon-mem-blue.png"></td>
-                            <td width="20%">王康飞<img class="icon" src="images/icon-sex2-w.png"></td>
-                            <td width="30%">13165546543<img class="icon" src="images/icon-mem-blue.png"></td>
-                          <tr>  
-                        </table>
-                      </div>
+                    <li class="award-scope-wrap">
+                      <span class="award-scope userlist-control"><i></i>指定范围抽奖</span>
+                      <ul class="userlist">
+                        <li>
+                          <span class="name">王康飞</span>
+                          <span class="sex-m"></span>
+                          <span class="phone">13165546543</span>
+                          <span class="mem-blue"></span>
+                        </li>
+                        <li>
+                          <span class="name">王康飞</span>
+                          <span class="sex-w"></span>
+                          <span class="phone">13165546543</span>
+                          <span class="mem-green"></span>
+                        </li>
+                        <li>
+                          <span class="name">王康飞</span>
+                          <span class="sex-w"></span>
+                          <span class="phone">13165546543</span>
+                          <span class="mem-green"></span>
+                        </li>
+                        <li>
+                          <span class="name">王康飞</span>
+                          <span class="sex-m"></span>
+                          <span class="phone">13165546543</span>
+                          <span class="mem-blue"></span>
+                        </li>
+                        <li>
+                          <span class="name">王康飞</span>
+                          <span class="sex-w"></span>
+                          <span class="phone">13165546543</span>
+                          <span class="mem-green"></span>
+                        </li>
+                        <li>
+                          <span class="name">王康飞</span>
+                          <span class="sex-w"></span>
+                          <span class="phone">13165546543</span>
+                          <span class="mem-green"></span>
+                        </li>
+                        <li>
+                          <span class="name">王康飞</span>
+                          <span class="sex-m"></span>
+                          <span class="phone">13165546543</span>
+                          <span class="mem-blue"></span>
+                        </li>
+                        <li>
+                          <span class="name">王康飞</span>
+                          <span class="sex-w"></span>
+                          <span class="phone">13165546543</span>
+                          <span class="mem-green"></span>
+                        </li>
+                        <li>
+                          <span class="name">王康飞</span>
+                          <span class="sex-w"></span>
+                          <span class="phone">13165546543</span>
+                          <span class="mem-green"></span>
+                        </li>
+                        <li>
+                          <span class="name">王康飞</span>
+                          <span class="sex-m"></span>
+                          <span class="phone">13165546543</span>
+                          <span class="mem-blue"></span>
+                        </li>
+                        <li>
+                          <span class="name">王康飞</span>
+                          <span class="sex-w"></span>
+                          <span class="phone">13165546543</span>
+                          <span class="mem-green"></span>
+                        </li>
+                        <li>
+                          <span class="name">王康飞</span>
+                          <span class="sex-w"></span>
+                          <span class="phone">13165546543</span>
+                          <span class="mem-green"></span>
+                        </li>
+                        <li>
+                          <span class="name">王康飞</span>
+                          <span class="sex-m"></span>
+                          <span class="phone">13165546543</span>
+                          <span class="mem-blue"></span>
+                        </li>
+                        <li>
+                          <span class="name">王康飞</span>
+                          <span class="sex-w"></span>
+                          <span class="phone">13165546543</span>
+                          <span class="mem-green"></span>
+                        </li>
+                        <li>
+                          <span class="name">王康飞</span>
+                          <span class="sex-w"></span>
+                          <span class="phone">13165546543</span>
+                          <span class="mem-green"></span>
+                        </li>
+                      </ul>
                     </li>
-                    <li><i></i>全部签到人员</li>
-                    <li>
-                      <div class="fl" style="margin-right:50px;">指定中奖人</div>
-                      <div class="fl" style="color:#ff8b62">王康飞<img class="icon" src="images/icon-sex2-m.png">&nbsp;&nbsp;&nbsp;&nbsp;13127576575&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5698664@qq.com</div>
-                    </li>
+                    <li class="award-scope-wrap"><span class="award-scope"><i></i>全部签到人员</span></li>
                   </ul>
+                  <div class="specify-the-winners">
+                    <div class="fl m-r-50">指定中奖人</div>
+                    <div class="fl ff8b62" >
+                      <span class="m-r-15">王康飞</span>
+                      <span class="m-r-15"><img class="icon" src="images/icon-sex2-m.png"></span>
+                      <span class="m-r-15">13127576575</span>
+                      <span class="m-r-15">5698664@qq.com</span>
+                    </div>
+                  </div>
                 </td>
               </tr>
             </table>
           </div>
-
-          <div class="item">
-            <table width="100%" cellpadding="0" cellspacing="0">
-              <tr>
-                <td width="70px">奖项二</td>
-                <td>
-                  <input type="text" class="text text-230-32" placeholder="奖项2" ><img src="images/icon-img.png" class="award-img"><a class="award-del">删除</a>
-                </td>            
-              </tr> 
-              <tr>
-                <td>中奖人数</td>
-                <td><input type="text" class="text text-230-32" placeholder="请输入中奖人数" ></td>
-              </tr>
-              <tr>
-                <td style="vertical-align: top;">奖项说明</td>
-                <td>
-                  <textarea placeholder="请输入奖项说明"></textarea>
-                </td>
-              </tr>
-              <tr style="vertical-align:top;">
-                <td>抽奖人员</td>
-                <td>
-                  <ul>
-                    <li>
-                      <div class="cursor-pointer"><i></i>会议邀请的所有人员</li></div>
-                    <li class="cur">
-                      <div class="cursor-pointer"><i></i>指定范围抽奖</li></div>
-                    </li>
-                    <li >
-                      <div class="userlist">
-                        <table width="100%" cellpadding="0">
-                          <tr>
-                            <td width="20%">王康飞<img class="icon" src="images/icon-sex2-m.png"></td>
-                            <td width="30%">13165546543<img class="icon" src="images/icon-mem-blue.png"></td>
-                            <td width="20%">王康飞<img class="icon" src="images/icon-sex2-w.png"></td>
-                            <td width="30%">13165546543<img class="icon" src="images/icon-mem-blue.png"></td>
-                          <tr>
-                          <tr>
-                            <td width="20%">王康飞<img class="icon" src="images/icon-sex2-m.png"></td>
-                            <td width="30%">13165546543<img class="icon" src="images/icon-mem-blue.png"></td>
-                            <td width="20%">王康飞<img class="icon" src="images/icon-sex2-w.png"></td>
-                            <td width="30%">13165546543<img class="icon" src="images/icon-mem-blue.png"></td>
-                          <tr>
-                          <tr>
-                            <td width="20%">王康飞<img class="icon" src="images/icon-sex2-m.png"></td>
-                            <td width="30%">13165546543<img class="icon" src="images/icon-mem-blue.png"></td>
-                            <td width="20%">王康飞<img class="icon" src="images/icon-sex2-w.png"></td>
-                            <td width="30%">13165546543<img class="icon" src="images/icon-mem-blue.png"></td>
-                          <tr>
-                          <tr>
-                            <td width="20%">王康飞<img class="icon" src="images/icon-sex2-m.png"></td>
-                            <td width="30%">13165546543<img class="icon" src="images/icon-mem-blue.png"></td>
-                            <td width="20%">王康飞<img class="icon" src="images/icon-sex2-w.png"></td>
-                            <td width="30%">13165546543<img class="icon" src="images/icon-mem-blue.png"></td>
-                          <tr>
-                          <tr>
-                            <td width="20%">王康飞<img class="icon" src="images/icon-sex2-m.png"></td>
-                            <td width="30%">13165546543<img class="icon" src="images/icon-mem-blue.png"></td>
-                            <td width="20%">王康飞<img class="icon" src="images/icon-sex2-w.png"></td>
-                            <td width="30%">13165546543<img class="icon" src="images/icon-mem-blue.png"></td>
-                          <tr>  
-                        </table>
-                      </div>
-                    </li>
-                    <li><i></i>全部签到人员</li>
-                    <li>
-                      <div class="fl" style="margin-right:50px;">指定中奖人</div>
-                      <div class="fl" style="color:#ff8b62">王康飞<img class="icon" src="images/icon-sex2-m.png">&nbsp;&nbsp;&nbsp;&nbsp;13127576575&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5698664@qq.com</div>
-                    </li>
-                  </ul>
-                </td>
-              </tr>
-            </table>
-            <div class="add-award">在此奖项之后新增奖项</div>
-            <div class="btn-wrap clear">
-              <a class="btn btn-primary btn-106-36 btn-br-18 fl">确认</a>
-              <a class="btn btn-default btn-106-36 btn-br-18 fr">取消</a>
-            </div>
+          <div class="add-award">在此奖项之后新增奖项</div>
+          <div class="btn-wrap clear">
+            <a class="btn btn-primary btn-106-36 btn-br-18 fl">确认</a>
+            <a class="btn btn-default btn-106-36 btn-br-18 fr">取消</a>
           </div>
         </div>
         <!-- 奖项信息 end -->
@@ -271,6 +257,143 @@
     </div>
   </div>
 </div>
+
+<div id="award-demo">
+  <div class="item">
+    <table width="100%" cellpadding="0" cellspacing="0">
+      <tr>
+        <td width="70px" class="td-award-name">奖项{--index--}</td>
+        <td><input type="text" class="text text-230-32 input-award-name" placeholder="奖项{--index--}" ><img src="images/icon-img.png" class="award-img"><a class="award-del">删除</a></td>            
+      </tr> 
+      <tr>
+        <td>中奖人数</td>
+        <td><input type="text" class="text text-230-32" placeholder="请输入中奖人数" ></td>
+      </tr>
+      <tr>
+        <td class="v-a-t">奖项说明</td>
+        <td>
+          <textarea placeholder="请输入奖项说明"></textarea>
+        </td>
+      </tr>
+      <tr class="v-a-t">
+        <td>抽奖人员</td>
+        <td>
+          <ul>
+            <li class="award-scope-wrap">
+              <span class="award-scope award-scope-cur"><i></i>会议邀请的所有人员</span>
+            </li>
+            <li class="award-scope-wrap">
+              <span class="award-scope userlist-control"><i></i>指定范围抽奖</span>
+              <ul class="userlist">
+                <li>
+                  <span class="name">王康飞</span>
+                  <span class="sex-m"></span>
+                  <span class="phone">13165546543</span>
+                  <span class="mem-blue"></span>
+                </li>
+                <li>
+                  <span class="name">王康飞</span>
+                  <span class="sex-w"></span>
+                  <span class="phone">13165546543</span>
+                  <span class="mem-green"></span>
+                </li>
+                <li>
+                  <span class="name">王康飞</span>
+                  <span class="sex-w"></span>
+                  <span class="phone">13165546543</span>
+                  <span class="mem-green"></span>
+                </li>
+                <li>
+                  <span class="name">王康飞</span>
+                  <span class="sex-m"></span>
+                  <span class="phone">13165546543</span>
+                  <span class="mem-blue"></span>
+                </li>
+                <li>
+                  <span class="name">王康飞</span>
+                  <span class="sex-w"></span>
+                  <span class="phone">13165546543</span>
+                  <span class="mem-green"></span>
+                </li>
+                <li>
+                  <span class="name">王康飞</span>
+                  <span class="sex-w"></span>
+                  <span class="phone">13165546543</span>
+                  <span class="mem-green"></span>
+                </li>
+                <li>
+                  <span class="name">王康飞</span>
+                  <span class="sex-m"></span>
+                  <span class="phone">13165546543</span>
+                  <span class="mem-blue"></span>
+                </li>
+                <li>
+                  <span class="name">王康飞</span>
+                  <span class="sex-w"></span>
+                  <span class="phone">13165546543</span>
+                  <span class="mem-green"></span>
+                </li>
+                <li>
+                  <span class="name">王康飞</span>
+                  <span class="sex-w"></span>
+                  <span class="phone">13165546543</span>
+                  <span class="mem-green"></span>
+                </li>
+                <li>
+                  <span class="name">王康飞</span>
+                  <span class="sex-m"></span>
+                  <span class="phone">13165546543</span>
+                  <span class="mem-blue"></span>
+                </li>
+                <li>
+                  <span class="name">王康飞</span>
+                  <span class="sex-w"></span>
+                  <span class="phone">13165546543</span>
+                  <span class="mem-green"></span>
+                </li>
+                <li>
+                  <span class="name">王康飞</span>
+                  <span class="sex-w"></span>
+                  <span class="phone">13165546543</span>
+                  <span class="mem-green"></span>
+                </li>
+                <li>
+                  <span class="name">王康飞</span>
+                  <span class="sex-m"></span>
+                  <span class="phone">13165546543</span>
+                  <span class="mem-blue"></span>
+                </li>
+                <li>
+                  <span class="name">王康飞</span>
+                  <span class="sex-w"></span>
+                  <span class="phone">13165546543</span>
+                  <span class="mem-green"></span>
+                </li>
+                <li>
+                  <span class="name">王康飞</span>
+                  <span class="sex-w"></span>
+                  <span class="phone">13165546543</span>
+                  <span class="mem-green"></span>
+                </li>
+              </ul>
+            </li>
+            <li class="award-scope-wrap"><span class="award-scope"><i></i>全部签到人员</span></li>
+          </ul>
+          <div class="specify-the-winners">
+            <div class="fl m-r-50">指定中奖人</div>
+            <div class="fl ff8b62" >
+              <span class="m-r-15">王康飞</span>
+              <span class="m-r-15"><img class="icon" src="images/icon-sex2-m.png"></span>
+              <span class="m-r-15">13127576575</span>
+              <span class="m-r-15">5698664@qq.com</span>
+            </div>
+          </div>
+        </td>
+      </tr>
+    </table>
+  </div>
+</div>
+
 
 <div id="footer">2015 kaikaihui  开发者中心/服务协议/权利声明</div>
 <div id="body-hover"></div>
@@ -290,6 +413,58 @@
     var id = $(this).attr('data-id');
     $('#' + id + ",#body-hover").show();
   });
+
+  //抽奖范围切换
+  $("#award-info .award-scope").live('click',function(){
+    var $_this = $(this);
+    var $_awardScopeWrap = $_this.parent().siblings('.award-scope-wrap');
+    if($_this.hasClass('award-scope-cur')){
+      return;
+    }else{
+      if($_this.hasClass('userlist-control')){
+        $_this.next('.userlist').show();
+      }else{
+        $_awardScopeWrap.children('.userlist').hide();
+      }
+      $_awardScopeWrap.children('.award-scope').removeClass('award-scope-cur');
+      $_this.addClass('award-scope-cur');
+      setSideHeight();
+    }
+  });
+
+  //在此奖项之后新增奖项
+  $("#award-info .add-award").on('click',function(){
+    var html = $('#award-demo').html();
+    var reg = new RegExp("{--index--}","g"); //创建正则RegExp对象 
+    var index = $("#award-info .item").length + 1;
+    html = html.replace(reg,index); 
+    $(this).before(html);
+    setSideHeight();
+  });
+
+  //删除奖项
+  $("#award-info .award-del").live('click',function(){
+    $(this).parents('.item').remove();
+
+    //奖项序号整理
+    $.each($("#award-info .item"),function(index,item){
+      var $_item = $(item);
+      $_item.find('.input-award-name').attr('placeholder',"奖项" + (index+1));
+      $_item.find('.td-award-name').text("奖项" + (index+1));
+    });
+
+    setSideHeight();
+  })
+
+  $(function(){
+    setSideHeight();
+  });
+
+  //设置左侧菜单导航高度
+  function setSideHeight(){
+    var height = $("#main").height();
+    $('#side').height(height);;
+  }
 })(jQuery);  
 </script>
 </body>

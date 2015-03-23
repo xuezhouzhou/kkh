@@ -1,6 +1,7 @@
 #side,
 #main{
-  height: 1900px;
+  height: auto;
+  padding-bottom: 50px;
 }
 
 /* main-header start */
@@ -103,6 +104,10 @@
 
 
 /* 奖项信息 start */
+#award-info .v-a-t{
+  vertical-align: top;
+}
+
 #award-info .item{
   padding: 20px 30px;
   border-top: 1px solid #d8dbdb;
@@ -135,10 +140,16 @@
 #award-info li{
   list-style: none;
   line-height: 32px;
-  
 }
 
-#award-info li i{
+#award-info .award-scope{
+  display: inline-block;
+  cursor: pointer;
+}
+
+
+
+#award-info .award-scope i{
   width:32px;
   height: 32px;
   background: url(../images/radio-sm-default.png) no-repeat left center;
@@ -146,9 +157,10 @@
   float: left;
 }
 
-#award-info li.cur i{
+#award-info .award-scope-cur i{
   background: url(../images/radio-sm-checked.png) no-repeat left center;
 }
+
 
 #award-info .userlist{
   border:1px solid #d8dbdb;
@@ -156,25 +168,89 @@
   height: 130px;
   overflow-y:scroll;
   margin-left: 32px; 
-
+  display: none;
 }
 
-#award-info .cursor-pointer{
-  cursor: pointer;
+
+
+
+
+
+
+
+
+#award-info .userlist li{
+  height: 40px;
+  line-height: 40px;
+  width: 50%;
+  float: left;
 }
 
-#award-info  .icon{
+#award-info .userlist li span{
+  float: left;
+  height: 40px;
+  text-align: center;
+}
+
+#award-info .userlist li span.name{
+  width: 30%;
+}
+
+#award-info .userlist li span.phone{
+  width: 40%;
+}
+
+#award-info .userlist li span.sex-m,
+#award-info .userlist li span.sex-w,
+#award-info .userlist li span.mem-blue,
+#award-info .userlist li span.mem-grey,
+#award-info .userlist li span.mem-green{
+  width: 15%;
+}
+
+#award-info .userlist li span.sex-m{
+  background:url(../images/icon-sex2-m.png) no-repeat center center;
+}
+
+#award-info .userlist li span.sex-w{
+  background:url(../images/icon-sex2-w.png) no-repeat center center;
+}
+
+#award-info .userlist li span.mem-blue{
+  background:url(../images/icon-mem-blue.png) no-repeat center center;
+}
+
+#award-info .userlist li span.mem-green{
+  background:url(../images/icon-mem-green.png) no-repeat center center;
+}
+
+#award-info .userlist li span.mem-grey{
+  background:url(../images/icon-mem-grey.png) no-repeat center center;
+}
+
+#award-info .specify-the-winners{
+  line-height: 40px;
+}
+
+#award-info .specify-the-winners img{
   vertical-align: middle;
-  margin-left:15px;
+  position: relative;
+  top:-2px;
 }
 
 #award-info .add-award{
-  margin-top: 50px;
+  padding: 20px 30px;
   cursor: pointer;
 }
 
 #award-info .btn-wrap{
+  padding: 20px 30px;
   width: 232px;
   margin-top: 15px;
+}
+
+#award-demo{
+  display: none;
+
 }
 /* 奖项信息 end */
