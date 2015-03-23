@@ -1,3 +1,5 @@
+/*== 互动子模块列表页公用CSS文件 ==*/
+
 /* tool-bar start */
 .tool-bar{
   height: 34px;
@@ -18,8 +20,8 @@
   font-weight: 400;
   font-size: 18px;
   position: absolute;
-  left:70px;
-  width: 200px;
+  left: 70px;
+  width: 205px;
   height: 34px;
   line-height: 34px;
 }
@@ -34,7 +36,8 @@
 .tool-bar .btn-add{
   position: absolute;
   top:1px;
-  right: 160px;
+  right: 136px;
+  
 }
 
 .tool-bar .btn-del{
@@ -109,3 +112,4 @@
   height: 24px;
   padding-right: 36px;
 }
+/* con-list end */
