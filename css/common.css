@@ -494,12 +494,15 @@ h3{
 /* 定位 */
 .absolute{ position: absolute; }
 .relative{ position: relative; }
-
 .center{
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
+.v-a-t{
+  vertical-align: top;
+}
+
 
 
 /* margin */
@@ -511,6 +514,7 @@ h3{
 .m-t-30{ margin-top: 30px; }
 .m-t-35{ margin-top: 35px; }
 .m-t-40{ margin-top: 40px; }
+.m-t-50{ margin-top: 40px; }
 
 .m-r-15{ margin-right: 20px; }
 .m-r-20{ margin-right: 20px; }
@@ -609,6 +613,8 @@ h3{
 /* 字体颜色 */
 .a4a9ae{ color: #a4a9ae; }
 .ff8b62{ color: #ff8b62; }
+.f38080{ color: #f38080; }
+.c-47b2d9{ color: #47b2d9; }
 
 
 /* 分页 start */

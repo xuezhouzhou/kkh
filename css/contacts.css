@@ -43,6 +43,7 @@
 }
 /* main-top end */
 
+
 /* 我的通讯录 start */
 #my-contacts{
   width: 270px;
@@ -66,8 +67,6 @@
   border-bottom: 1px solid #d8dbdb;
 }
 
-
-
 #my-contacts .child{
   font-size: 18px;
   border-bottom: 1px solid #d8dbdb;
@@ -88,8 +87,6 @@
   background: url(../images/icon-check.png) no-repeat center center;
 }
 
-
-
 #my-contacts .parent{
   cursor: pointer;
 } 
@@ -103,7 +100,6 @@
 #my-contacts .open i{
   background: url(../images/icon-jt-top.png) no-repeat center center;
 }
-
 
 #my-contacts .his .child{
   display: none;
@@ -161,3 +157,23 @@
   text-align: center;
 }
 /* 添加通讯人弹出层 end */
+
+
+/* 添加通讯录弹出层 start */
+#tc-address-book-add{
+  height: 300px;
+  width:400px;
+  margin-left: -200px;
+  margin-top: -150px;
+}
+
+#tc-address-book-add .content{
+  width: 296px;
+  margin:30px auto; 
+}
+
+#tc-address-book-add h2{
+  margin-top: 50px;
+  text-align: center;
+}
+/* 添加通讯录弹出层 end */

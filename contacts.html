@@ -86,7 +86,7 @@
             <div class="btn-search"></div>
           </div>
         </div>
-        <a class="btn btn-primary btn-100-32 btn-add">新建通讯录</a>
+        <a class="btn btn-primary btn-100-32 btn-add tc-show" data-id="tc-address-book-add">新建通讯录</a>
         <a class="btn btn-default btn-100-32 btn-del">删除通讯录</a>
       </div>
       <div id="main-bottom">
@@ -162,6 +162,25 @@
   </div>
 </div>
 <!-- 添加通讯人弹出层 end -->
+
+
+<!-- 添加通讯录弹出层 start -->
+<div id="tc-address-book-add" class="tc-box">
+  <div class="tc-close" data-id="tc-address-book-add"></div>
+  <div class="content">
+    <h2>新建通讯录</h2>
+    <div class="m-t-15">
+      <input type="text" class="text text-296-40" placeholder="通讯录名称">
+    </div>
+    <p class="m-t-15">提示：通讯录编号会自动生成</p>
+    <div class="m-t-50">
+      <a class="btn btn-primary btn-106-36 btn-br-18 fl">添加</a>
+      <a class="btn btn-default btn-106-36 btn-br-18 fr">取消</a>
+    </div>
+  </div>
+</div>
+<!-- 添加通讯录弹出层 end -->
+
 <script src="js/jquery.min.js"></script>
 <script src="js/common.js"></script>
 <script>
@@ -178,7 +197,6 @@
     $(this).addClass("checked");
   });
 
-
   //性别切换
   $('#sex-radio .radio').on('click',function(){
     $(this).siblings('.radio-checked').removeClass('radio-checked').end().addClass('radio-checked');
@@ -192,10 +210,6 @@
       });
     });
   });
-
-
-
-  
 
   //弹出层隐藏
   $('.tc-close').on('click',function(){
