@@ -1,0 +1,53 @@
+.header{
+  position: relative;
+  height: 827px;
+  background:url(../images/header.png) no-repeat center center;
+}
+
+.top{
+  width: 1014px;
+  height: 100px;
+  margin: 0 auto;
+}
+
+.logo{
+  width: 200px;
+  height: 100px;
+  float: left;
+  background:url(../images/logo.png) no-repeat left center;
+}
+
+.nav-wrap{
+  width: 500px;
+  height: 100px;
+  float: right;
+  background: #fff;
+}
+
+
+.header h1{
+  font-size: 48px;
+  height: 60px;
+  line-height: 60px;
+  font-weight: 400;
+  color: #fff;
+  position: absolute;
+  text-align: center;
+  width: 800px;
+  left:50%;
+  margin-left: -400px;
+  top:25%;
+}
+
+.introduce{
+  font-size: 18px;
+  line-height: 1.6em;
+  color: #fff;
+  position: absolute;
+  text-align: center;
+  width: 800px;
+  left:50%;
+  margin-left: -400px;
+  top:50%;
+}
+
