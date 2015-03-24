@@ -1,5 +1,7 @@
 *{
-  margin: 0 auto;
+  margin: 0;
+  padding: 0;
+  border:none;
 }
 
 body{
@@ -7,3 +9,35 @@ body{
   font-size: 14px;
 }
 
+input{
+  font-family: 'microsoft yahei';
+}
+
+a{
+  text-decoration: none;
+}
+
+li{
+  list-style:none;
+}
+
+.fl,
+.fr{
+  display: block;
+}
+
+.fl{
+  float: left;
+}
+
+.fr{
+  float: right;
+}
+
+.clear:after {
+  content:".";
+  display:block;
+  height:0;
+  clear:both;
+  visibility:hidden;
+}

@@ -1,7 +1,13 @@
+h1,h2{
+  font-weight: 400;
+}
+/* header start */
 .header{
   position: relative;
   height: 827px;
   background:url(../images/header.png) no-repeat center center;
+  width: 100%;
+  overflow: hidden;
 }
 
 .top{
@@ -18,13 +24,69 @@
 }
 
 .nav-wrap{
-  width: 500px;
+  width: 710px;
   height: 100px;
   float: right;
-  background: #fff;
+  position: relative;
 }
 
+.nav-bg{
+  position: absolute;
+  width: 1920px;
+  height: 100px;
+  left:0;
+  top:0;
+  background: #fff;
+  border-radius: 50px 0 0 50px;
+  opacity: 0.2;
+  z-index: 9;
+}
 
+.nav-inner{
+  position: absolute;
+  width: 1920px;
+  height: 50px;
+  left:25px;
+  top:25px;
+  z-index: 99;
+  font-size:18px;
+}
+
+.nav,
+.login-wrap{
+  float: left;
+} 
+
+.login-wrap{
+  line-height: 50px;
+  color: #fff;
+  margin-left: 10px;
+}
+
+.nav a{
+  display: block;
+  float: left;
+  height: 50px;
+  line-height: 50px;
+  padding: 0 30px;
+  color: #fff;
+  border-radius: 24px;
+  margin:0 2px;  
+}
+
+.login-wrap a{
+  color: #fff;
+}
+
+.nav a:hover,
+.nav a.cur{
+  background-color: #66cccc;
+}
+
+.login-wrap a:hover{
+  color: #66cccc;
+}
+  
 .header h1{
   font-size: 48px;
   height: 60px;
@@ -36,7 +98,7 @@
   width: 800px;
   left:50%;
   margin-left: -400px;
-  top:25%;
+  top:302px;
 }
 
 .introduce{
@@ -48,6 +110,212 @@
   width: 800px;
   left:50%;
   margin-left: -400px;
-  top:50%;
+  top:410px;
 }
 
+.my-demand{
+  display: block;
+  font-size: 18px;
+  line-height: 1.6em;
+  color: #fff;
+  position: absolute;
+  text-align: center;
+  width: 100px;
+  height: 120px;
+  left:50%;
+  margin-left: -50px;
+  top:662px;
+  cursor: pointer;
+}
+
+.my-demand i{
+  display: block;
+  width: 73px;
+  height: 73px;
+  margin: 0 auto;
+  background:url('../images/icon-jt-bottom.png');
+  margin-top: 14px; 
+}
+/* header end */
+
+
+/* 产品演示 start */
+.product-wrap{
+  background: url('../images/product-bg.jpg');
+  height: 585px;
+}
+
+.product{
+  width: 1014px;
+  height: 585px;
+  margin: 0 auto;
+  background: url('../images/product.png');
+  position: relative;
+}
+
+.product a{
+  position: absolute;
+  display: block;
+  width: 200px;
+  height: 52px;
+  left: 661px;
+  top: 381px;
+}
+/* 产品演示 end */
+
+
+/* 需求填写 start */
+.demand-wrap{
+  background: #66cdcc; 
+}
+
+.demand{
+  width: 1014px;
+  height: 685px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.demand-input{
+  width: 490px;
+  margin: 0 auto;
+}
+
+.demand-input h2{
+  font-size: 36px;
+  color: #fff;
+  font-weight: 400;
+  padding-top: 80px;
+}
+
+.demand-input p{
+  font-size: 18px;
+  margin-top: 15px;
+  color: #fff;
+}
+
+.demand-input ul{
+  margin-top: 50px;
+}
+
+.demand-input li{
+  margin-bottom:25px; 
+}
+
+.demand-input .text{
+  font-size: 18px;
+  background-color:#ecf9f9;
+  padding: 14px 26px;
+  border-radius: 26px;
+  color: #46c1bf;
+  outline: none;
+}
+
+.demand-input .city,
+.demand-input .type{
+  width: 160px;
+}
+
+.demand-input .time,
+.demand-input .total,
+.demand-input .spending{
+  width: 438px;
+}
+
+.demand-input .submit{
+  display: block;
+  width: 180px;
+  border:2px solid #fff;
+  color: #fff;
+  text-align: center;
+  height: 58px;
+  line-height: 56px;
+  border-radius: 31px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.demand .wifi{
+  width: 60px;
+  height: 60px;
+  border-radius: 32px;
+  border: 2px solid #fff;
+  text-align: center;
+  line-height: 60px;
+  position: absolute;
+  top: 207px;
+  left: 801px;
+  color: #fff;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.demand .circle{
+  width: 66px;
+  height: 66px;
+  border-radius: 33px;
+  position: absolute;
+  left:50%;
+  margin-left:-33px;
+  bottom: -46px;
+  background: #fff; 
+}
+/* 需求填写 end */
+
+
+/* 我们的服务 start */
+.service{
+  width: 1014px;
+  height: 722px;
+  margin: 0 auto;
+  background:url(../images/service.png) no-repeat center center; 
+}
+/* 我们的服务 end */
+
+
+/* 案例介绍 start */
+.project-wrap{
+  background: #5c5b58;
+  display: none;
+}
+
+.project{
+  width: 1014px;
+  height: 952px;
+  margin:0 auto;
+  padding-top: 48px;
+}
+
+.project h2{
+  font-size: 36px;
+  text-align: center;
+  color: #fff;
+}
+
+.project .tab-wrap{
+  
+}
+
+.project .tab{
+  height: 50px;
+  width: 720px;
+  margin: 0 auto;
+}
+
+.project .tab li{
+  float: left;
+  width: 120px;
+  height: 50px;
+  background: red;
+}
+
+.project .tab li a{
+  display: block;
+  font-size: 20px;
+  color: #fff;
+  width: 50px;
+  margin: 0 auto;
+  text-align: center;
+  border-bottom: 3px solid #66cccc;
+}
+/* 案例介绍 end */
