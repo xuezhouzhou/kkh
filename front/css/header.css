@@ -1,0 +1,71 @@
+.header-wrap{
+  border-bottom:1px solid #d8dbdb;
+  width: 100%;
+  overflow: hidden;
+}
+
+.header{
+  height: 100px;
+  width: 1014px;
+  margin: 0 auto;
+}
+
+.header .logo{
+  width: 212px;
+  height: 100px;
+  float: left;
+  background: url(../images/logo2.png) no-repeat left center;
+}
+
+.header .nav-wrap{
+  width: 710px;
+  height: 100px;
+  float: right;
+  position: relative;
+}
+
+.header .nav-inner{
+  position: absolute;
+  width: 1920px;
+  height: 50px;
+  left: 25px;
+  top: 25px;
+  z-index: 99;
+  font-size: 18px; 
+}
+
+.header .nav,
+.header .login-wrap{
+  float: left;
+} 
+
+.header .login-wrap{
+  line-height: 50px;
+  color: #fff;
+  margin-left: 10px;
+}
+
+.header .nav a{
+  display: block;
+  float: left;
+  height: 50px;
+  line-height: 50px;
+  padding: 0 30px;
+  color: #6c6c6c;
+  border-radius: 24px;
+  margin:0 2px;  
+}
+
+.header .login-wrap a{
+  color: #6c6c6c;
+}
+
+.nav a:hover,
+.nav a.cur{
+  background-color: #66cccc;
+  color: #fff;
+}
+
+.login-wrap a:hover{
+  color: #66cccc;
+}

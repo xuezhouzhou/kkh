@@ -1,0 +1,38 @@
+.footer-wrap{
+  background-color: #516262;
+  font-size: 16px;
+  position: relative;
+}
+
+.footer{
+  color: #fff;
+  width: 1014px;
+  height: 100px;
+  margin: 0 auto;
+  padding-top: 50px;
+}
+
+.footer .link{
+  text-align: center;
+}
+
+.footer .link a{
+  color:#fff; 
+}
+
+.footer .copy{
+  margin-top: 20px;
+  text-align: center;
+  line-height: 2em;
+}
+
+.circle{
+  width: 66px;
+  height: 66px;
+  border-radius: 33px;
+  position: absolute;
+  left:50%;
+  margin-left:-33px;
+  top: -20px;
+  background-color:#516262; 
+}

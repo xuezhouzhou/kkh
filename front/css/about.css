@@ -1,0 +1,49 @@
+.about-wrap{
+  margin-bottom: 120px;
+}
+
+.about{
+  width: 1014px;
+  margin: 0 auto;
+  padding-top: 15px;
+  color: #727475;
+  font-size: 18px;
+  line-height: 2em;
+}
+
+.why{
+  height: 280px;
+  line-height: 280px;
+  background-color: #00aadd;
+  text-align: center;
+  font-size: 36px;
+  color: #fff;
+}
+
+.introduce{
+  margin-top: 50px;
+  position:relative;
+}
+
+.introduce p{
+  font-size: 18px;
+  line-height: 2em;
+  padding-left: 110px;
+}
+
+.introduce h1{
+  width: 60px;
+  height: 80px;
+  position: absolute;
+  left:0;
+  top:0;
+  font-size: 30px;
+}
+
+.about-img{
+  margin-top: 20px;
+}
+
+.about-img img{
+  width: 100%;
+}

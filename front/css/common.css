@@ -21,6 +21,10 @@ li{
   list-style:none;
 }
 
+h1,h2{
+  font-weight: 400;
+}
+
 .fl,
 .fr{
   display: block;
