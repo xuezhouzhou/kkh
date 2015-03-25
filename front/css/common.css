@@ -9,7 +9,7 @@ body{
   font-size: 14px;
 }
 
-input{
+input,textarea{
   font-family: 'microsoft yahei';
 }
 

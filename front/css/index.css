@@ -1,6 +1,18 @@
 h1,h2{
   font-weight: 400;
 }
+
+
+.circle{
+  width: 66px;
+  height: 66px;
+  border-radius: 33px;
+  position: absolute;
+  left:50%;
+  margin-left:-33px;
+  bottom: -46px;
+}
+  
 /* header start */
 .header{
   position: relative;
@@ -150,7 +162,7 @@ h1,h2{
   width: 1014px;
   height: 585px;
   margin: 0 auto;
-  background: url('../images/product.png');
+  background: url('../images/product.jpg');
   position: relative;
 }
 
@@ -161,6 +173,10 @@ h1,h2{
   height: 52px;
   left: 661px;
   top: 381px;
+}
+
+.product .circle{
+  background-color:#66cdcc;
 }
 /* 产品演示 end */
 
@@ -252,13 +268,7 @@ h1,h2{
 }
 
 .demand .circle{
-  width: 66px;
-  height: 66px;
-  border-radius: 33px;
-  position: absolute;
-  left:50%;
-  margin-left:-33px;
-  bottom: -46px;
+  
   background: #fff; 
 }
 /* 需求填写 end */
@@ -269,7 +279,13 @@ h1,h2{
   width: 1014px;
   height: 722px;
   margin: 0 auto;
-  background:url(../images/service.png) no-repeat center center; 
+  background-image:url(../images/service.jpg);
+  position: relative;
+  overflow: hidden; 
+}
+
+.service .circle{
+  background-color: #545755;
 }
 /* 我们的服务 end */
 
@@ -280,10 +296,15 @@ h1,h2{
 }
 
 .project{
-  width: 1014px;
+  width: 1056px;
   height: 952px;
   margin:0 auto;
   padding-top: 48px;
+  position: relative;
+}
+
+.project .circle{
+  background-color:#fff;
 }
 
 .project h2{
@@ -339,7 +360,6 @@ h1,h2{
   float: left;
   width: 310px;
   height: 210px;
-  background: pink;
   margin: 15px 21px;
   position: relative;
   cursor: pointer;
@@ -371,7 +391,6 @@ h1,h2{
   filter:alpha(opacity=80);
 }
 
-
 .project .list li .info h3,
 .project .list li .info p{
   position: absolute;
@@ -379,7 +398,6 @@ h1,h2{
   line-height: 1.6em;
   z-index: 999;
 }
-
 
 .project .list li .info h3{
   bottom: 70px
@@ -405,6 +423,11 @@ h1,h2{
   height: 652px;
   margin: 0 auto;
   padding-top: 48px;
+  position: relative;
+}
+
+.site .circle{
+  background-color:#223030; 
 }
 
 .site h2{
@@ -412,7 +435,6 @@ h1,h2{
   text-align: center;
   color: #2c3e50;
 }
-
 
 .site .site-tab-wrap{
   margin-top: 40px;
@@ -560,3 +582,155 @@ h1,h2{
   display: block;
 }
 /* 热门场地 end */ 
+
+
+/* 联系我们 start */
+.contact-wrap{
+  background-color: #223030;
+}
+
+.contact{
+  width: 1014px;
+  height: 490px;
+  margin:0 auto;
+  padding-top: 80px;
+  position:relative;
+  overflow: hidden;
+}
+
+.contact .circle{
+  background-color: #516262;
+}
+
+.contact-info,
+.contact-input{
+  width: 50%;
+  float: left;
+}
+
+.contact-info{
+  color:#fff;
+}
+
+.contact-info h2{
+  font-size: 36px;
+  padding-left: 3px;
+}
+
+.contact-info p{
+  line-height: 2em;
+  padding-left: 3px;
+  margin-top: 20px;
+}
+
+.contact-info ul{
+  margin-top: 30px;
+}
+
+.contact-info li{
+  line-height: 2em;
+  margin: 5px 0;
+}
+
+.contact-info li i{
+  display: block;
+  width: 28px;
+  height: 28px;
+  float: left;
+  background-image:url(../images/contact.png);
+  background-repeat:no-repeat;
+
+}
+
+.contact-info li.ico-position i{
+  background-position: 0px 8px
+}
+
+.contact-info li.ico-tel i{
+  background-position: 1px -29px
+}
+
+.contact-info li.ico-email i{
+  background-position: 1px -64px
+}
+
+.contact-input ul{
+  padding: 0 15px;
+}
+
+.contact-input li{
+  margin-bottom: 15px;
+}
+
+.contact .text{
+  border:2px solid #3c4949;
+  outline: none;
+  color:#a7acac;
+  padding: 12.5px 12px;
+  background-color: #223030;
+  border-radius: 6px;
+}
+
+.contact .contact-name,
+.contact .contact-email{
+  width: 200px;  
+}
+
+.contact .contact-position{
+  width: 449px;
+}
+
+.contact .contact-advice{
+  border:2px solid #3c4949;
+  outline: none;
+  color:#a7acac;
+  padding: 12.5px 12px;
+  width: 449px;
+  background-color: #223030;
+  height: 150px;
+  border-radius: 6px;
+  overflow:hidden;
+}
+
+.contact .btn-send{
+  background-color:#25b7b7;
+  border-radius: 6px;
+  color:#fff;
+  text-align: center;
+  display: block;
+  float: right;
+  height: 48px;
+  line-height: 48px;
+  width: 140px
+}
+/* 联系我们 end */
+
+
+/* footer start */
+.footer-wrap{
+  background-color: #516262;
+  font-size: 16px;
+}
+
+.footer{
+  color: #fff;
+  width: 1014px;
+  height: 120px;
+  margin: 0 auto;
+  padding-top: 30px;
+}
+
+.footer .link{
+  text-align: center;
+}
+
+.footer .link a{
+  color:#fff; 
+}
+
+.footer .copy{
+  margin: 30px;
+  text-align: center;
+  line-height: 2em;
+}
+/* footer end */
