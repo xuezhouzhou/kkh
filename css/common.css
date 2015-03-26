@@ -1,5 +1,5 @@
 *{ margin:0; padding:0; border:none; }
-body,input{ font-family:"microsoft yahei","Hiragino Sans GB","Hiragino Sans GB W3"; font-size:14px; color:#5d5d5e; }
+body,input,textarea{ font-family:"microsoft yahei","Hiragino Sans GB","Hiragino Sans GB W3"; font-size:14px; color:#5d5d5e; }
 body{ background-color:#fcfcfd; }
 a{ color: #5d5d5e; text-decoration: none; }
 h1,h2,h3{ font-weight: 400; }
@@ -502,39 +502,13 @@ h3{ font-size:16px; }
 /* 文本框 start */
 .text{ border:1px solid #d8dbdb; outline: none; }
 .text-356-50{ width: 334px; padding: 14px 10px; }
-.text-220-50{ width:198px; padding: 14px 10px; }
+.text-356-42{ width: 334px;padding:10px; }
+.text-320-38{width:298px;padding: 8px 10px; } 
+.text-296-40{ width:274px; padding: 9px 10px; }
 .text-294-50{ width:272px; padding: 14px 10px; }
-
-.text-356-42{
-  width: 334px;
-  padding:10px; 
-}
-
-.text-300-38{
-  width:298px;
-  padding: 10px; 
-}
-
-.text-296-40{
-  width:274px;
-  padding: 11px 10px; 
-}
-
-.text-230-38{
-  width:208px;
-  padding: 10px; 
-}
-
-.text-230-32{
-  width:208px;
-  padding: 7px 10px; 
-}
-
-
-
-
-
-
+.text-230-38{ width:208px; padding: 8px 10px; }
+.text-230-32{ width:208px; padding: 7px 10px; }
+.text-220-50{ width:198px; padding: 14px 10px; }
 /* 文本框 end */
 
 
@@ -696,11 +670,10 @@ h3{ font-size:16px; }
 }
 
 .search input{
-  padding: 9px 10px;
+  padding: 7px 10px;
   outline: none;
   width: 173px;
   background-color: #f0f2f5;
-  color: #abadb3;
 }
 
 .search .btn-search{

@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>KKH - 会议管理 - 新建会议</title>
+<title>KKH - 会议管理 - 新建</title>
 <link rel="stylesheet" href="css/common.css">
 <link rel="stylesheet" href="css/meeting-add.css">
 <script src="http://api.map.baidu.com/api?v=2.0&ak=154xlNeRRQNWV0XuZpRib87i"></script>
@@ -101,9 +101,9 @@
           </tr>
           <tr>
             <td>开始时间</td>
-            <td><input type="text" class="text text-230-38" placeholder="2014-10-09 16:00"></td>
+            <td><input type="text" class="text text-230-38" onclick="WdatePicker({dateFmt:'yyyy-MM-dd HH:mm:ss'})" placeholder="开始时间"></td>
             <td class="w80">结束时间</td>
-            <td><input type="text" class="text text-230-38" placeholder="2014-10-09 16:00"></td>
+            <td><input type="text" class="text text-230-38" onclick="WdatePicker({dateFmt:'yyyy-MM-dd HH:mm:ss'})" placeholder="结束时间"></td>
           </tr>
           <tr>
             <td>联系人</td>
@@ -123,7 +123,7 @@
             </td>
           </tr>
           <tr>
-            <td colspan="4" class="a4a9ae" ><span class="tc-show" data-id="tc-add-wifi">自动配置WiFi编号</span></td>
+            <td colspan="4"><span class="tc-show" data-id="tc-add-wifi">自动配置WiFi编号</span></td>
           </tr>
           <tr>
             <td>会议图片</td>
@@ -214,12 +214,12 @@
       </tr>
       <tr>
         <td colspan="2">
-          <div class="check"><i></i>是否有宽带接入</div>
+          <div id="bandwidth" class="check"><i></i>是否有宽带接入</div>
         </td>
       </tr>
       <tr>
         <td colspan="2">
-          <input type="text" class="text text-300-38" placeholder="带宽值">
+          <input type="text" class="text text-320-38" placeholder="带宽值">
         </td>
       </tr>
       <tr>
@@ -242,11 +242,22 @@
 
 <script src="js/jquery.min.js"></script>
 <script src="js/common.js"></script>
+<script src="vendor/My97DatePicker/WdatePicker.js"></script>
 <script>
 (function($){
   //WiFi服务 切换
   $('#wifi-radio .radio').on('click',function(){
     $(this).siblings('.radio-checked').removeClass('radio-checked').end().addClass('radio-checked');
+  });
+
+  //室内，室外 切换
+  $('#wifi-positon-radio .radio').on('click',function(){
+    $(this).siblings('.radio-checked').removeClass('radio-checked').end().addClass('radio-checked');
+  });
+
+  //是否有带宽接入checked处理
+  $("#bandwidth").on("click",function(){
+    $(this).toggleClass('checked');
   });
 
   //弹出层隐藏
