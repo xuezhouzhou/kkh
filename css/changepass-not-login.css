@@ -3,7 +3,8 @@
   width: 618px;
   height: 418px;
   border:1px solid #d8dbdb;
-  margin: 70px auto 0 auto; 
+  margin: 70px auto 0 auto;
+  background-color:#fff;  
 }
 
 #change-pass h1{

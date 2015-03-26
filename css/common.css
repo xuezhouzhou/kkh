@@ -1,40 +1,11 @@
-*{
-  margin:0;
-  padding:0;
-  border:none;
-}
-
-body{
-  background-color:#fcfcfd;
-  font-family:'microsoft yahei';
-  font-size:14px;
-  color:#5d5d5e;
-}
-
-a{
-  color: #5d5d5e;
-  text-decoration: none;
-}
-
-h1,h2,h3{
-  font-weight: 400;
-}
-
-h2{
-  font-size:18px; 
-}
-
-h3{
-  font-size:16px; 
-}
-
-.clear:after {
-  content:".";
-  display:block;
-  height:0;
-  clear:both;
-  visibility:hidden;
-}
+*{ margin:0; padding:0; border:none; }
+body,input{ font-family:"microsoft yahei","Hiragino Sans GB","Hiragino Sans GB W3"; font-size:14px; color:#5d5d5e; }
+body{ background-color:#fcfcfd; }
+a{ color: #5d5d5e; text-decoration: none; }
+h1,h2,h3{ font-weight: 400; }
+h2{ font-size:18px;}
+h3{ font-size:16px; }
+.clear:after { content:".";display:block;height:0;clear:both;visibility:hidden;}
 
 
 /* header start */
@@ -87,7 +58,6 @@ h3{
 
 #top-menu .login-menu a{
   font-size: 18px;
-  color:#5d5d5e;
   line-height: 79px;
 }
 
@@ -530,21 +500,19 @@ h3{
 
 
 /* 文本框 start */
-.text{
-  border:1px solid #d8dbdb;
-  color:#a4a9ae;
-  font-size: 14px;
-  outline: none;
-}
-
-.text-356-50{
-  width: 334px;
-  padding: 16px 10px; 
-}
+.text{ border:1px solid #d8dbdb; outline: none; }
+.text-356-50{ width: 334px; padding: 14px 10px; }
+.text-220-50{ width:198px; padding: 14px 10px; }
+.text-294-50{ width:272px; padding: 14px 10px; }
 
 .text-356-42{
   width: 334px;
-  padding: 12px 10px; 
+  padding:10px; 
+}
+
+.text-300-38{
+  width:298px;
+  padding: 10px; 
 }
 
 .text-296-40{
@@ -562,20 +530,11 @@ h3{
   padding: 7px 10px; 
 }
 
-.text-300-38{
-  width:298px;
-  padding: 10px; 
-}
 
-.text-210-50{
-  width:198px;
-  padding: 16px 10px; 
-}
 
-.text-294-50{
-  width:272px;
-  padding: 16px 10px; 
-}
+
+
+
 /* 文本框 end */
 
 

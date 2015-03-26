@@ -1,0 +1,92 @@
+
+
+/* main-header start */
+#main-header{
+  height: 60px;
+  border-bottom: 1px solid #d8dbdb;
+  position: relative;
+}
+
+#main-header .btn-back,
+#main-header .btn-edit, 
+#main-header .btn-del,
+#main-header .icon, 
+#main-header h2 {
+  top: 14px;
+  position: absolute;
+}
+
+#main-header .icon{
+  left: 12px;
+  width: 32px;
+  height: 32px;
+  background: url(../images/icon-interactive-cur.png) no-repeat center center;
+}
+
+#main-header .btn-back{
+  right: 225px;
+}
+
+#main-header .btn-edit{
+  right: 125px;
+}
+
+#main-header .btn-del{
+  right: 25px;
+}
+
+#main-header h2{
+  left: 56px;
+  width: 240px;
+  height: 32px;
+  line-height: 32px; 
+}
+/* main-header end */
+
+/* 众筹详情 start */
+#the-raise-detail{
+  padding: 20px 30px;
+  width: 590px;
+}
+
+#the-raise-detail h1{
+  font-size: 20px;
+}
+
+#the-raise-detail .poster{
+  margin-top: 20px;
+}
+
+#the-raise-detail .poster img{
+  width: 100%;
+}
+
+#the-raise-detail .info{
+  height: 48px;
+}
+
+#the-raise-detail .total{
+  float: left;
+  height: 48px;
+  line-height: 48px;
+  font-size: 20px;
+}
+
+#the-raise-detail .current{
+  float: right;
+  height: 48px;
+}
+
+#the-raise-detail .bar{
+  width: 125px;
+  height: 14px;
+  border:1px solid #79d1d1;
+  border-radius: 8px;
+  margin-top: 10px;
+}
+
+#the-raise-detail .txt{
+  width: 125px;
+  text-align: center;
+}
+/* 众筹详情 end */

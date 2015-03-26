@@ -1,0 +1,126 @@
+#side,
+#main{
+  height: 900px;
+}
+
+/* main-header start */
+#main-header{
+  height: 60px;
+  border-bottom: 1px solid #d8dbdb;
+  position: relative;
+}
+
+#main-header .btn-back,
+#main-header .btn-preview, 
+#main-header .icon, 
+#main-header h2 {
+  top: 14px;
+  position: absolute;
+}
+
+#main-header .icon{
+  left: 12px;
+  width: 32px;
+  height: 32px;
+  background: url(../images/icon-interactive-cur.png) no-repeat center center;
+}
+
+#main-header .btn-preview{
+  right: 25px;
+}
+
+#main-header .btn-back{
+  right: 125px;
+}
+
+#main-header h2{
+  left: 56px;
+  width: 240px;
+  height: 32px;
+  line-height: 32px; 
+}
+/* main-header end */
+
+
+/* 新建众筹 start */
+#the-raise-add{
+  padding: 20px 30px;
+}
+
+#the-raise-add td{
+  padding:5px 0; 
+}
+
+#the-raise-add textarea{
+  border: 1px solid #d8dbdb;
+  width: 450px;
+  height: 60px;
+  padding: 10px;
+  color:#a4a9ae;
+  outline: none;
+}
+
+#the-raise-add .btn-wrap{
+  width: 232px;
+  height: 32px;
+  margin-top:20px;  
+}
+/* 新建众筹 end */
+
+
+/* 众筹预览弹出框 start */
+#tc-the-raise-preview{
+  width: 670px;
+  height: 500px;
+  margin-left: -335px;
+  margin-top: -250px;
+  overflow: hidden;   
+}
+
+#tc-the-raise-preview .content{
+  padding: 20px 30px;
+  overflow-y:scroll;
+  height: 394px;
+}
+
+#tc-the-raise-preview h1{
+  font-size: 20px;
+}
+
+#tc-the-raise-preview .poster{
+  margin-top: 20px;
+}
+
+#tc-the-raise-preview .poster img{
+  width: 100%;
+}
+
+#tc-the-raise-preview .info{
+  height: 48px;
+}
+
+#tc-the-raise-preview .total{
+  float: left;
+  height: 48px;
+  line-height: 48px;
+  font-size: 20px;
+}
+
+#tc-the-raise-preview .current{
+  float: right;
+  height: 48px;
+}
+
+#tc-the-raise-preview .bar{
+  width: 125px;
+  height: 14px;
+  border:1px solid #79d1d1;
+  border-radius: 8px;
+  margin-top: 10px;
+}
+
+#tc-the-raise-preview .txt{
+  width: 125px;
+  text-align: center;
+}
+/* 众筹预览弹出框 end */
