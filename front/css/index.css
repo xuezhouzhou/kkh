@@ -272,12 +272,96 @@
 /* 我们的服务 start */
 .service{
   width: 1014px;
-  height: 722px;
+  height: 608px;
   margin: 0 auto;
-  background-image:url(../images/service.jpg);
+  /* background-image:url(../images/service.jpg); */
   position: relative;
   overflow: hidden; 
+  padding-top: 114px;
 }
+
+.service h2{
+  text-align: center;
+  color:#2c3e50;
+  font-size: 36px;
+}
+
+.service .des{
+  color:#9b9a9a;
+  font-size:18px;
+  text-align: center;
+  margin-top: 13px;
+}
+
+.service ul{
+  margin-top: 90px;
+}
+
+.service ul li{
+  width: 25%;
+  height:350px;
+  float: left;
+}
+
+.service li .icon{
+  width: 158px;
+  height: 158px;
+  margin: 0 auto;
+  background-image: url(../images/service-icon.png);
+  background-repeat:no-repeat;
+  cursor: pointer; 
+}
+
+.service li.fast .icon{
+  background-position: 0px 0px;
+}
+
+.service li.fast .icon:hover,
+.service li.fast .icon-cur{
+  background-position: 0px -158px;
+}
+
+.service li.interactive .icon{
+  background-position: 0px -316px;
+}
+
+.service li.interactive .icon:hover,
+.service li.interactive .icon-cur{
+  background-position: 0px -474px;
+}
+
+.service li.analysis .icon{
+  background-position: 0px -632px;
+}
+
+.service li.analysis .icon:hover,
+.service li.analysis .icon-cur{
+  background-position: 0px -790px;
+}
+
+.service li.marketing .icon{
+  background-position: 0px -948px;
+}
+
+.service li.marketing .icon:hover,
+.service li.marketing .icon-cur{
+  background-position: 0px -1106px;
+}
+
+.service li h3{
+  font-size: 24px;
+  text-align: center;
+  color: #3c3b3b;
+  margin-top: 30px;
+}
+
+.service li p{
+  margin-top: 30px;
+  text-align: center;
+  color:#a3a3a3;
+}
+
+
 
 .service .circle{
   background-color: #545755;

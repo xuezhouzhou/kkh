@@ -1,0 +1,119 @@
+/* 联系我们 start */
+.contact-wrap{
+  background-color: #223030;
+}
+
+.contact{
+  width: 1014px;
+  height: 650px;
+  margin:0 auto;
+  padding-top: 90px;
+  position:relative;
+  overflow: hidden;
+}
+
+.contact h2{
+  font-size: 36px;
+  text-align: center;
+  color: #fff;
+}
+
+
+.contact-info,
+.contact-input{
+  width: 50%;
+  float: left;
+}
+
+.contact-info{
+  color:#fff;
+}
+
+.contact-info p{
+  line-height: 2em;
+  padding-left: 3px;
+
+}
+
+.contact-info ul{
+  margin-top: 30px;
+}
+
+.contact-info li{
+  line-height: 2em;
+  margin: 15px 0;
+}
+
+.contact-info li i{
+  display: block;
+  width: 28px;
+  height: 28px;
+  float: left;
+  background-image:url(../images/contact.png);
+  background-repeat:no-repeat;
+}
+
+.contact-info li.ico-position i{
+  background-position: 0px 8px
+}
+
+.contact-info li.ico-tel i{
+  background-position: 1px -29px
+}
+
+.contact-info li.ico-email i{
+  background-position: 1px -64px
+}
+
+.contact-input ul{
+  padding: 0 15px;
+}
+
+.contact-input li{
+  margin-bottom: 15px;
+}
+
+.contact .text{
+  border:2px solid #3c4949;
+  outline: none;
+  color:#fff;
+  padding: 12.5px 12px;
+  background-color: #223030;
+  border-radius: 6px;
+}
+
+.contact .contact-name,
+.contact .contact-email{
+  width: 200px;  
+}
+
+.contact .contact-position{
+  width: 449px;
+}
+
+.contact .contact-advice{
+  border:2px solid #3c4949;
+  outline: none;
+  color:#f0f1f1;
+  padding: 12.5px 12px;
+  width: 449px;
+  background-color: #223030;
+  height: 150px;
+  border-radius: 6px;
+  overflow:hidden;
+}
+
+.contact .btn-send{
+  background-color:#25b7b7;
+  border-radius: 6px;
+  color:#f0f1f1;
+  text-align: center;
+  display: block;
+  float: right;
+  height: 48px;
+  line-height: 48px;
+  width: 140px
+}
+
+.m-t-80{ margin-top: 80px; }
+/* 联系我们 end */

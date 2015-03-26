@@ -4,13 +4,9 @@
   border:none;
 }
 
-body{
-  font-family: 'microsoft yahei';
+body,input,textarea{
+  font-family:"microsoft yahei","Hiragino Sans GB","Hiragino Sans GB W3";
   font-size: 14px;
-}
-
-input,textarea{
-  font-family: 'microsoft yahei';
 }
 
 a{
@@ -21,7 +17,7 @@ li{
   list-style:none;
 }
 
-h1,h2{
+h1,h2,h3{
   font-weight: 400;
 }
 

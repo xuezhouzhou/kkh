@@ -1,0 +1,30 @@
+.kv{
+  height:517px;
+  background:#f8f8f8 url(../images/recruitment.jpg) no-repeat center center;
+}
+
+.des{
+  margin-top: 105px;
+  font-size: 24px;
+  text-align: center;
+  line-height: 2em;
+  color:#6c6c6c;
+}
+
+.c-6cc{
+  color: #6cc;
+}
+
+.join-wrap{
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+
+.join{
+  display: block;
+  font-size: 21px;
+  width: 120px;
+  margin: 0 auto;
+  color: #060606;
+  background: url(../images/icon-join-us.png) no-repeat right center;
+}
