@@ -1,0 +1,11 @@
+.site-wrap{
+  background: #fff;
+}
+
+.site{
+  width: 1014px;
+  height: 652px;
+  margin: 0 auto;
+  padding-top: 48px;
+  position: relative;
+}
