@@ -1,0 +1,98 @@
+body{
+  color: #06315e; 
+}
+
+.container{
+  width: 1024px;
+  height: 768px;
+  margin:0 auto;
+  background:url(../images/wx-wall.jpg);
+}
+
+.header{
+  padding-top: 24px;
+  height: 70px;
+  position: relative;
+}
+
+.header h1{
+  font-size:44px;
+  font-weight: 400;
+  color:#fff;
+  text-align: center;
+  text-shadow: 1px 0 10px #1b81dc, 0 1px 10px #1b81dc,0 -1px 10px #1b81dc, -1px 0 10px #1b81dc;
+}
+
+
+li{
+  list-style: none;
+}
+
+
+.header .logo{
+  position: absolute;
+  left: 130px;
+  top: 16px;
+}
+
+.header .logo img{
+  height: 30px;
+}
+
+.header .company{
+  position: absolute;
+  left: 130px;
+  top: 57px;
+  font-size: 20px;
+  color: #fff;
+}
+
+.content{
+  width: 765px;
+  margin:0 auto; 
+}
+
+.content li{
+  height: 195px;
+  margin-bottom: 15px;
+  background-color: #fff;
+  box-shadow: 0 0 20px 0 #54a9d6;
+  border-radius:5px;
+}
+
+.content li .userinfo{
+  float: left;
+  width: 210px;
+}
+
+.content li .message{
+  float: right;
+  width:555px;
+}
+
+.content .userinfo-inner{
+  padding-top:20px;
+  padding-left: 15px; 
+}
+
+.content .tx img{
+  width: 108px;
+  height: 108px;
+}
+
+.content .name{
+  width: 108px;
+  text-align: center;
+  font-size: 22px;
+}
+
+.content .floor{
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.message-inner{
+  line-height: 1.5em;
+  font-size: 34px;
+  padding: 20px 0;
+}
