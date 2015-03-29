@@ -1,0 +1,99 @@
+body{
+  color: #eadaa1; 
+}
+
+.container{
+  width: 1920px;
+  height: 1080px;
+  margin:0 auto;
+  background:url(../images/photo-wall.png);
+  position: relative;
+}
+
+.img{
+  position: absolute;
+  background: #000;
+}
+
+.img img{
+  width: 100%;
+  height: 100%;
+}
+
+.size-lg{
+  width: 769px;
+  height: 609px;
+}
+
+.size-sm{
+  width: 362px;
+  height: 287px;
+}
+
+.img1{
+  left: 661px;
+  top: 76px;
+}
+
+.img2{
+  left: 1480px;
+  top: 72px;
+}
+
+.img3{
+  left: 1480px;
+  top: 398px;
+}
+
+.img4{
+  left: 1480px;
+  top: 726px;
+}
+
+.img5{
+  left: 1072px;
+  top: 726px;
+}
+
+.img6{
+  left: 661px;
+  top: 726px;
+}
+
+
+.logo{
+  position: absolute;
+  left: 236px;
+  top: 133px;
+  width: 200px;
+  height: 108px;
+}
+
+.logo img{
+  width: 100%;
+  height: 100%
+}
+
+.company,
+.meeting-name{
+  text-shadow: 1px 0 10px #6a0d00, 0 1px 10px #6a0d00,0 -1px 10px #6a0d00, -1px 0 10px #6a0d00;
+}
+
+.company{
+  position: absolute;
+  left: 136px;
+  top: 264px;
+  font-size: 50px;
+  font-weight: 800;
+  width: 400px;
+  text-align: center;
+}
+
+.meeting-name{
+  position: absolute;
+  left: 142px;
+  top: 498px;
+  font-size: 61px;
+  font-weight: 800;
+  width: 400px;
+}
