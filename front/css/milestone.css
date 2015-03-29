@@ -1,0 +1,169 @@
+.milestone{
+  height:900px;
+  width: 1014px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.milestone-img{
+  width: 900px;
+  height: 400px;
+  position: absolute;
+  left: 50%;
+  margin-left: -450px;
+}
+
+.milestone-img-main{
+  position:absolute;
+  width:400px;
+  height:299px;
+  margin:50px 250px 0px 250px;
+}
+
+
+#milestone-left,
+#milestone-right{
+  position:absolute;
+  width:45px;
+  height:45px;
+  top:127px;
+  z-index:20;
+  cursor:pointer
+}
+
+#milestone-right {
+  left:605px
+}
+#milestone-left {
+  left:-250px
+}
+
+#milestone-img1 {
+  width:400px;
+  height:299px;
+  position:absolute;
+  z-index:5;
+  left:0px
+}
+
+#milestone-img2 {
+  position:absolute;
+  top:45px;
+  left:370px;
+  width:280px;
+  height:209px;
+  filter:alpha(opacity=50); 
+  -moz-opacity:0.5; 
+  opacity:0.5;
+}
+
+#milestone-img3 ,
+#milestone-img4{
+  position:absolute;
+  width:140px;
+  height:104px;
+  top:95px;
+  left:580px;
+  filter:alpha(opacity=0); 
+  -moz-opacity:0; 
+  opacity:0;
+}
+
+#milestone-img5 {
+  position:absolute;
+  width:140px;
+  height:104px;
+  top:95px;
+  left:-320px;
+  filter:alpha(opacity=0); 
+  -moz-opacity:0; 
+  opacity:0;
+}
+
+#milestone-img6 {
+  position:absolute;
+  width:280px;
+  height:209px;
+  top:45px;
+  left:-250px;
+  filter:alpha(opacity=50); 
+  -moz-opacity:0.5; 
+  opacity:0.5;
+}
+
+#milestone-btn-list {
+  position: absolute;
+  width: 180px;
+  height: 4px;
+  top: 325px;
+  left: 110px;
+}
+
+#milestone-btn-list li{
+  list-style: none;
+  float: left;
+  width: 26px;
+  margin: 0 2px;
+  background-color:#cccdd1;
+  height: 4px; 
+}
+
+#milestone-btn-list li.cur{
+  background-color:#01aadc;
+}
+
+#milestone-year{
+  width: 150px;
+  height: 50px;
+  position: absolute;
+  left:125px;
+  top:360px;
+  text-align: center;
+  font-size: 24px;
+  line-height: 50px;
+  background-color: #ebebea;
+  border-radius: 25px;
+}
+
+#milestone-list{
+  left:50%;
+  margin-left: -507px;
+  position: absolute;
+  width: 1014px;
+  height: 315px;
+  border-top: 1px solid #d8dbdb;
+  top:490px;
+  padding-top: 20px;
+}
+
+#milestone-list li{
+  font-size: 18px;
+  line-height: 2em;
+  color: #727475;
+  position: relative;
+  text-indent: 60px;
+  margin: 10px 0;
+}
+
+#milestone-list li.cur{
+  color: #00aadd;
+}
+
+#milestone-list li.cur i{
+  background-color: #49c2e7;
+}
+
+#milestone-list li i{
+  display: block;
+  width: 10px;
+  height: 10px;
+  border:3px solid #00aadd;
+  border-radius: 8px;
+  position: absolute;
+  left:20px;
+  top:10px;
+}
+
+.p-r-25{
+  padding-right: 25px;
+}

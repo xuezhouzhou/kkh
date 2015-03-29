@@ -1,0 +1,168 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>KKH - 大事记</title>
+<link rel="stylesheet" type="text/css" href="css/common.css">
+<link rel="stylesheet" type="text/css" href="css/header.css">
+<link rel="stylesheet" type="text/css" href="css/footer.css">
+<link rel="stylesheet" type="text/css" href="css/milestone.css">
+</head>
+<body>
+<!-- header start -->  
+<div class="header-wrap">
+  <div class="header">
+    <div class="logo"></div>
+    <div class="nav-wrap">
+      <div class="nav-inner">
+        <div class="nav">
+          <a href="index.html">首页</a>
+          <a href="">我的会</a>
+          <a href="about.html">关于</a>
+          <a href="javascript:void(0)" class="cur">大事记</a>
+          <a href="site.html">场地</a>
+          <a href="recruitment.html">招贤</a>
+          <a href="contact.html">联系</a>
+        </div>
+        <div class="login-wrap">
+          <a href="">登录</a>&nbsp;/&nbsp;<a href="">注册</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- header end -->
+
+<!-- 大事记 start -->
+<div class="milestone-wrap">
+  <div class="milestone">
+    <div class="milestone-img">
+      <div class="milestone-img-main">
+        <img id="milestone-left" src="images/milestone-left.png"/>
+        <img id="milestone-right" src="images/milestone-right.png"/>
+        <ul id="milestone-btn-list"></ul>
+        <div id="milestone-year">2013.09</div>
+      </div>
+    </div>
+    <ul id="milestone-list">
+      <li class="cur"><i></i>2013.09<span class="p-r-25"></span>上海龙德网络科技有限公司成立</li>
+      <li><i></i>2014.08<span class="p-r-25"></span>龙德网络科技获得中路资本天使轮投资</li>
+      <li><i></i>2014.09<span class="p-r-25"></span>开开会超级Wi-Fi正式推广</li>
+      <li><i></i>2014.12<span class="p-r-25"></span>开开会服务场次超过100场,累计服务人数超过16万人次,确认合作的企业客户（主办方）超过300家</li>
+      <li><i></i>2015.01<span class="p-r-25"></span>开开会微信应用推出</li>
+      <li><i></i>2015.04<span class="p-r-25"></span>开开会APP1.0版上线,开开会微应用全面上线</li>
+    </ul>
+  </div>
+</div>
+<!-- 大事记 end -->
+
+<!-- footer start -->
+<div class="footer-wrap">
+  <div class="footer">
+    <div class="link">
+      <a href="">法律</a>
+      | <a href="">招聘</a>
+      | <a href="about.html">关于我们</a> 
+      | <a href="">联系我们</a> 
+    </div>
+    <div class="copy">Copyright 2013-2014 @andreyyan, All right reserved.</div>
+  </div>
+  <div class="circle">
+
+  </div>
+</div>
+<!-- footer end --> 
+
+<script src="js/jquery.min.js"></script> 
+<script>
+(function($){
+  var imgid = 0;
+  var timeText = ['2013.09','2014.08','2014.09','2014.12','2015.01','2015.04'];
+
+  for(var i=1;i<=6;i++){
+    document.getElementById("milestone-left")
+    .insertAdjacentHTML("afterEnd",
+      '<img id="milestone-img'+ i +'" src="images/milestone/'+ i +'.jpg">'
+    )
+  }
+
+  for(var i=1;i<=6;i++){
+    var milestoneBtnList = document.getElementById("milestone-btn-list");
+    if(i==1){
+      milestoneBtnList.insertAdjacentHTML("beforeEnd",'<li class="cur"></li>');  
+    }else{
+      milestoneBtnList.insertAdjacentHTML("beforeEnd",'<li></li>');
+    }
+  }
+
+  $("#milestone-right").click(function(){
+    imgid++;
+    moveAni();
+  });
+
+  $("#milestone-left").click(function(){
+    imgid+=6;
+    imgid--;
+    imgid=imgid%6;
+    moveAni();
+  });
+
+  function moveAni(){
+    if(imgid==6) imgid=0;
+    
+    $("#milestone-img"+(imgid+1)).animate({
+      left:'0px',
+      width:'400px',
+      height:'299px',
+      top:'0px',
+      opacity:'1'
+    },600).css({'z-index' : '10'});
+
+    $("#milestone-img"+((imgid+1)%6+1)).animate({
+      left:'370px',
+      width:'280px',
+      height:'209px',
+      top:'45px',
+      opacity:'0.5'
+    },600).css({'z-index' : '1'});
+
+    $("#milestone-img"+((imgid+2)%6+1)).animate({
+      left:'580px',
+      width:'140px',
+      height:'104px',
+      top:'95px',
+      opacity:'0'
+    },600).css({'z-index' : '1'});
+
+    $("#milestone-img"+((imgid+3)%6+1)).animate({
+      left:'580px',
+      width:'140px',
+      height:'104px',
+      top:'95px',
+      opacity:'0'
+    },600).css({'z-index' : '1'});
+
+    $("#milestone-img"+((imgid+4)%6+1)).animate({
+      left:'-320px',
+      width:'140px',
+      height:'104px',
+      top:'95px',
+      opacity:'0'
+    },600).css({'z-index' : '1'});
+
+    $("#milestone-img"+((imgid+5)%6+1)).animate({
+      left:'-250px',
+      width:'280px',
+      height:'209px',
+      top:'45px',
+      opacity:'0.5'
+    },600).css({'z-index' : '1'});
+
+    $('#milestone-btn-list li,#milestone-list li').removeClass('cur');
+    $('#milestone-btn-list li:nth-child('+ (imgid + 1) +'),#milestone-list li:nth-child(' + (imgid + 1) +')').addClass('cur');
+    $('#milestone-year').text(timeText[imgid]);
+  }
+})(jQuery);
+</script> 
+</body>
+</html>
