@@ -274,7 +274,6 @@
   width: 1014px;
   height: 608px;
   margin: 0 auto;
-  /* background-image:url(../images/service.jpg); */
   position: relative;
   overflow: hidden; 
   padding-top: 114px;
@@ -294,57 +293,100 @@
 }
 
 .service ul{
+  width: 1014px;
+  height: 350px;
+  position: relative;
   margin-top: 90px;
 }
 
 .service ul li{
   width: 25%;
   height:350px;
-  float: left;
+  position: absolute;
 }
 
 .service li .icon{
+  position: absolute;
   width: 158px;
   height: 158px;
-  margin: 0 auto;
+  left: 50%;
+  margin-left: -79px;
   background-image: url(../images/service-icon.png);
   background-repeat:no-repeat;
   cursor: pointer; 
+  z-index: 99;
 }
 
-.service li.fast .icon{
-  background-position: 0px 0px;
+.service li .panel{
+  left:127px;
+  position: absolute;
+  width: 632px; 
+  height: 298px;
+  border:1px solid #e3e3e4;
+  background: #fff;
+  z-index: 9;
+  display: none;
 }
 
-.service li.fast .icon:hover,
-.service li.fast .icon-cur{
-  background-position: 0px -158px;
+
+.service li .panel .title{
+  position: absolute;
+  left:115px;
+  top:70px;
+  font-size: 24px;
+  color: #3c3b3b;
 }
+
+.service li .panel .con{
+  position: absolute;
+  width: 435px;
+  left: 115px;
+  top: 120px;
+  font-size: 18px;
+  line-height: 2em;
+  color: #a3a3a3;
+}
+
+.service li.interactive{ left:0; }
+.service li.fast{ left:25%; }
+.service li.consumption{ left:50%; }
+.service li.analysis{ left:75%; }
+
 
 .service li.interactive .icon{
-  background-position: 0px -316px;
+  background-position: 0px 0px;
 }
 
 .service li.interactive .icon:hover,
 .service li.interactive .icon-cur{
+  background-position: 0px -158px;
+}
+
+
+.service li.fast .icon{
+  background-position: 0px -316px;
+}
+
+.service li.fast .icon:hover,
+.service li.fast .icon-cur{
   background-position: 0px -474px;
 }
 
-.service li.analysis .icon{
+.service li.consumption .icon{
   background-position: 0px -632px;
+}
+
+.service li.consumption .icon:hover,
+.service li.consumption .icon-cur{
+  background-position: 0px -790px;
+}
+
+.service li.analysis .icon{
+  background-position: 0px -948px; 
 }
 
 .service li.analysis .icon:hover,
 .service li.analysis .icon-cur{
-  background-position: 0px -790px;
-}
-
-.service li.marketing .icon{
-  background-position: 0px -948px;
-}
-
-.service li.marketing .icon:hover,
-.service li.marketing .icon-cur{
   background-position: 0px -1106px;
 }
 
@@ -352,7 +394,7 @@
   font-size: 24px;
   text-align: center;
   color: #3c3b3b;
-  margin-top: 30px;
+  margin-top: 188px;
 }
 
 .service li p{
