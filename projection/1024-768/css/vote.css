@@ -61,9 +61,9 @@
 
 .vote-list{
   position: absolute;
-  width: 1000px;
+  width: 900px;
   height: 600px;
-  left: 12px;
+  left: 62px;
   top: 83px;
 }
 
@@ -162,4 +162,5 @@
   background-image: url(../images/crown.png);
   left: 68px;
   top: -50px;
+  z-index: 999;
 }
