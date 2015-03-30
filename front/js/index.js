@@ -57,7 +57,7 @@
   placeHolder($('.type'),'会议类型');
   placeHolder($('.time'),'会议时长');
   placeHolder($('.total'),'参加人数');
-  placeHolder($('.spending'),'会议预算');
+  placeHolder($('.spending'),'是否提供会议餐饮');
 
   //炫酷互动
   $('.service .interactive .icon').on('click',function(){
