@@ -44,7 +44,7 @@
     siteScroll($_this,index);
   });
   
-  //场地右边按钮
+  //场地右按钮
   $(".site-scroll-right").on('click',function(){
     $_this = $(this);
     var index = $_this.siblings('.index').val();
@@ -52,12 +52,6 @@
     if(index>5) index = 1;
     siteScroll($_this,index);
   });
-
-  placeHolder($('.city'),'活动城市');
-  placeHolder($('.type'),'会议类型');
-  placeHolder($('.time'),'会议时长');
-  placeHolder($('.total'),'参加人数');
-  placeHolder($('.spending'),'是否提供会议餐饮');
 
   //炫酷互动
   $('.service .interactive .icon').on('click',function(){
@@ -128,13 +122,13 @@
     $obj.siblings('.site-dotted-wrap').find('.site-dotted li:nth-child('+ index +')').addClass('cur');
   }
 
-  function placeHolder($obj,text){
+  /*function placeHolder($obj,text){
     $obj.on('focus',function(){
       if($obj.val()==text) $obj.val("") ;
     }).on('blur',function(){
       if($obj.val()=="") $obj.val(text);
     });      
-  }
+  }*/
 
   //关闭 我们的服务 的展开项
   $("body").on('click',function(e){
@@ -147,4 +141,26 @@
       }
     }
   });
+
+  $('.demand-input [placeholder]').focus(function() {
+    var input = $(this);
+    if (input.val() == input.attr('placeholder')) {
+      input.val('');
+      input.removeClass('placeholder');
+    }
+  }).blur(function() {
+    var input = $(this);
+    if (input.val() == '' || input.val() == input.attr('placeholder')) {
+      input.addClass('placeholder');
+      input.val(input.attr('placeholder'));
+    }
+  });
+
+  $.each($('.demand-input input[placeholder]'),function(index,val) {
+    var input = $(val);
+    if (input.val() == '' || input.val() == input.attr('placeholder')) {
+      input.addClass('placeholder');
+      input.val(input.attr('placeholder'));
+    }
+  });  
 })(jQuery); 

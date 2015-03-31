@@ -59,6 +59,10 @@
   position: relative;
 }
 
+.site-list a.site-item:hover{
+  border: 1px solid #6fcfcf;
+}
+
 .site-info{
   padding: 0 10px;
 }
