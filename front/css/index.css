@@ -292,6 +292,7 @@
   left:155px;
   top:85px;
   background-image: url(../images/demand-left.png);
+  display: none;
 }
 
 .demand .demand-right{
