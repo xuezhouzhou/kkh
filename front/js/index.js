@@ -155,6 +155,7 @@
   //基本信息提交按钮
   $('#meeting-info-submit').on('click',function(){
     $('.tc-contact').show();
+    $('.demand-right').hide();
   });
 
   //快速填写需求模块 右箭头切换
