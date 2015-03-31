@@ -188,9 +188,19 @@
   position: relative;
 }
 
-.demand-input{
+.demand-input-wrap{
   width: 490px;
   margin: 0 auto;
+  overflow: hidden;
+}
+
+.demand-input-inner{
+  width: 980px;
+}
+
+.demand-input{
+  float: left;
+  width: 490px;
 }
 
 .demand-input h2{
@@ -223,14 +233,11 @@
   outline: none;
 }
 
-.demand-input .city,
-.demand-input .type{
+.demand-input .text-sm{
   width: 160px;
 }
 
-.demand-input .time,
-.demand-input .total,
-.demand-input .food{
+.demand-input .text-lg{
   width: 438px;
 }
 
@@ -246,7 +253,9 @@
   font-size: 24px;
   cursor: pointer;
 }
-
+.demand-input .submit:hover{
+  background-color: #57e7e5;
+}
 .demand .wifi{
   width: 60px;
   height: 60px;
@@ -262,8 +271,33 @@
   cursor: pointer;
 }
 
+.demand .wifi:hover,
+.demand .wifi-cur{
+  background-color:#68c852;
+}
+
 .demand .circle{
   background: #fff; 
+}
+
+.demand .demand-left,
+.demand .demand-right{
+  width: 71px;
+  height: 71px;
+  cursor: pointer;
+  position: absolute;
+}
+
+.demand .demand-left{
+  left:155px;
+  top:85px;
+  background-image: url(../images/demand-left.png);
+}
+
+.demand .demand-right{
+  right:0px;
+  top:320px;
+  background-image: url(../images/demand-right.png);
 }
 
 .placeholder {

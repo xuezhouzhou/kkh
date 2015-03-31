@@ -142,6 +142,18 @@
     }
   });
 
+  $('.demand-right').on('click',function(){
+    $(".demand-input-wrap").animate({'scrollLeft':490},300);
+    $(this).hide();
+    $('.demand-left').show();
+  });
+
+  $('.demand-left').on('click',function(){
+    $(".demand-input-wrap").animate({'scrollLeft':0},300);
+    $(this).hide();
+    $('.demand-right').show();
+  });
+
   $('.demand-input [placeholder]').focus(function() {
     var input = $(this);
     if (input.val() == input.attr('placeholder')) {
