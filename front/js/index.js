@@ -92,6 +92,8 @@
     $('.service .analysis').animate({'left':'25%'},300); 
   });
 
+
+
   function serviceAni($_obj){
     $('.service .icon').removeClass('icon-cur');
     $('.service .panel').hide();
@@ -142,16 +144,39 @@
     }
   });
 
+  //wifi信息 确定按钮
+  $('#wifi-submit').on('click',function(){
+    $(".demand-input-wrap").animate({'scrollLeft':0},300);
+    $('.demand-right').show();
+    $('.demand-left').hide();
+    $(".demand .wifi").show().addClass('wifi-cur');
+  });
+
+  //基本信息提交按钮
+  $('#meeting-info-submit').on('click',function(){
+    $('.tc-contact').show();
+  });
+
+  //快速填写需求模块 右箭头切换
   $('.demand-right').on('click',function(){
     $(".demand-input-wrap").animate({'scrollLeft':490},300);
     $(this).hide();
+    $(".demand .wifi").hide();
     $('.demand-left').show();
   });
 
+  //快速填写需求模块 左箭头切换
   $('.demand-left').on('click',function(){
     $(".demand-input-wrap").animate({'scrollLeft':0},300);
     $(this).hide();
     $('.demand-right').show();
+    $(".demand .wifi").show()
+  });
+
+
+  //性别radio切换
+  $('#sex .radio').on('click',function(){
+    $(this).siblings('.radio-checked').removeClass('radio-checked').end().addClass('radio-checked');
   });
 
   $('.demand-input [placeholder]').focus(function() {
