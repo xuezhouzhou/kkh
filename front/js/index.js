@@ -174,6 +174,16 @@
     $(".demand .wifi").show()
   });
 
+  $('#contact-submit').on('click',function(){
+    $('.tc-contact').hide();
+    $('.demand-right').show();
+    $('.message-tips').show();
+    $(".demand input").val('');
+    setTimeout(function(){
+      $('.message-tips').fadeOut();  
+    },2000);
+
+  });
 
   //性别radio切换
   $('#sex .radio').on('click',function(){
