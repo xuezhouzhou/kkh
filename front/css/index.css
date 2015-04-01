@@ -555,10 +555,9 @@
 .service li p{
   margin-top: 30px;
   text-align: center;
+  line-height: 24px;
   color:#a3a3a3;
 }
-
-
 
 .service .circle{
   background-color: #545755;
