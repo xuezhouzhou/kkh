@@ -16,8 +16,7 @@
 }
 
 #contacts-list .name{
-  width: 82px;
-  margin: 0 auto;
+  text-indent: 40px;
 }
 #contacts-list .name i{
   width: 40px;
@@ -29,7 +28,6 @@
 #contacts-list .sex-w{
   background: url(../images/icon-sex2-w.png) no-repeat center center;
 }
-
 .page-wrap{
   padding: 20px  30px; 
 }
