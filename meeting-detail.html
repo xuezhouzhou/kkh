@@ -32,6 +32,7 @@
   </div>
 </div>
 <!-- header end -->
+
 <div id="container-wrap">
   <div id="container">
     <!-- side start -->
@@ -271,7 +272,7 @@
             <a class="btn btn-default btn-82-32 btn-add tc-show" data-id="tc-interactive-add">添加互动</a>
           </div>
           <table width="100%" cellspacing="0" cesspadding="0">
-            <tbody><tr>
+            <tr>
               <td class="meeting-type"><img src="images/hd-type-qdms.png"></td>
               <td colspan="4">
                 <a class="sign-wx">微信签到</a>
@@ -280,7 +281,7 @@
               </td>
             </tr>
             <tr>
-              <td class="meeting-type"><img src="images/hd-type-zpq.png"></td>
+              <td class="meeting-type"><img src="images/interactive-icon/questionnaire.png"></td>
               <td width="170px;">暖场展示</td>
               <td width="150px">20141207000010</td>
               <td width="90px">等待进行</td>
@@ -292,7 +293,7 @@
               </td>
             </tr>
             <tr>
-              <td class="meeting-type"><img src="images/hd-type-wj.png"></td>
+              <td class="meeting-type"><img src="images/interactive-icon/photo-wall.png"></td>
               <td>本次会议演出最佳的...</td>
               <td>20141207000010</td>
               <td>等待进行</td>
@@ -303,7 +304,55 @@
                 <a href="">删除</a>
               </td>
             </tr>
-          </tbody></table>
+            <tr>
+              <td class="meeting-type"><img src="images/interactive-icon/luck-draw.png"></td>
+              <td>本次会议演出最佳的...</td>
+              <td>20141207000010</td>
+              <td>等待进行</td>
+              <td class="link">
+                <a href="" class="border">置顶</a>
+                <a href="">上移</a>
+                <a href="">下移</a>
+                <a href="">删除</a>
+              </td>
+            </tr>
+            <tr>
+              <td class="meeting-type"><img src="images/interactive-icon/wx-wall.png"></td>
+              <td>本次会议演出最佳的...</td>
+              <td>20141207000010</td>
+              <td>等待进行</td>
+              <td class="link">
+                <a href="" class="border">置顶</a>
+                <a href="">上移</a>
+                <a href="">下移</a>
+                <a href="">删除</a>
+              </td>
+            </tr>
+            <tr>
+              <td class="meeting-type"><img src="images/interactive-icon/the-raise.png"></td>
+              <td>本次会议演出最佳的...</td>
+              <td>20141207000010</td>
+              <td>等待进行</td>
+              <td class="link">
+                <a href="" class="border">置顶</a>
+                <a href="">上移</a>
+                <a href="">下移</a>
+                <a href="">删除</a>
+              </td>
+            </tr>
+            <tr>
+              <td class="meeting-type"><img src="images/interactive-icon/vote.png"></td>
+              <td>本次会议演出最佳的...</td>
+              <td>20141207000010</td>
+              <td>等待进行</td>
+              <td class="link">
+                <a href="" class="border">置顶</a>
+                <a href="">上移</a>
+                <a href="">下移</a>
+                <a href="">删除</a>
+              </td>
+            </tr>
+          </table>
         </div>
         <!-- 会议互动 end -->
       </div>
@@ -492,6 +541,16 @@
       $(this).addClass('radio-checked');
     }
   });
+
+  $(function(){
+    setSideHeight();
+  });
+
+  //设置左侧菜单导航高度
+  function setSideHeight(){
+    var height = $("#main").height();
+    $('#side').height(height);;
+  }
 })(jQuery);
 
 // 百度地图API功能
