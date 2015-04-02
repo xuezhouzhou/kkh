@@ -1,0 +1,164 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>KKH - 互动管理 - 照片墙管理 - 新建</title>
+<link rel="stylesheet" type="text/css" href="css/common.css">
+<link rel="stylesheet" type="text/css" href="css/interactive-photo-wall-add.css">
+</head>
+<body>
+<!-- header start --> 
+<div id="header-wrap">
+  <div id="header">
+    <div id="logo"></div>
+    <div id="welcome">欢迎您的登录！您可在此管理您的系统后台。</div>
+    <div id="top-menu">
+      <div class="back-index">
+        <a href="#">回到首页</a>
+      </div>
+      <div class="login-info">
+        <div class="login-info-inner">
+          <img class="tx" src="images/tx.jpg" >
+          <p class="username">河西</p>
+        </div>
+        <div class="login-info-list">
+          <a href="userinfo.html">账号信息</a>
+          <a href="changepass.html">密码修改</a>
+          <a href="">退出</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- header end -->
+<div id="container-wrap">
+  <div id="container">
+    <!-- side start -->
+    <div id="side">
+      <!-- 侧边栏用户信息 start  -->
+      <div id="side-userinfo">
+        <div class="hover"></div>
+        <img class="tx" src="images/tx.jpg">
+        <div class="sex sex-m"></div>
+        <p class="username">荷西-sweety</p>
+        <p class="score"><span class="num">208</span>分</p>
+      </div>
+      <!-- 侧边栏用户信息 end --> 
+      <!-- 侧边栏菜单 start -->
+      <div id="side-menu">
+        <a class="menu-list">
+          <div class="icon icon-meeting"></div>
+          <div class="title">会议管理</div>
+        </a>
+        <a class="menu-list">
+          <div class="icon icon-contacts"></div>
+          <div class="title">通讯录管理</div>
+        </a>
+        <div id="side-menu-interactive" class="menu-list">
+          <div class="border border-interactive"></div>
+          <div class="icon icon-interactive icon-interactive-cur"></div>
+          <div class="title">互动管理</div>
+          <div class="icon-jt icon-jt-right icon-jt-bottom"></div>
+        </div>
+        <div id="interactive-child" style="display:block;">
+          <a class="menu-list"><div class="title">投票管理</div></a>
+          <a class="menu-list"><div class="title">问卷管理</div></a>
+          <a class="menu-list"><div class="title">抽奖管理</div></a>
+          <a class="menu-list"><div class="title">微信墙管理</div></a>
+          <a class="menu-list cur"><div class="title">照片墙管理</div></a>
+          <a class="menu-list"><div class="title">签到管理</div></a>
+          <a class="menu-list"><div class="title">众筹管理</div></a>
+        </div>
+        <a class="menu-list">
+          <div class="icon icon-statistical"></div>
+          <div class="title">统计报表</div>
+        </a>
+      </div>
+      <!-- 侧边栏菜单 end -->
+    </div>
+    <!-- side end -->    
+    <div id="main">
+      <div id="main-header">
+        <div class="icon"></div>
+        <h2>互动管理 > 新建照片墙</h2>
+        <a class="btn btn-default btn-82-32 btn-back">返回</a>
+        <a class="btn btn-default btn-82-32 btn-preview tc-show" data-id="tc-photo-wall-preview">预览</a>
+      </div>
+      <div id="main-content">
+        <!-- 照片墙模板类型 start -->
+        <div id="photo-wall-type">
+          <div class="clear">
+            <div class="fl">模版</div>
+            <div class="fr">选定模版用于结果显示</div>
+          </div>
+          <ul class="clear">
+            <li class="cur">
+              <img src="images/photo-wall-type-1.png" />
+              <i></i>
+            </li>
+            <li>
+              <img src="images/photo-wall-type-2.png" />
+              <i></i>
+            </li>
+          </ul>
+        </div>
+        <!-- 照片墙模板类型 end -->
+        <!-- 添加照片墙 start -->
+        <div id="photo-wall-add">
+          <table width="100%" cellspacing="0" cellpadding="0">
+            <tr >
+              <td width="80px">照片墙名称</td>
+              <td>
+                <input type="text" class="text text-230-32" placeholder="请输入照片墙名称">
+              </td>
+            </tr>
+            <tr>
+              <td style="vertical-align: top;">照片墙名称</td>
+              <td>
+                <textarea placeholder="请输入说明该照片墙名称的文字信息"></textarea>
+              </td>
+            </tr>
+          </table>
+          <div class="btn-wrap clear">
+            <a class="btn btn-primary btn-106-36 btn-br-18 fl">确认</a>
+            <a class="btn btn-default btn-106-36 btn-br-18 fr">取消</a>
+          </div>
+        </div>
+        <!-- 添加照片墙 end -->
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div id="footer">2015 kaikaihui  开发者中心/服务协议/权利声明</div>
+<div id="body-hover"></div>
+
+<!-- 照片墙预览弹出层 start -->
+<div id="tc-photo-wall-preview" class="tc-box">
+  <div class="tc-close" data-id="tc-photo-wall-preview"></div>
+  <div class="top">
+    <h2>照片墙预览</h2>
+  </div>
+</div>
+<!-- 照片墙预览弹出层 end -->
+
+<script src="js/jquery.min.js"></script>
+<script src="js/common.js"></script>
+<script>
+(function($){
+  //弹出层隐藏
+  $('.tc-close').on('click',function(){
+    var id = $(this).attr('data-id');
+    $('#' + id + ",#body-hover").hide();
+  });
+  
+  //弹出层显示
+  $('.tc-show').on('click',function(){
+    var id = $(this).attr('data-id');
+    $('#' + id + ",#body-hover").show();
+  });
+})(jQuery);  
+</script>
+</body>
+</html>

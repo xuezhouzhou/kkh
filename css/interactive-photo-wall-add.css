@@ -1,0 +1,151 @@
+#side,
+#main{
+  height: 900px;
+}
+
+/* main-header start */
+#main-header{
+  height: 60px;
+  border-bottom: 1px solid #d8dbdb;
+  position: relative;
+}
+
+#main-header .btn-back,
+#main-header .btn-preview, 
+#main-header .icon, 
+#main-header h2 {
+  top: 14px;
+  position: absolute;
+}
+
+#main-header .icon{
+  left: 12px;
+  width: 32px;
+  height: 32px;
+  background: url(../images/icon-interactive-cur.png) no-repeat center center;
+}
+
+#main-header .btn-preview{
+  right: 25px;
+}
+
+#main-header .btn-back{
+  right: 125px;
+}
+
+#main-header h2{
+  left: 56px;
+  width: 240px;
+  height: 32px;
+  line-height: 32px; 
+}
+/* main-header end */
+
+
+/*照片墙模板类型选择 start */
+#photo-wall-type{
+  padding: 20px 30px;
+  border-bottom: 1px solid #d8dbdb;
+}
+#photo-wall-type li{
+  list-style: none;
+}
+#photo-wall-type ul{
+  margin: 30px auto;
+  width: 718px;
+  border-top: 1px solid #d8dbdb;
+  border-left:1px solid #d8dbdb;
+}
+#photo-wall-type li{
+  width: 348px;
+  height: 196px;
+  border-right: 1px solid #d8dbdb;
+  border-bottom: 1px solid #d8dbdb;
+  float: left;
+  position: relative;
+  cursor: pointer;
+  padding: 5px;
+}
+#photo-wall-type li img{
+  width: 348px;
+  height: 196px;
+}
+#photo-wall-type li i{
+  display: block;
+  width: 42px;
+  height: 42px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  background: url(../images/icon-vote-type-select.png);
+}
+#photo-wall-type li.cur i{
+  background: url(../images/icon-vote-type-select-cur.png);
+}
+/*照片墙模板类型 end */
+
+/* 添加照片墙 start */
+#photo-wall-add{
+  padding: 40px 30px;
+}
+
+#photo-wall-add textarea{
+  border:1px solid #d8dbdb;
+  width: 450px;
+  height: 60px;
+  padding: 10px;
+  outline: none;
+}
+
+#photo-wall-add li{
+  list-style: none;
+  height: 32px;
+  line-height: 32px;
+  margin-bottom: 10px;
+}
+
+#photo-wall-add li img{
+  vertical-align: middle;
+  position: relative;
+  top:-2px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+#photo-wall-add li a{
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+#photo-wall-add td{
+  padding: 5px 0;
+}
+
+#photo-wall-add .add-options{
+  width: 90px;
+  cursor: pointer;
+}
+
+#photo-wall-add .add-options i{
+  width: 32px;
+  height: 32px;
+  float: left;
+  background: url(../images/icon-add-options.png) no-repeat left center;
+}
+
+#photo-wall-add .btn-wrap{
+  width: 232px;
+  margin-left: 80px;
+}
+/* 添加照片墙 end */
+
+
+/* 照片墙预览弹出框 start */
+#tc-photo-wall-preview{
+  width: 670px;
+  height: 500px;
+  margin-left: -335px;
+  margin-top: -250px;
+  overflow: hidden;
+}
+/* 照片墙预览弹出框 end */

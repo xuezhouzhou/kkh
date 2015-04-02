@@ -1,0 +1,134 @@
+#side,
+#main{
+  height: 1100px;
+}
+
+/* main-header start */
+#main-header{
+  height: 60px;
+  border-bottom: 1px solid #d8dbdb;
+  position: relative;
+}
+
+#main-header .btn-back,
+#main-header .btn-edit, 
+#main-header .btn-del,
+#main-header .icon, 
+#main-header h2 {
+  top: 14px;
+  position: absolute;
+}
+
+#main-header .icon{
+  left: 12px;
+  width: 32px;
+  height: 32px;
+  background: url(../images/icon-interactive-cur.png) no-repeat center center;
+}
+
+#main-header .btn-back{
+  right: 225px;
+}
+
+#main-header .btn-edit{
+  right: 125px;
+}
+
+#main-header .btn-del{
+  right: 25px;
+}
+
+#main-header h2{
+  left: 56px;
+  width: 240px;
+  height: 32px;
+  line-height: 32px; 
+}
+/* main-header end */
+
+
+
+#photo-wall-detail-top{
+  padding: 20px;
+  border-bottom: 1px solid #d8dbdb;
+}
+
+#photo-wall-detail-top .num-time{
+  height: 28px;
+  line-height: 28px;
+}
+#photo-wall-detail-top .status{
+  color:#f88d68;
+}
+#photo-wall-detail-top .time i{
+  display: block;
+  width: 28px;
+  height: 28px;
+  float: left;
+  background: url(../images/icon-clock.png) no-repeat center center;
+}
+
+#photo-wall-detail-top .template{
+  margin: 30px 0;
+  text-align: center;
+}
+
+#photo-wall-detail-top .template img{
+  border:1px solid #d8dbdb;
+}
+
+#photo-wall-detail-bottom{
+  padding: 20px 30px;
+}
+
+#photo-wall-detail-bottom .history-photo{
+  height: 32px;
+  line-height: 32px;
+  position: relative;
+}
+
+#photo-wall-detail-bottom .btn-export{
+  position: absolute;
+  right: 96px;
+}
+
+#photo-wall-detail-bottom .btn-del{
+  position: absolute;
+  right: 0;
+}
+
+#photo-wall-detail-bottom .photo-list{
+  margin-top: 20px;
+}
+
+#photo-wall-detail-bottom li{
+  list-style: none;
+  float: left;
+  width: 154px;
+  height: 142px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+#photo-wall-detail-bottom li img{
+  width:154px;
+  height: 115px;
+}
+
+#photo-wall-detail-bottom li p{
+  height: 24px;
+  line-height: 24px;
+  font-size: 12px;
+}
+
+#photo-wall-detail-bottom li i{
+  display: block;
+  width: 24px;
+  height: 24px;
+  float: left;
+  background:url(../images/radio-sm-default.png) no-repeat center center;
+}
+
+#photo-wall-detail-bottom li.select i{
+  background:url(../images/radio-sm-checked.png) no-repeat center center;
+}
