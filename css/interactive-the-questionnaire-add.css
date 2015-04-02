@@ -1,0 +1,129 @@
+/* main-header start */
+#main-header{
+  height: 60px;
+  border-bottom: 1px solid #d8dbdb;
+  position: relative;
+}
+
+#main-header .btn-back,
+#main-header .btn-preview,
+#main-header .btn-commit, 
+#main-header .icon, 
+#main-header h2 {
+  top: 14px;
+  position: absolute;
+}
+
+#main-header .icon{
+  left: 12px;
+  width: 32px;
+  height: 32px;
+  background: url(../images/icon-interactive-cur.png) no-repeat center center;
+}
+
+#main-header .btn-preview{
+  right: 125px;
+}
+
+#main-header .btn-back{
+  right: 225px;
+}
+
+#main-header .btn-commit{
+  right: 25px;
+}
+
+#main-header h2{
+  left: 56px;
+  width: 240px;
+  height: 32px;
+  line-height: 32px; 
+}
+/* main-header end */
+
+
+
+.the-questionnaire-title{
+  width: 470px;
+  height: 59px;
+  margin: 0 auto;
+  margin-top:30px; 
+  background-image:url(../images/the-questionnaire-title.png);
+  position: relative; 
+}
+
+.the-questionnaire-title input{
+  position: absolute;
+  height: 59px;
+  left: 44px;
+  width: 380px;
+  outline: none;
+  font-size:18px;
+  text-align: center;
+  background-color: #66cccc; 
+  color:#fff;
+}
+
+.the-questionnaire-des{
+  width:600px;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.the-questionnaire-des input{
+  text-align: center;
+  width: 600px;
+  padding: 6px 0;
+  outline: none;
+}
+
+.item-wrap{
+  width: 840px;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.item-wrap .item{
+  padding: 20px;
+  border:1px solid #d8dbdb;
+}
+
+.item-wrap .item .btn-wrap{
+  height: 32px;
+  line-height: 32px;
+}
+
+
+.ques-title-wrap{
+  height: 32px;
+  margin-top: 10px;
+}
+
+.ques-title-wrap input{
+  width: 800px;
+  padding: 6px 0;
+  outline: none;
+}
+
+.option-wrap{
+  padding-left: 16px;
+}
+
+.option-wrap input{
+  width: 200px;
+  padding: 6px 0;
+  outline: none;
+}
+
+.option-add{
+  height: 32px;
+  line-height: 32px;
+  cursor: pointer;
+}
+
+.option-add i{
+  width: 32px;
+  height: 32px;
+  float: left;
+  background: url(../images/icon-add-options.png) no-repeat left center;
+}

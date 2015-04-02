@@ -4,8 +4,7 @@
 <meta charset="UTF-8">
 <title>KKH - 互动管理 - 问卷管理 - 新建</title>
 <link rel="stylesheet" type="text/css" href="css/common.css">
-<link rel="stylesheet" type="text/css" href="css/common-list.css">
-</head>
+<link rel="stylesheet" type="text/css" href="css/interactive-the-questionnaire-add.css"></head>
 <body>
 <!-- header start --> 
 <div id="header-wrap">
@@ -83,8 +82,39 @@
         <div class="icon"></div>
         <h2>互动管理 &gt; 新建问卷</h2>
         <a class="btn btn-default btn-82-32 btn-back">返回</a>
-        <a class="btn btn-default btn-82-32 btn-preview">返回</a>
-        <a class="btn btn-default btn-82-32 btn-commit">预览</a>
+        <a class="btn btn-default btn-82-32 btn-preview">预览</a>
+        <a class="btn btn-default btn-82-32 btn-commit">完成</a>
+      </div>
+      <div id="main-content">
+        <div class="the-questionnaire-title">
+          <input id="the-questionnaire-title" type="text" value="问卷名称">
+        </div>
+        <div class="the-questionnaire-des">
+          <input id="the-questionnaire-des" type="text" value="点此输入问卷说明">
+        </div>
+
+        <div class="item-wrap">
+          <div class="item">
+            <div class="btn-wrap">
+              <div class="fl">
+                <a class="btn btn-primary btn-82-32">单选</a>
+                <a class="btn btn-default btn-82-32">多选</a>
+                <a class="btn btn-default btn-82-32">填空</a>  
+              </div>
+              <div class="fr">
+                <a class="btn btn-default btn-82-32">完成</a>  
+              </div>
+            </div>
+            <div class="ques-title-wrap">
+              <input class="ques-title" type="text" value="请在此处输入问题标题">
+            </div>
+            <div class="option-wrap">
+              <div><input type="text" value="选项1"></div>
+              <div><input type="text" value="选项2"></div>
+              <div class="option-add"><i></i>增加选项</div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
