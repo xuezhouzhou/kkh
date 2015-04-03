@@ -440,6 +440,7 @@ h3{ font-size:16px; }
   line-height: 34px;
 }
 
+.btn-160-32,
 .btn-112-32,
 .btn-82-32{
   font-size: 14px;
@@ -449,11 +450,14 @@ h3{ font-size:16px; }
 
 .btn-112-32{
   width: 110px;
-  
 }
 
 .btn-82-32{
   width: 80px;
+}
+
+.btn-160-32{
+  width: 158px;
 }
 
 /* 浮动 */
