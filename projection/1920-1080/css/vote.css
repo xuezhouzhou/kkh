@@ -1,6 +1,6 @@
 .container{
-  width: 1024px;
-  height: 768px;
+  width: 1920px;
+  height: 1080px;
   margin: 0 auto;
   background-image: url(../images/vote.png);
   position: relative;
@@ -9,10 +9,10 @@
 
 .logo{
   position: absolute;
-  left: 50px;
+  left: 49px;
   top: 12px;
-  width: 50px;
-  height: 25px;
+  width: 100px;
+  height: 50px;
 }
 
 
@@ -23,9 +23,9 @@
 
 .company{
   position: absolute;
-  font-size: 15px;
-  left: 21px;
-  top: 39px;
+  font-size: 24px;
+  left: 55px;
+  top: 66px;
 }
 
 .company,
@@ -36,24 +36,23 @@
 
 .vote-name{
   position: absolute;
-  left: 263px;
-  top: 19px;
-  width: 536px;
-  height: 40px;
-  line-height: 40px;
-  font-size: 30px;
+  left: 381px;
+  top: 15px;
+  width: 1110px;
+  height: 70px;
+  line-height: 70px;
+  font-size: 46px;
   font-weight: 800;
   text-align: center;
-  color:#fff;
-
+  color: #fff;
 }
 
 .vote-total{
   position: absolute;
-  left: 45px;
-  top: 708px;
+  left: 58px;
+  top: 1011px;
   line-height: 40px;
-  font-size: 22px;
+  font-size: 24px;
   font-weight: 800;
   text-align: center;
   color: #fff;
@@ -61,11 +60,12 @@
 
 .vote-list-wrap{
   position: absolute;
-  width: 900px;
-  height: 600px;
-  left: 62px;
-  top: 83px;
+  width: 1500px;
+  height: 870px;
+  left: 212px;
+  top: 120px;
   overflow: hidden;
+  
 }
 
 .vote-list{
@@ -76,18 +76,18 @@
 .vote-list li{
   list-style: none;
   float: left;
-  height: 600px;
+  height: 870px;
   position: relative;
 }
 
 .vote-list .bar-bg,
 .vote-list .bar-wrap{
-  width: 60px;
+  width: 80px;
   position: absolute;
-  left:50%;
-  margin-left: -30px;
+  left: 50%;
+  margin-left: -40px;
   border-radius: 5px 5px 0 0;
-  height: 401px;
+  height: 559px;
 }
 
 .vote-list .bar-bg{
@@ -113,12 +113,12 @@
 
 .vote-list .bar .value{
   color: #fff;
-  font-size: 24px;
-  height: 40px;
-  line-height: 40px;
+  font-size: 28px;
+  height: 60px;
+  line-height: 60px;
   position: absolute;
-  top:50%;
-  margin-top: -20px;
+  top: 50%;
+  margin-top: -30px;
   text-align: center;
   width: 100%;
   font-weight: 800;
@@ -126,12 +126,12 @@
 
 .vote-list li .img{
   position: absolute;
-  width: 102px;
-  height: 128px;
+  width: 178px;
+  height: 224px;
   border-radius: 5px;
-  left:50%;
-  margin-left: -58px;
-  top:401px;
+  left: 50%;
+  margin-left: -95px;
+  top: 560px;
 }
 
 .vote-list .one .img{ border: 7px solid #ff2931; }
@@ -148,10 +148,10 @@
   position: absolute;
   bottom: 0;
   width: 100%;
-  font-size: 30px;
+  font-size: 58px;
   text-align: center;
-  height: 57px;
-  line-height: 57px;
+  height: 58px;
+  line-height: 58px;
 }
 
 .vote-list .one .name{ color:#ff2931; }
@@ -162,10 +162,10 @@
 
 .vote-list .one .crown{
   position: absolute;
-  width: 82px;
-  height: 72px;
+  width: 116px;
+  height: 101px;
   background-image: url(../images/crown.png);
-  left: 68px;
-  top: -50px;
+  left: 125px;
+  top: -63px;
   z-index: 999;
 }
