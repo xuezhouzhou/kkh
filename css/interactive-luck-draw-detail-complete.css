@@ -1,0 +1,135 @@
+#side,
+#main{
+  height: 1200px;
+}
+
+/* main-header start */
+#main-header{
+  height: 60px;
+  border-bottom: 1px solid #d8dbdb;
+  position: relative;
+}
+
+#main-header .btn-back,
+#main-header .btn-del,
+#main-header .btn-edit, 
+#main-header .icon, 
+#main-header h2 {
+  top: 14px;
+  position: absolute;
+}
+
+#main-header .icon{
+  left: 12px;
+  width: 32px;
+  height: 32px;
+  background: url(../images/icon-interactive-cur.png) no-repeat center center;
+}
+
+#main-header .btn-del{
+  right: 25px;
+}
+
+#main-header .btn-edit{
+  right: 125px;
+}
+
+#main-header .btn-back{
+  right: 225px;
+}
+
+#main-header h2{
+  left: 56px;
+  width: 240px;
+  height: 32px;
+  line-height: 32px; 
+}
+/* main-header end */
+
+
+.num-time{
+  padding: 10px 20px;
+  height: 28px;
+  line-height: 28px;
+}
+.status{
+  color:#8cc152;
+  padding: 0 20px;
+}
+.time i{
+  display: block;
+  width: 28px;
+  height: 28px;
+  float: left;
+  background: url(../images/icon-clock.png) no-repeat center center;
+}
+
+.content-wrap{
+  width: 670px;
+  margin:0 auto;
+}
+
+.content-top{
+  padding-top: 50px;
+  border-bottom: 1px solid #d8dbdb;
+}
+
+.content-top h1{
+  text-align: center;
+  font-size: 18px;
+}
+
+.content-top .des{
+  text-indent: 28px;
+  line-height: 1.5em;
+  margin-top: 20px;
+}
+
+
+.content-top .luck-draw-type{
+  text-align: center;
+  padding: 50px 0;
+}
+
+.content-top .luck-draw-type img{
+  border:1px solid #d8dbdb;
+  padding: 5px 10px;
+}
+
+
+.content-bottom td{
+  padding:10px 0;
+}
+
+.award-item{
+  border-bottom:1px solid #d8dbdb;
+}
+
+.user-item{
+  color: #8cc152;
+  height: 26px;
+  line-height: 26px;
+}
+
+.user-item div{
+  float: left;
+}
+
+.user-item .name,
+.user-item .sex{
+  margin-right: 10px;
+}
+
+.user-item .sex{
+  width: 26px;
+  height: 26px;
+  
+}
+
+.user-item .sex-m{
+  background: url(../images/icon-sex2-m.png) no-repeat center center;  
+}
+
+.user-item .sex-w{
+  background: url(../images/icon-sex2-w.png) no-repeat center center;  
+}
