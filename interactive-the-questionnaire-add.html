@@ -90,28 +90,38 @@
           <input id="the-questionnaire-title" type="text" value="问卷名称">
         </div>
         <div class="the-questionnaire-des">
-          <input id="the-questionnaire-des" type="text" value="点此输入问卷说明">
+          <input id="the-questionnaire-des" type="text" placeholder="点此输入问卷说明">
         </div>
 
         <div class="item-wrap">
           <div class="item">
             <div class="btn-wrap">
               <div class="fl">
-                <a class="btn btn-primary btn-82-32">单选</a>
-                <a class="btn btn-default btn-82-32">多选</a>
-                <a class="btn btn-default btn-82-32">填空</a>  
+                <a data-show="1" class="btn btn-primary btn-82-32 btn-single">单选</a>
+                <a data-show="1" class="btn btn-default btn-82-32 btn-multi">多选</a>
+                <a data-show="0" class="btn btn-default btn-82-32 btn-blanks">填空</a>  
               </div>
               <div class="fr">
                 <a class="btn btn-default btn-82-32">完成</a>  
               </div>
             </div>
             <div class="ques-title-wrap">
-              <input class="ques-title" type="text" value="请在此处输入问题标题">
+              <input class="ques-title" type="text" placeholder="请在此处输入问题标题">
             </div>
             <div class="option-wrap">
-              <div><input type="text" value="选项1"></div>
-              <div><input type="text" value="选项2"></div>
+              <div class="option" data-index="1"><input type="text" placeholder="选项1"></div>
+              <div class="option" data-index="2"><input type="text" placeholder="选项2"></div>
               <div class="option-add"><i></i>增加选项</div>
+            </div>
+            <div class="bottom-bar clear">
+              <div class="item-add fl">在此题后添加新题</div>
+              <div class="tool fr">
+                <a class="item-del">删除</a>
+                <a class="item-prev">上移</a>
+                <a class="item-next">下移</a>
+                <a class="item-first">最前</a>
+                <a class="item-last">最后</a>
+              </div>
             </div>
           </div>
         </div>
@@ -120,7 +130,99 @@
   </div>
 </div>
 <div id="footer">2015 kaikaihui  开发者中心/服务协议/权利声明</div>
+
+
+
+<div id="item-demo">
+  <div class="item">
+    <div class="btn-wrap">
+      <div class="fl">
+        <a data-show="1" class="btn btn-primary btn-82-32 btn-single">单选</a>
+        <a data-show="1" class="btn btn-default btn-82-32 btn-multi">多选</a>
+        <a data-show="0" class="btn btn-default btn-82-32 btn-blanks">填空</a>  
+      </div>
+      <div class="fr">
+        <a class="btn btn-default btn-82-32">完成</a>  
+      </div>
+    </div>
+    <div class="ques-title-wrap">
+      <input class="ques-title" type="text" placeholder="请在此处输入问题标题">
+    </div>
+    <div class="option-wrap">
+      <div class="option" data-index="1"><input type="text" placeholder="选项1"></div>
+      <div class="option" data-index="2"><input type="text" placeholder="选项2"></div>
+      <div class="option-add"><i></i>增加选项</div>
+    </div>
+    <div class="bottom-bar clear">
+      <div class="item-add fl">在此题后添加新题</div>
+      <div class="tool fr">
+        <a class="item-del">删除</a>
+        <a class="item-prev">上移</a>
+        <a class="item-next">下移</a>
+        <a class="item-first">最前</a>
+        <a class="item-last">最后</a>
+      </div>
+    </div>
+  </div>
+</div>
+
 <script src="js/jquery.min.js"></script>
 <script src="js/common.js"></script>
+<script>
+(function(){
+  $('.item-del').live('click',function(){
+    $(this).parents('.item').remove();
+    setSideHeight();
+  })
+
+  $('.item-add').live("click",function(){
+    var html = $('#item-demo').html();
+    $(this).parents('.item').after(html);
+    setSideHeight();
+  });
+
+  $('.option-add').live('click',function(){
+    var index = parseInt($(this).prev().attr('data-index')) + 1;
+    //console.log(index)
+    $(this).before('<div class="option" data-index="'+ index +'"><input type="text" placeholder="选项'+ index +'"></div>');
+    setSideHeight();
+  });
+
+  $('.btn-blanks,.btn-single,.btn-multi').live('click',function(){
+    $(this).siblings().removeClass('btn-primary').addClass('btn-default');
+    $(this).removeClass('btn-default').addClass('btn-primary');
+    var show = $(this).attr('data-show');
+    if(show=='1'){
+      $(this).parents('.btn-wrap').siblings('.option-wrap').show();
+    }else{
+      $(this).parents('.btn-wrap').siblings('.option-wrap').hide();
+    }
+    setSideHeight();
+  })
+
+  placeHolder($('#the-questionnaire-title'),'问卷名称');
+  function placeHolder($_obj,text){
+    $_obj.on('focus',function(){
+      if($(this).val()==text){
+        $(this).val('');
+      }
+    }).on('blur',function(){
+      if($(this).val()==""){
+        $(this).val(text);
+      }
+    });
+  }
+
+  $(function(){
+    setSideHeight();
+  });
+
+  //设置左侧高度
+  function setSideHeight(){
+    var height = $("#main").height();
+    $('#side').height(height);;
+  }
+})(jQuery);
+</script>
 </body>
 </html>
