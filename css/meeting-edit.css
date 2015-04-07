@@ -137,30 +137,14 @@
 
 /* 更多会议信息弹出层 start */
 #tc-more-meeting-info{
-  margin-left: -330px;
+  margin-left: -350px;
   margin-top: -250px;
-  width: 660px;
+  width: 700px;
   height: 500px;
 }
 
 #tc-more-meeting-info .content{
-  padding: 28px;
-}
-
-#tc-more-meeting-info .content h3{
-  font-size: 14px;
-  font-weight: 400;
-  color: #454646;
-}
-
-#tc-more-meeting-info .content textarea{
-  border: 1px solid #d8dbdb;
-  width: 586px;
-  height: 55px;
-  color: #a4a9ae;
-  outline: none;
-  padding: 10px;
-  margin-top: 10px;
+  padding: 5px;
 }
 
 #tc-more-meeting-info .btn-wrap{

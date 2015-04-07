@@ -1,0 +1,154 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>KKH - 互动管理 - 众筹管理 - 详情 - 已完成</title>
+<link rel="stylesheet" type="text/css" href="css/common.css">
+<link rel="stylesheet" type="text/css" href="css/interactive-the-raise-detail-complete.css">
+</head>
+<body>
+<!-- header start --> 
+<div id="header-wrap">
+  <div id="header">
+    <div id="logo"></div>
+    <div id="welcome">欢迎您的登录！您可在此管理您的系统后台。</div>
+    <div id="top-menu">
+      <div class="back-index">
+        <a href="#">回到首页</a>
+      </div>
+      <div class="login-info">
+        <div class="login-info-inner">
+          <img class="tx" src="images/tx.jpg" >
+          <p class="username">河西</p>
+        </div>
+        <div class="login-info-list">
+          <a href="userinfo.html">账号信息</a>
+          <a href="changepass.html">密码修改</a>
+          <a href="">退出</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- header end -->
+
+<div id="container-wrap">
+  <div id="container">
+    <!-- side start -->
+    <div id="side">
+      <!-- 侧边栏用户信息 start  -->
+      <div id="side-userinfo">
+        <div class="hover"></div>
+        <img class="tx" src="images/tx.jpg">
+        <div class="sex sex-m"></div>
+        <p class="username">荷西-sweety</p>
+        <p class="score"><span class="num">208</span>分</p>
+      </div>
+      <!-- 侧边栏用户信息 end --> 
+      <!-- 侧边栏菜单 start -->
+      <div id="side-menu">
+        <a class="menu-list">
+          <div class="icon icon-meeting"></div>
+          <div class="title">会议管理</div>
+        </a>
+        <a class="menu-list">
+          <div class="icon icon-contacts"></div>
+          <div class="title">通讯录管理</div>
+        </a>
+        <div id="side-menu-interactive" class="menu-list">
+          <div class="border border-interactive"></div>
+          <div class="icon icon-interactive icon-interactive-cur"></div>
+          <div class="title">互动管理</div>
+          <div class="icon-jt icon-jt-right icon-jt-bottom"></div>
+        </div>
+        <div id="interactive-child" style="display:block;">
+          <a class="menu-list"><div class="title">投票管理</div></a>
+          <a class="menu-list"><div class="title">问卷管理</div></a>
+          <a class="menu-list"><div class="title">抽奖管理</div></a>
+          <a class="menu-list"><div class="title">微信墙管理</div></a>
+          <a class="menu-list"><div class="title">照片墙管理</div></a>
+          <a class="menu-list"><div class="title">签到管理</div></a>
+          <a class="menu-list cur"><div class="title">众筹管理</div></a>
+        </div>
+        <a class="menu-list">
+          <div class="icon icon-statistical"></div>
+          <div class="title">统计报表</div>
+        </a>
+      </div>
+      <!-- 侧边栏菜单 end -->
+    </div>
+    <!-- side end -->    
+    <div id="main">
+      <div id="main-header">
+        <div class="icon"></div>
+        <h2>互动管理 > 众筹详情</h2>
+        <a class="btn btn-default btn-82-32 btn-back">返回</a>
+        <a class="btn btn-default btn-82-32 btn-edit">修改</a>
+        <a class="btn btn-default btn-82-32 btn-del">删除</a>
+      </div>
+      <div id="main-content">
+        <div id="the-raise-detail">
+          <h1>用行动拯救“迷失的家园”</h1>
+          <div class="interactive-info clear">
+            <div class="fl">
+              <span class="time"><i></i>2014-09-08 23:09</span>
+            </div>
+            <div class="fr">
+              <span class="statue">已结束</span>
+              <span class="num">20141207000010</span>
+            </div>
+          </div>
+          <div class="poster"><img src="images/the-raise-poster.png"></div>
+          <div class="info">
+            <div class="total"><span class="f38080">10000</span>元/<span class="c-47b2d9">500</span>份</div>
+            <div class="current">
+              <div class="bar"></div>
+              <div class="txt">已筹集了0份</div>
+            </div>
+          </div>
+          <p>如果有一天，<br>
+      当苍穹不再蔚蓝，当碧水不再澄澈，<br>
+      当茂林不再繁盛，当沃土不再富饶，<br>
+      当“鹰击长空，鱼翔浅底”只成为曾经的口述诗篇，<br>
+      我们再也无法亲眼所见；<br>
+      当“蛙声十里出山泉”只成为一种传说，<br>
+      我们再也无法耳闻；<br>
+      当“遥知不是雪，唯有暗香来”只成为“枯藤老树”，<br>
+      我们再也无法感知；<br>
+      当一切曾经美好又亲切的大自然造物皆化为满目疮痍，我们终将成为那“断肠人”，行走于消<br>
+      逝，再也无法找到曾经的美好。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="footer">2015 kaikaihui  开发者中心/服务协议/权利声明</div>
+<div id="body-hover"></div>
+
+
+<div id="tc-the-raise-preview" class="tc-box">
+  <div class="tc-close" data-id="tc-the-raise-preview"></div>
+  <div class="top">
+    <h2>预览</h2>
+  </div>
+</div>
+<script src="js/jquery.min.js"></script>
+<script src="js/common.js"></script>
+<script>
+(function($){
+  //弹出层隐藏
+  $('.tc-close').on('click',function(){
+    var id = $(this).attr('data-id');
+    $('#' + id + ",#body-hover").hide();
+  });
+  
+  //弹出层显示
+  $('.tc-show').on('click',function(){
+    var id = $(this).attr('data-id');
+    $('#' + id + ",#body-hover").show();
+  });
+})(jQuery);  
+</script>
+</body>
+</html>

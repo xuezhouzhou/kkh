@@ -2,9 +2,10 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>KKH - 会议管理 - 编辑会议</title>
+<title>KKH - 会议管理 - 编辑</title>
 <link rel="stylesheet" href="css/common.css">
 <link rel="stylesheet" href="css/meeting-edit.css">
+<link rel="stylesheet" href="vendor/kindeditor/themes/default/default.css">
 <script src="http://api.map.baidu.com/api?v=2.0&ak=154xlNeRRQNWV0XuZpRib87i"></script>
 </head>
 <body>
@@ -106,9 +107,9 @@
           </tr>
           <tr>
             <td>开始时间</td>
-            <td><input type="text" class="text text-230-38" placeholder="2014-10-09 16:00"></td>
+            <td><input type="text" class="text text-230-38" onclick="WdatePicker({dateFmt:'yyyy-MM-dd HH:mm:ss'})" placeholder="2014-10-09 16:00"></td>
             <td class="w80">结束时间</td>
-            <td><input type="text" class="text text-230-38" placeholder="2014-10-09 16:00"></td>
+            <td><input type="text" class="text text-230-38" onclick="WdatePicker({dateFmt:'yyyy-MM-dd HH:mm:ss'})" placeholder="2014-10-09 16:00"></td>
           </tr>
           <tr>
             <td>联系人</td>
@@ -128,7 +129,7 @@
             </td>
           </tr>
           <tr>
-            <td colspan="4" class="a4a9ae">自动配置WiFi编号</td>
+            <td colspan="4" class="a4a9ae">自动配置WiFi编号>></td>
           </tr>
           <tr>
             <td>会议图片</td>
@@ -149,7 +150,7 @@
             </td>
           </tr>
           <tr>
-            <td colspan="4" style="line-height:50px;"><a class="tc-show" data-id="tc-more-meeting-info">更多会议信息填写>></a></td>
+            <td colspan="4" style="line-height:50px;"><a class="tc-show" data-id="tc-more-meeting-info">更多会议信息>></a></td>
           </tr>
           <tr>
             <td style="vertical-align: top;">会议二维码</td>
@@ -178,15 +179,10 @@
 <div id="tc-more-meeting-info" class="tc-box">
   <div class="tc-close" data-id="tc-more-meeting-info"></div>
   <div class="top">
-    <h2>更多会议信息填写</h2>
+    <h2>会议详情编辑</h2>
   </div>
   <div class="content">
-    <h3>会议介绍</h3>
-    <textarea placeholder="请输入会议介绍" row="3"></textarea>
-    <h3 class="m-t-5">嘉宾介绍</h3>
-    <textarea placeholder="请输入嘉宾介绍" row="3"></textarea>
-    <h3 class="m-t-5">会议日程</h3>
-    <textarea placeholder="请输入会议日程" row="3"></textarea>
+    <textarea name="meeting-detail" style="width:688px;height: 360px;">这里是会议详细信息</textarea>
     <div class="btn-wrap">
       <a class="btn btn-primary btn-106-36 btn-br-18 fl">确认</a>
       <a class="btn btn-default btn-106-36 btn-br-18 fr">取消</a>
@@ -196,8 +192,10 @@
 <!-- 更多会议信息填写弹出层 end -->
 <script src="js/jquery.min.js"></script>
 <script src="js/common.js"></script>
+<script src="vendor/My97DatePicker/WdatePicker.js"></script>
+<script src="vendor/kindeditor/kindeditor.js"></script>
 <script>
-(function($){
+(function($,BMap,KindEditor){
   //WiFi服务 切换
   $('#wifi-radio .radio').on('click',function(){
     $(this).siblings('.radio-checked').removeClass('radio-checked').end().addClass('radio-checked');
@@ -214,16 +212,30 @@
     var id = $(this).attr('data-id');
     $('#' + id + ",#body-hover").show();
   });
-})(jQuery);
 
-// 百度地图API功能
-var map = new BMap.Map("allmap");
-var point = new BMap.Point(116.356716,39.356716);
-map.centerAndZoom(point, 12);
-var marker = new BMap.Marker(point);  // 创建标注
-map.addOverlay(marker);              // 将标注添加到地图中
-var label = new BMap.Label("上海市浦东新区巨峰路311号",{offset:new BMap.Size(20,-10)});
-marker.setLabel(label);   
+  // 百度地图API功能
+  var map = new BMap.Map("allmap");
+  var point = new BMap.Point(116.356716,39.356716);
+  map.centerAndZoom(point, 12);
+  var marker = new BMap.Marker(point);  // 创建标注
+  map.addOverlay(marker);              // 将标注添加到地图中
+  var label = new BMap.Label("上海市浦东新区巨峰路311号",{offset:new BMap.Size(20,-10)});
+  marker.setLabel(label);
+
+  //文本编辑器
+  var editorMeeting;
+  KindEditor.ready(function(K) {
+    editorMeeting = K.create('textarea[name="meeting-detail"]', {
+      resizeType : 0,
+      allowFileManager : false,
+      items : [
+        'fontname', 'fontsize', '|', 'forecolor', 'hilitecolor', 'bold', 'italic', 'underline',
+        'removeformat', '|', 'justifyleft', 'justifycenter', 'justifyright', 'insertorderedlist',
+        'insertunorderedlist','|','fullscreen']
+    });
+  });
+
+})(jQuery,BMap,KindEditor);
 </script>
 </body>
 </html>
