@@ -5,7 +5,6 @@
 }
 
 .header{
-  height: 100px;
   width: 1014px;
   margin: 0 auto;
 }
@@ -27,11 +26,8 @@
 .header .nav-inner{
   position: absolute;
   width: 1920px;
-  height: 50px;
-  left: 25px;
-  top: 25px;
   z-index: 99;
-  font-size: 18px; 
+  
 }
 
 .header .nav,
@@ -40,20 +36,15 @@
 } 
 
 .header .login-wrap{
-  line-height: 50px;
-  color: #fff;
+  color: #6c6c6c;
   margin-left: 10px;
 }
 
 .header .nav a{
   display: block;
   float: left;
-  height: 50px;
-  line-height: 50px;
-  padding: 0 30px;
   color: #6c6c6c;
-  border-radius: 24px;
-  margin:0 2px;  
+  margin:0 2px; 
 }
 
 .header .login-wrap a{
@@ -68,4 +59,69 @@
 
 .login-wrap a:hover{
   color: #66cccc;
+}
+
+
+@media screen and (max-width:1350px){
+  .header{
+    height: 80px;
+  }
+
+  .header .logo{
+    height: 80px;
+  }
+
+  .header .nav-wrap{
+    height: 80px;
+  }
+
+  .header .nav-inner{
+    font-size: 16px;
+    height: 40px;
+    left: 20px;
+    top: 20px; 
+  }
+
+  .header .nav a{
+    padding: 0 20px;
+    border-radius: 20px;
+    height: 40px;
+    line-height: 40px;
+  }
+
+  .header .login-wrap{
+    line-height: 40px;
+  }
+}
+
+@media screen and (min-width:1351px){
+  .header{
+    height: 100px;
+  }
+  
+  .header .logo{
+    height: 100px;
+  }
+
+  .header .nav-wrap{
+    height: 100px;
+  }
+
+  .header .nav-inner{
+    font-size: 18px;
+    height: 50px;
+    left: 25px;
+    top: 25px; 
+  }
+
+  .header .nav a{
+    padding: 0 30px;
+    border-radius: 25px;
+    height: 50px;
+    line-height: 50px;
+  }
+  
+  .header .login-wrap{
+    line-height: 50px;
+  }
 }
