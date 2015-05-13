@@ -218,22 +218,53 @@
   width: 1014px;
   height: 585px;
   margin: 0 auto;
-  background: url('../images/product.jpg');
   position: relative;
 }
 
-.product a{
+.product .video{
+	position: absolute;
+	width: 504px;
+	height: 339px;
+	top: 112px;
+}
+
+.product h2{
+	position: absolute;
+	top: 138px;
+	left: 625px;
+	font-size: 36px;
+	color: #2c3e50;
+}
+
+.product p{
+	position: absolute;
+	color: #a2a1a1;
+	font-size: 18px;
+	line-height: 1.5em;
+	top: 209px;
+	left: 540px;
+}
+
+.product .learn-more{
   position: absolute;
   display: block;
   width: 200px;
   height: 52px;
   left: 661px;
   top: 381px;
+	font-size:18px;
+	line-height:52px;
+	text-align:center;
+	color:#fff;
+	background-color:#69C852;
+	border-radius:5px;
 }
 
 .product .circle{
   background-color:#66cdcc;
 }
+
+
 /* 产品演示 end */
 
 
