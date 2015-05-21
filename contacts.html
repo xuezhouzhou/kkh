@@ -138,7 +138,7 @@
       <input type="text" class="text text-296-40" placeholder="姓名">
     </div>
     <div class="m-t-15">
-      <div id="sex-radio" class="clear">
+      <div class="js-sex-radio clear">
         <div class="radio"><i></i>男</div>
         <div class="radio radio-checked"><i></i>女</div>   
       </div>
@@ -162,6 +162,41 @@
   </div>
 </div>
 <!-- 添加通讯人弹出层 end -->
+
+
+<!-- 编辑通讯人弹出层 start -->
+<div id="tc-contacts-edit" class="tc-box">
+  <div class="tc-close" data-id="tc-contacts-edit"></div>
+  <div class="content">
+    <h2>通讯录详情</h2>
+    <div class="m-t-15">
+      <input type="text" class="text text-296-40" placeholder="姓名" value="王康飞">
+    </div>
+    <div class="m-t-15">
+      <div class="js-sex-radio clear">
+        <div class="radio radio-checked"><i></i>男</div>
+        <div class="radio"><i></i>女</div>   
+      </div>
+    </div>
+    <div class="m-t-15">
+      <input type="text" class="text text-296-40" placeholder="手机号" value="18616675742">
+    </div>
+    <div class="m-t-15">
+      <input type="text" class="text text-296-40" placeholder="邮箱" value="5698637@qq.com">
+    </div>
+    <div class="m-t-15">
+      <input type="text" class="text text-296-40" placeholder="公司" value="河西资讯有限公司">
+    </div>
+    <div class="m-t-15">
+      <input type="text" class="text text-296-40" placeholder="职务" value="项目经理">
+    </div>
+    <div class="m-t-15">
+      <a class="btn btn-primary btn-106-36 btn-br-18 fl">修改</a>
+      <a class="btn btn-default btn-106-36 btn-br-18 fr">取消</a>
+    </div>
+  </div>
+</div>
+<!-- 编辑通讯人弹出层 end -->
 
 
 <!-- 添加通讯录弹出层 start -->
@@ -198,16 +233,22 @@
   });
 
   //性别切换
-  $('#sex-radio .radio').on('click',function(){
+  $('.js-sex-radio .radio').on('click',function(){
     $(this).siblings('.radio-checked').removeClass('radio-checked').end().addClass('radio-checked');
   });
 
   $(function(){
     var contactsInfo = window.frames['contacts-info'];
     $(contactsInfo).load(function () {
-      $(contactsInfo.document).find('#add-contacts').on('click',function(){
+			//新建通讯人
+			$(contactsInfo.document).find('#add-contacts').on('click',function(){
         $("#body-hover,#tc-contacts-add").show();
       });
+			
+			//编辑通讯人
+			$(contactsInfo.document).find('.js-name').on('click',function(){
+				$("#body-hover,#tc-contacts-edit").show();
+			});
     });
   });
 

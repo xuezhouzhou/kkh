@@ -120,20 +120,23 @@
 /* 通讯录详细信息 end */
 
 
-/* 添加通讯人弹出层 start */
-#tc-contacts-add{
+/* 添加/编辑 通讯人弹出层 start */
+#tc-contacts-add,
+#tc-contacts-edit{
   height: 460px;
   width:400px;
   margin-left: -200px;
   margin-top: -230px;  
 }
 
-#tc-contacts-add .content{
+#tc-contacts-add .content,
+#tc-contacts-edit .content{
   width: 296px;
   margin:30px auto; 
 }
 
-#tc-contacts-add .radio{
+#tc-contacts-add .radio,
+#tc-contacts-edit .radio{
   height: 38px;
   line-height: 38px;
   cursor: pointer;
@@ -141,7 +144,8 @@
   margin-right: 30px;
 }
 
-#tc-contacts-add .radio i{
+#tc-contacts-add .radio i,
+#tc-contacts-edit .radio i{
   width: 30px;
   height: 38px;
   display: block;
@@ -149,11 +153,13 @@
   background: url(../images/radio-sm-default.png) no-repeat -2px center; 
 }
 
-#tc-contacts-add .radio-checked i{
+#tc-contacts-add .radio-checked i,
+#tc-contacts-edit .radio-checked i{
   background: url(../images/radio-sm-checked.png) no-repeat -2px center; 
 }
 
-#tc-contacts-add h2{
+#tc-contacts-add h2,
+#tc-contacts-edit h2{
   text-align: center;
 }
 /* 添加通讯人弹出层 end */

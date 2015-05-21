@@ -17,6 +17,7 @@
 
 #contacts-list .name{
   text-indent: 40px;
+	cursor:pointer;
 }
 #contacts-list .name i{
   width: 40px;
