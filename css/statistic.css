@@ -1,0 +1,49 @@
+#main .header{
+	height: 60px;
+	border-bottom: 1px solid #d8dbdb;
+	position: relative;
+}
+#main .header .icon,
+#main .header h2{
+	position: absolute;
+	top: 14px;
+}
+#main .header .icon{
+	left: 12px;
+	width: 32px;
+	height: 32px;
+	background: url(../images/icon-tjbb-cur.png) no-repeat center center;	
+}
+#main .header h2{
+	font-weight: 400;
+	font-size: 18px;
+	left: 56px;
+	width: 180px;
+	height: 32px;
+	line-height: 32px;
+}
+
+#main .section {
+	color:#454646;
+	padding-top:100px;
+}
+#main .section .total{
+	font-size:24px;
+	letter-spacing:1px;
+	text-align:center;
+}
+#main .des{ padding:0 100px;	}
+#main .des li{
+	width:33%;
+	float:left;
+	font-size:18px;
+	list-style:none;
+	margin-top:50px;
+	text-align:center;
+}
+
+#main .num{ padding:0 10px; }
+#main .num1{ color:#8d99f5;	}
+#main .num2{ color:#6fb7f9; }
+#main .num3{ color:#65cb3d; }
+#main .num4{ color:#efb349; }

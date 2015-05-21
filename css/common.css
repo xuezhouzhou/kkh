@@ -276,33 +276,14 @@ h3{ font-size:16px; }
   top: 10px;
 }
 
-#side-menu .menu-list .icon-meeting{
-  background: url(../images/icon-hygl.png) no-repeat center center;
-}
-
-#side-menu .menu-list .icon-meeting-cur{
-  background: url(../images/icon-hygl-cur.png) no-repeat center center;
-}
-
-#side-menu .menu-list .icon-contacts{
-  background: url(../images/icon-txlgl.png) no-repeat center center;
-}
-
-#side-menu .menu-list .icon-contacts-cur{
-  background: url(../images/icon-contacts-cur.png) no-repeat center center;
-}
-
-#side-menu .menu-list .icon-interactive{
-  background: url(../images/icon-hdgl.png) no-repeat center center;
-}
-
-#side-menu .menu-list .icon-interactive-cur{
-  background: url(../images/icon-interactive-cur.png) no-repeat center center;
-}
-
-#side-menu .menu-list .icon-statistical{
-  background: url(../images/icon-tjbb.png) no-repeat center center;
-}
+#side-menu .icon-meeting{ background: url(../images/icon-hygl.png) no-repeat center center; }
+#side-menu .icon-contacts{ background: url(../images/icon-txlgl.png) no-repeat center center; }
+#side-menu .icon-interactive{ background: url(../images/icon-hdgl.png) no-repeat center center;}
+#side-menu .icon-statistical{ background: url(../images/icon-tjbb.png) no-repeat center center;}
+#side-menu .icon-meeting-cur{ background: url(../images/icon-hygl-cur.png) no-repeat center center; }
+#side-menu .icon-contacts-cur{ background: url(../images/icon-contacts-cur.png) no-repeat center center; }
+#side-menu .icon-interactive-cur{  background: url(../images/icon-interactive-cur.png) no-repeat center center;}
+#side-menu .icon-statistical-cur{ background: url(../images/icon-tjbb-cur.png) no-repeat center center; }
 
 #side-menu .menu-list .border{
   position: absolute;
@@ -312,17 +293,10 @@ h3{ font-size:16px; }
   height:50px;
 }
 
-#side-menu .menu-list .border-meeting{
-  background-color: #8cc152;
-}
-
-#side-menu .menu-list .border-contacts{
-  background-color: #5db3f5;
-}
-
-#side-menu .menu-list .border-interactive{
-  background-color: #f88d68;
-}
+#side-menu .border-meeting{ background-color: #8cc152; }
+#side-menu .border-contacts{ background-color: #5db3f5; }
+#side-menu .border-interactive{ background-color: #f88d68; }
+#side-menu .border-statistical{ background-color: #8d99f5; }
 
 #side-menu .menu-list .icon-jt{
   width: 15px;
