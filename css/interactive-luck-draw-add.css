@@ -149,17 +149,13 @@
 
 
 
-#award-info .award-scope i{
-  width:32px;
-  height: 32px;
-  background: url(../images/radio-sm-default.png) no-repeat left center;
-  display: block;
-  float: left;
-}
+#award-info .award-scope i{ width:32px; height: 32px; display: block; float: left; background-repeat:no-repeat; background-position:left center; }
+#award-info .award-scope.radio i{ background-image: url(../images/radio-sm-default.png) }
+#award-info .award-scope.radio-checked i{ background-image: url(../images/radio-sm-checked.png) }
+#award-info .award-scope.checkbox i{ background-image: url(../images/icon-check.png) }
+#award-info .award-scope.checkbox-checked i{ background-image: url(../images/icon-checked.png) }
 
-#award-info .award-scope-cur i{
-  background: url(../images/radio-sm-checked.png) no-repeat left center;
-}
+
 
 
 #award-info .userlist{
@@ -241,8 +237,5 @@
   margin-top: 15px;
 }
 
-#award-demo{
-  display: none;
-
-}
+.award-demo{ display: none; }
 /* 奖项信息 end */
