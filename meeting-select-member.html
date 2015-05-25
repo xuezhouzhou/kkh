@@ -115,16 +115,6 @@
               </div>
             </td>
           </tr>
-          <tr>
-            <td>邀请函</td>
-            <td>
-              <div class="clear">
-                <div class="radio fl"><i></i>不需要</div>
-                <div class="radio radio-checked fl"><i></i>需要</div>
-                <div class="inv tc-show" data-id="tc-inv">2015年年度大会</div>
-              </div>
-            </td>
-          </tr>
         </table>
         <div class="btn-wrap">
           <a class="btn btn-primary btn-106-36 btn-br-18 fl">确定</a>
@@ -279,29 +269,6 @@
   </div>
 </div>
 <!-- 我的通讯录弹出层 end -->
-
-<!-- 邀请函弹出层 start -->
-<div id="tc-inv" class="tc-box">
-  <div class="tc-close" data-id="tc-inv"></div>
-  <div class="tc-inv-inner">
-    <h2></h2>
-    <div class="title"><input id="inv-title" type="text" value="点击输入标题"></div>
-    <p>尊敬的来宾</p>
-    <p class="m-t-20" id="p-inv-con"></p>
-    <div class="con">
-      <textarea id="inv-con">点击输入邀请函内容</textarea>
-    </div>
-    <div class="qr-code"><img src="images/ewm.png" /></div>
-    <div class="clear"><p class="fr">上海市人才委员会 敬上<p></div>
-    <div class="clear"><p class="fr">2015年09月10日<p></div>
-    <div class="btn-wrap">
-      <a id="inv-commit" data="commit" class="btn btn-primary btn-106-36 btn-br-18 fl">确定</a>
-      <a class="btn btn-default btn-106-36 btn-br-18 fr" data-id="tc-confirm">取消</a>
-    </div>
-  </div>
-</div>
-<!-- 邀请函弹出层 end -->
-
 <div id="footer">2015 kaikaihui  开发者中心/服务协议/权利声明</div>
 <script src="js/jquery.min.js"></script>
 <script src="js/common.js"></script>
@@ -317,59 +284,6 @@ $(function(){
   $('.tc-show').on('click',function(){
     var id = $(this).attr('data-id');
     $('#' + id + ",#body-hover").show();
-  }); 
-
-  //邀请函标题
-  $('#inv-title').on('focus',function(){
-    var text = $(this).val();
-    if(text=='点击输入标题'){
-      $(this).val('');
-    }
-  }).on('blur',function(){
-    var text = $(this).val();
-    if(text==''){
-      $(this).val('点击输入标题');
-    }else{
-      $('#tc-inv h2').text(text);
-    }
-  });
-
-  //邀请函内容
-  $('#inv-con').on('focus',function(){
-    var text = $(this).val();
-    if(text=='点击输入邀请函内容'){
-      $(this).val('');
-    }
-  }).on('blur',function(){
-    var text = $(this).val();
-    if(text==''){
-      $(this).val('点击输入邀请函内容');
-    }else{
-      $('#p-inv-con').text(text);
-    }
-  });
-
-
-  $("#inv-commit").on('click',function(){
-    var statue = $(this).attr('data');
-    if(statue=='edit'){
-      $('#inv-title,#inv-con').show();
-      $('#p-inv-con,#tc-inv h2').hide();
-      $(this).attr('data','commit').text('确定');
-    }else{
-      var invTitle = $('#inv-title').val();
-      var invCon = $('#inv-con').val();
-      if(invTitle=='点击输入标题'){
-        alert("请输入邀请函标题");
-      }else if(invCon=="点击输入邀请函内容"){
-        alert("请输入邀请函内容");
-      }else{
-        $('#inv-title,#inv-con').hide();
-        $('#p-inv-con,#tc-inv h2').show();
-        $(this).attr('data','edit');
-        $(this).text('修改');
-      }
-    }
   });
 });
 </script>

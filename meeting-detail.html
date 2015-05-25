@@ -143,20 +143,11 @@
             <h2>参会人员</h2>
             <div class="total">78/98人</div>
           </div>
+          <div style="padding: 15px 15px 10px 15px;">
+          	<a class="btn btn-default btn-230-32" href="meeting-select-member.html">增加参会人</a>
+          </div>
           <div class="content">
-            <table width="100%" cellspacing="0" cesspadding="0">
-              <tr>
-                <td class="name">王康飞</td>
-                <td class="ico"><div class="icon-sex-m"></div></td>
-                <td>13165546543</td>
-                <td class="ico"><div class="icon-mem-grey"></div></td>
-              </tr>
-              <tr>
-                <td class="name">王康飞</td>
-                <td class="ico"><div class="icon-sex-w"></div></td>
-                <td>13165546543</td>
-                <td class="ico"><div class="icon-mem-green"></div></td>
-              </tr>
+          	<table width="100%" cellspacing="0" cesspadding="0">
               <tr>
                 <td class="name">王康飞</td>
                 <td class="ico"><div class="icon-sex-w"></div></td>
@@ -255,10 +246,10 @@
               </tr>
             </table>
             <div class="more-member">
-              <a class="fl tc-show" data-id="tc-more-member">更多&gt;&gt;</a>
-              <!--<a class="btn btn-default btn-82-32 fr tc-show" data-id="tc-add-member">增加参会人</a>-->
-              <a class="btn btn-default btn-82-32 fr" href="meeting-select-member.html">增加参会人</a>
-            </div>
+              <a class="tc-show fl" data-id="tc-more-member">更多&gt;&gt;</a>
+             	<a class="btn btn-default btn-82-32 fr tc-show" data-id="tc-inv">邀请函</a>
+              <!--<a class="btn btn-default btn-100-32 fr">发送邀请函</a>-->
+						</div>
           </div>
         </div>
         <!-- 参会人员 end -->
@@ -428,14 +419,7 @@
   </div>
 </div>
 <!-- 添加新的互动弹出层 end -->
-<!-- 增加参会人弹出层 start -->
-<!--<div id="tc-add-member" class="tc-box">
-  <div class="tc-close" data-id="tc-add-member"></div>
-  <div class="frame-wrap">
-    <iframe src="iframe-add-member.html" width="100%" height="100%"></iframe>
-  </div>
-</div>-->
-<!-- 增加参会人弹出层 end -->
+
 <!-- 更多参会人员信息 start -->
 <div id="tc-more-member" class="tc-box">
   <div class="tc-close" data-id="tc-more-member"></div>
@@ -519,49 +503,31 @@
 </div>
 <!-- 更多参会人员信息 end -->
 
+<!--邀请函弹出层 start-->
+<div id="tc-inv" class="tc-box">
+  <div class="tc-close" data-id="tc-inv"></div>
+  <div class="tc-inv-inner">
+    <h2></h2>
+    <div class="title"><input id="inv-title" type="text" value="点击输入标题"></div>
+    <p>尊敬的来宾</p>
+    <p class="m-t-20" id="p-inv-con"></p>
+    <div class="con">
+      <textarea id="inv-con">点击输入邀请函内容</textarea>
+    </div>
+    <div class="qr-code"><img src="images/ewm.png"></div>
+    <div class="clear"><p class="fr">上海市人才委员会 敬上</p><p></p></div>
+    <div class="clear"><p class="fr">2015年09月10日</p><p></p></div>
+    <div class="btn-wrap">
+      <a id="inv-commit" data="commit" class="btn btn-primary btn-106-36 btn-br-18 fl">确定</a>
+      <a class="btn btn-default btn-106-36 btn-br-18 fr" data-id="tc-confirm">取消</a>
+    </div>
+  </div>
+</div>
+<!--邀请函弹出层 end-->
+
 <script src="js/jquery.min.js"></script>
 <script src="js/common.js"></script>
-<script>
-(function($){
-  //弹出层隐藏
-  $('.tc-close').on('click',function(){
-    var id = $(this).attr('data-id');
-    $('#' + id + ",#body-hover").hide();
-  });
-  
-  //弹出层显示
-  $('.tc-show').on('click',function(){
-    var id = $(this).attr('data-id');
-    $('#' + id + ",#body-hover").show();
-  });
+<script src="js/meeting-detail.js"></script>
 
-  //签到模式radio切换
-  $("#tc-sign-change .radio").on('click',function(){
-    if(!$(this).hasClass('radio-checked')){
-      $("#tc-sign-change .radio").removeClass("radio-checked");
-      $(this).addClass('radio-checked');
-    }
-  });
-
-  $(function(){
-    setSideHeight();
-  });
-
-  //设置左侧菜单导航高度
-  function setSideHeight(){
-    var height = $("#main").height();
-    $('#side').height(height);;
-  }
-})(jQuery);
-
-// 百度地图API功能
-var map = new BMap.Map("allmap");
-var point = new BMap.Point(116.356716,39.356716);
-map.centerAndZoom(point, 12);
-var marker = new BMap.Marker(point);  // 创建标注
-map.addOverlay(marker);              // 将标注添加到地图中
-var label = new BMap.Label("上海市浦东新区巨峰路311号",{offset:new BMap.Size(20,-10)});
-marker.setLabel(label);  
-</script>
 </body>
 </html>

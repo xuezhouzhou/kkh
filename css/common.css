@@ -390,11 +390,7 @@ h3{ font-size:16px; }
   line-height: 48px;
 }
 
-.btn-100-32{
-  width: 98px;
-  height: 30px;
-  line-height: 30px;
-}
+
 
 .btn-220-50{
   width: 218px;
@@ -414,25 +410,21 @@ h3{ font-size:16px; }
   line-height: 34px;
 }
 
+.btn-230-32,
 .btn-160-32,
 .btn-112-32,
+.btn-100-32,
 .btn-82-32{
   font-size: 14px;
   height: 30px;
   line-height: 30px;
 }
 
-.btn-112-32{
-  width: 110px;
-}
-
-.btn-82-32{
-  width: 80px;
-}
-
-.btn-160-32{
-  width: 158px;
-}
+.btn-230-32{ width:228px; }
+.btn-160-32{ width: 158px; }
+.btn-112-32{ width: 110px; }
+.btn-100-32{ width: 98px; }
+.btn-82-32{ width: 80px; }
 
 /* 浮动 */
 .fl,.fr{ display: block; }

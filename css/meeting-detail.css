@@ -219,12 +219,7 @@
   width: 34px;
 }
 
-#meeting-member .more-member{
-  margin-top: 5px;
-  height: 32px;
-  line-height: 30px;
-  padding: 0 15px;
-}
+#meeting-member .more-member{ margin-top: 11px ;height: 32px; line-height: 30px; padding: 0 15px;}
 /* 参会人员 end */
 
 
@@ -473,3 +468,22 @@
   bottom: 14px;
 }
 /* 添加互动弹出层 end */
+
+
+
+
+
+
+
+
+
+/* 邀请函弹出层 start */
+#tc-inv{ width: 610px; height: 500px; margin-top: -250px; margin-left: -305px; overflow: hidden; display:none;}
+#tc-inv .tc-inv-inner{ padding:50px 35px; overflow-y: scroll; height: 400px; }
+#tc-inv h2{ text-align: center; display: none; }
+#tc-inv p{ line-height: 2em; }
+#tc-inv .qr-code{ padding: 30px 0; text-align: center; }
+#tc-inv .title input{ text-align: center; padding: 1px; color: #5d5d5e; font-size: 18px; width: 100%; outline: none;}
+#tc-inv .con textarea{ height: 80px; color: #5d5d5e; line-height: 1.5em; width: 100%; outline: none; border:1px solid #ccc; padding: 10px; margin:0 -10px;}
+#tc-inv .btn-wrap{ width: 232px; float: right; margin-top: 20px; }
+#p-inv-con{ display: none; }
