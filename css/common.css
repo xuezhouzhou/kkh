@@ -594,7 +594,7 @@ h3{ font-size:16px; }
 
 /* 弹出层通用样式 start */
 .tc-box{
-  position: fixed;
+  position:fixed;
   display: none;
   left: 50%;
   top: 50%;
