@@ -479,11 +479,12 @@
 
 /* 邀请函弹出层 start */
 #tc-inv{ width: 610px; height: 500px; margin-top: -250px; margin-left: -305px; overflow: hidden; display:none;}
-#tc-inv .tc-inv-inner{ padding:50px 35px; overflow-y: scroll; height: 400px; }
+#tc-inv .tc-inv-inner{ padding:50px 35px; height: 400px; }
 #tc-inv h2{ text-align: center; display: none; }
 #tc-inv p{ line-height: 2em; }
-#tc-inv .qr-code{ padding: 30px 0; text-align: center; }
+#tc-inv .qr-code{ padding: 20px 0; text-align: center; }
+#tc-inv .qr-code img{ width:100px; height:100px; }
 #tc-inv .title input{ text-align: center; padding: 1px; color: #5d5d5e; font-size: 18px; width: 100%; outline: none;}
-#tc-inv .con textarea{ height: 80px; color: #5d5d5e; line-height: 1.5em; width: 100%; outline: none; border:1px solid #ccc; padding: 10px; margin:0 -10px;}
-#tc-inv .btn-wrap{ width: 232px; float: right; margin-top: 20px; }
+#tc-inv .con textarea{ height: 80px; color: #5d5d5e; line-height: 1.5em; width: 100%; outline: none; border:1px solid #ccc; padding: 10px; margin-left:-10px;}
+#tc-inv .btn-wrap{ position:absolute; right:35px; bottom:35px; width: 232px;  }
 #p-inv-con{ display: none; }
